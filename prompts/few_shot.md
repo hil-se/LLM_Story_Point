@@ -6,7 +6,7 @@ Story points are a team-specific, unit-less measure of relative effort required 
 **ESTIMATION SCALE:**
 Range: minimum 1, maximum 20
 
-** EXAMPLES:**
+**EXAMPLES:**
 Here are carefully selected examples representing different complexity levels:
 {examples_str}
 
