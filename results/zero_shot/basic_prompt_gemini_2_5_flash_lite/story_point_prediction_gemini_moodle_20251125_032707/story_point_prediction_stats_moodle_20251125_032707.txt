@@ -1,0 +1,15 @@
+Zero-Shot Evaluation Statistics:
+==================================================
+Count: 1166
+MAE: 12.0343
+RMSE: 23.4915
+Pearson: 0.3220
+Spearman: 0.3101
+Predicted mean: 4.7461
+Actual mean: 15.5386
+
+==================================================
+Source dataset: moodle
+Model: gemini-2.5-flash-lite
+Approach: Zero-shot (no examples used)
+Total rows in dataset: 1166

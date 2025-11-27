@@ -1,0 +1,15 @@
+Zero-Shot Evaluation Statistics:
+==================================================
+Count: 2240
+MAE: 3.3259
+RMSE: 5.5447
+Pearson: 0.2608
+Spearman: 0.2981
+Predicted mean: 5.1205
+Actual mean: 6.3018
+
+==================================================
+Source dataset: titanium
+Model: gpt-5-nano-2025-08-07
+Approach: Zero-shot (no examples used)
+Total rows in dataset: 2251

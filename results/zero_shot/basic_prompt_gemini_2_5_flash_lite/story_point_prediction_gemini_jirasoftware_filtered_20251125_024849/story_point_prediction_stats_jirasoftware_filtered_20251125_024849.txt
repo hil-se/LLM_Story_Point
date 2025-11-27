@@ -1,0 +1,15 @@
+Zero-Shot Evaluation Statistics:
+==================================================
+Count: 284
+MAE: 3.2148
+RMSE: 4.6052
+Pearson: 0.1784
+Spearman: 0.3279
+Predicted mean: 5.7641
+Actual mean: 4.3239
+
+==================================================
+Source dataset: jirasoftware_filtered
+Model: gemini-2.5-flash-lite
+Approach: Zero-shot (no examples used)
+Total rows in dataset: 284

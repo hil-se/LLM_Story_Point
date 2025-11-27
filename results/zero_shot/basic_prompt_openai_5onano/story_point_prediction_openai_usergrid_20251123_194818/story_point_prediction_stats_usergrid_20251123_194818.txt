@@ -1,0 +1,15 @@
+Zero-Shot Evaluation Statistics:
+==================================================
+Count: 482
+MAE: 2.5664
+RMSE: 3.5320
+Pearson: 0.2638
+Spearman: 0.2072
+Predicted mean: 5.2158
+Actual mean: 2.8527
+
+==================================================
+Source dataset: usergrid
+Model: gpt-5-nano-2025-08-07
+Approach: Zero-shot (no examples used)
+Total rows in dataset: 482
