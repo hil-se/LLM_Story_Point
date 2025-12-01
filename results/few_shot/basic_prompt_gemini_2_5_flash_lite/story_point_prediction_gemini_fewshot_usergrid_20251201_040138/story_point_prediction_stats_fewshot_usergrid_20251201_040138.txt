@@ -1,0 +1,16 @@
+Few-Shot Evaluation Statistics:
+==================================================
+Count: 482
+MAE: 6.0290
+RMSE: 8.6096
+Pearson: 0.3822
+Spearman: 0.3299
+Predicted mean: 8.8527
+Actual mean: 2.8527
+
+==================================================
+Source dataset: usergrid
+Model: gemini-2.5-flash-lite
+Approach: Few-shot (examples from Data/FewShotExamples.csv)
+Total rows in dataset: 482
+Few-shot examples used: 5

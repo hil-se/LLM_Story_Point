@@ -1,0 +1,16 @@
+Few-Shot Evaluation Statistics:
+==================================================
+Count: 283
+MAE: 8.7633
+RMSE: 13.5899
+Pearson: 0.2443
+Spearman: 0.2772
+Predicted mean: 12.3216
+Actual mean: 4.3286
+
+==================================================
+Source dataset: jirasoftware_filtered
+Model: gemini-2.5-flash-lite
+Approach: Few-shot (examples from Data/FewShotExamples.csv)
+Total rows in dataset: 283
+Few-shot examples used: 5
