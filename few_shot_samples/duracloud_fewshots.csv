@@ -1,0 +1,6 @@
+issuekey,title,description,storypoint
+DURACLOUD-4,Document logging framework,"Store-client: Whenever used, creates a c:/ directory and several directories underneath it to store its log files.  Sending logs to STDOUT by default and/or having a documented way to changes this would be good.",1
+DURACLOUD-60,Allow expected checksum value to be included when adding a content item,Update the DuraStore REST API call for storing a content item to allow for including an MD5 checksum value which is compared with the stored file's checksum to ensure that the file was received correctly.,2
+DURACLOUD-10,Allow for simple updating of project version numbers,It should be easy/simple to update the version number of all parts of the baseline for each release.,3
+DURACLOUD-22,JPEG2K: Image server service,Service wrapper and service to serve JPEG2K images.,5
+DURACLOUD-126,Create content retrieval tool,This tool is the complement to the Sync Tool: A command line utility which would be used to pull content from a DuraCloud space to the local file system. Part of that activity is reconstituting any chunked files.,4
