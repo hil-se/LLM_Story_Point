@@ -1,0 +1,6 @@
+issuekey,title,description,storypoint,split_mark
+BAM-10355,Tabbed content re-design,,4,test
+BAM-3961,Bucket - Gadget issues,,8,train
+BAM-4418,"Rename ""Bamboo Builds"" tab in JIRA Bamboo plugin to be ""Builds""",,1,train
+BAM-5645,Deadlocks reported during change detection on MS SQL Server,Observed on installation created from J2BAC export.,13,train
+BAM-4536,Spike: Extract common behaviour from Plan and Chain,,20,train

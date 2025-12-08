@@ -1,0 +1,6 @@
+issuekey,title,description,storypoint,split_mark
+MESOS-5013,Add docker volume driver isolator for Mesos containerizer.,The isolator will interact with Docker Volume Driver Plugins to mount and unmount external volumes to container.  ,8,test
+MESOS-3894,Rebuild reservation slack allocator state during master failover.,,13,train
+MESOS-2044,Use one IP address per container for network isolation,"If there are enough IP addresses, either IPv4 or IPv6, we should use one IP address per container, instead of the ugly port range based solution. One problem with this is the IP address management, usually it is managed by a DHCP server, maybe we need to manage them in mesos master/slave.    Also, maybe use macvlan instead of veth for better isolation.",40,train
+MESOS-934,'Logging and Debugging' document is out-of-date.,The following is no longer correct:  http://mesos.apache.org/documentation/latest/logging-and-debugging/    We should either delete this document or re-write it entirely.,1,train
+MESOS-4098,Allow interactive terminal for mesos containerizer,Today mesos containerizer does not have a way to run tasks that require interactive sessions. An example use case is running a task that requires a manual password entry from an operator. Another use case could be debugging (gdb). ,10,train

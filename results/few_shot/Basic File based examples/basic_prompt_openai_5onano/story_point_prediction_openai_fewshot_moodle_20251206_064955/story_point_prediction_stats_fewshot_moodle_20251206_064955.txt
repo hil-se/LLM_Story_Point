@@ -1,0 +1,16 @@
+Few-Shot Evaluation Statistics:
+==================================================
+Count: 1161
+MAE: 12.5108
+RMSE: 20.9078
+Pearson: 0.4066
+Spearman: 0.3686
+Predicted mean: 15.9311
+Actual mean: 15.4117
+
+==================================================
+Source dataset: moodle
+Model: gpt-5-nano-2025-08-07
+Model: gpt-5-nano-2025-08-07
+Total rows in dataset: 1161
+Few-shot examples used: 5
