@@ -1,0 +1,6 @@
+issuekey,title,description,storypoint,split_mark
+XD-374,Command to list taps,,1,train
+XD-3592,Harmonize REST features between deployment profiles,"As an s-c-d user, I'd like to take advantage of admin running on variety of platforms such as Lattice, YARN or CF. I'd like to access REST APIs consistently across these platforms.",5,test
+XD-1027,Create script-based batch ItemProcessor ,This would be included in the OOTB batch jobs to optionally process the loaded Tuple with a configured script.,10,train
+XD-2252,Measure baseline performance of RabbitMQ using PerfTest (In-house),,16,train
+XD-1391,Rewrite of the existing UI to use AngluarJS,,40,train

@@ -1,0 +1,6 @@
+issuekey,title,description,storypoint,split_mark
+XD-374,Command to list taps,,1,train
+XD-1624,UI: The user should be able to view a graphical representation of the job,"This may be broken up into multiple Jira issues. Provide a generic approach to render Batch jobs graphically.   Second, especially for Hadoop components - Provide step-type-dependent renderings of Batch components - see: XD-1622",12,train
+XD-964,Support for common use cases using quartz,,40,train
+XD-1631,Update hdfs sink docs,Options that are not covered:  --codec  --idleTimeout  --inUsePrefix  --inUseSuffix  --inputType  --overwrite    Options Renamed:  --filename is now --fileName,1,train
+XD-1726,Change jacoco to 0.7 for jdk 8 builds,"https://build.spring.io/browse/XD-JDK8-5  apply plugin: 'jacoco'  jacoco {     toolVersion = ""0.7.0.201403182114"" }",1,train
