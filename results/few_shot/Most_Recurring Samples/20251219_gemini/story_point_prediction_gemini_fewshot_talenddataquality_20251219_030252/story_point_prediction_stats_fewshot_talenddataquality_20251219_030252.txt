@@ -1,0 +1,16 @@
+Few-Shot Evaluation Statistics:
+==================================================
+Count: 1376
+MAE: 3.6177
+RMSE: 5.0816
+Pearson: 0.3130
+Spearman: 0.3328
+Predicted mean: 6.5850
+Actual mean: 5.9310
+
+==================================================
+Source dataset: talenddataquality
+Model: gemini-2.5-flash-lite
+Approach: Few-shot (examples from Data/few_shot_samples/talenddataquality_fewshots.csv)
+Total rows in dataset: 1376
+Few-shot examples used: 5

@@ -1,0 +1,16 @@
+Few-Shot Evaluation Statistics:
+==================================================
+Count: 1161
+MAE: 11.2463
+RMSE: 22.0179
+Pearson: 0.3439
+Spearman: 0.3048
+Predicted mean: 8.3325
+Actual mean: 15.5633
+
+==================================================
+Source dataset: moodle
+Model: gemini-2.5-flash-lite
+Approach: Few-shot (examples from Data/few_shot_samples/moodle_fewshots.csv)
+Total rows in dataset: 1161
+Few-shot examples used: 5
