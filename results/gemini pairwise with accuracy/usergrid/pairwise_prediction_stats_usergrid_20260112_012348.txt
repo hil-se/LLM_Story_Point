@@ -1,0 +1,23 @@
+Zero-Shot Pairwise Evaluation Statistics:
+==================================================
+Count: 482
+Accuracy (Explicit Pairwise): 0.6100
+Precision: 0.4145
+Recall: 0.3889
+F1 Score: 0.4013
+MAE: 0.3900
+RMSE: 0.6245
+Pearson: 0.1126
+Spearman: 0.1126
+Predicted mean: 0.3154
+Actual mean: 0.3361
+Confusion Matrix:
+  [[231  89]
+ [ 99  63]]
+
+==================================================
+Source dataset: usergrid
+Model: gemini-flash-lite-latest
+Approach: Zero-shot (no examples used)
+Total rows in dataset: 482
+Valid predictions: 482

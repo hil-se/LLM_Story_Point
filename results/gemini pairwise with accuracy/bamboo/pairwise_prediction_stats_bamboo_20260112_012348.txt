@@ -1,0 +1,23 @@
+Zero-Shot Pairwise Evaluation Statistics:
+==================================================
+Count: 520
+Accuracy (Explicit Pairwise): 0.6346
+Precision: 0.3390
+Recall: 0.4511
+F1 Score: 0.3871
+MAE: 0.3654
+RMSE: 0.6045
+Pearson: 0.1370
+Spearman: 0.1370
+Predicted mean: 0.3404
+Actual mean: 0.2558
+Confusion Matrix:
+  [[270 117]
+ [ 73  60]]
+
+==================================================
+Source dataset: bamboo
+Model: gemini-flash-lite-latest
+Approach: Zero-shot (no examples used)
+Total rows in dataset: 520
+Valid predictions: 520

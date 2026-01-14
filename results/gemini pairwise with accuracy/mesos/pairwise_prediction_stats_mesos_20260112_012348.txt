@@ -1,0 +1,23 @@
+Zero-Shot Pairwise Evaluation Statistics:
+==================================================
+Count: 1677
+Accuracy (Explicit Pairwise): 0.6321
+Precision: 0.4247
+Recall: 0.4820
+F1 Score: 0.4516
+MAE: 0.3679
+RMSE: 0.6066
+Pearson: 0.1772
+Spearman: 0.1772
+Predicted mean: 0.3566
+Actual mean: 0.3143
+Confusion Matrix:
+  [[806 344]
+ [273 254]]
+
+==================================================
+Source dataset: mesos
+Model: gemini-flash-lite-latest
+Approach: Zero-shot (no examples used)
+Total rows in dataset: 1677
+Valid predictions: 1677

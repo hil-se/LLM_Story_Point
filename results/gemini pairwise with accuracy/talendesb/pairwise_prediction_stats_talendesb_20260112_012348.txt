@@ -1,0 +1,23 @@
+Zero-Shot Pairwise Evaluation Statistics:
+==================================================
+Count: 866
+Accuracy (Explicit Pairwise): 0.6363
+Precision: 0.2950
+Recall: 0.5191
+F1 Score: 0.3762
+MAE: 0.3637
+RMSE: 0.6031
+Pearson: 0.1578
+Spearman: 0.1578
+Predicted mean: 0.3718
+Actual mean: 0.2113
+Confusion Matrix:
+  [[456 227]
+ [ 88  95]]
+
+==================================================
+Source dataset: talendesb
+Model: gemini-flash-lite-latest
+Approach: Zero-shot (no examples used)
+Total rows in dataset: 866
+Valid predictions: 866
