@@ -1,0 +1,39 @@
+COMPREHENSIVE STORY POINT PREDICTION EXPERIMENT REPORT
+============================================================
+
+Project: jirasoftware_filtered
+Timestamp: 2025-09-03T01:33:04.799587
+Model: gpt-4o-mini
+Test Samples: 65
+
+ZERO-SHOT RESULTS:
+--------------------
+Pearson Correlation: 0.365
+Spearman Correlation: 0.433
+Mean Absolute Error: 2.631
+Accuracy within ±1: 0.246
+Accuracy within ±2: 0.538
+
+FEW-SHOT RESULTS:
+--------------------
+Pearson Correlation: 0.257
+Spearman Correlation: 0.247
+Mean Absolute Error: 2.815
+Accuracy within ±1: 0.292
+Accuracy within ±2: 0.538
+
+PERFORMANCE COMPARISON:
+--------------------
+Best Pearson Correlation: 0.365
+Best Spearman Correlation: 0.433
+Best MAE: 2.631
+
+FILES GENERATED:
+--------------------
+• detailed_predictions/zero_shot_predictions.csv
+• detailed_predictions/few_shot_predictions.csv
+• performance_analysis/performance_metrics.csv
+• performance_analysis/method_comparison.csv
+• experiment_metadata/experiment_summary.csv
+• experiment_metadata/few_shot_examples.csv
+• experiment_metadata/comprehensive_summary_report.txt

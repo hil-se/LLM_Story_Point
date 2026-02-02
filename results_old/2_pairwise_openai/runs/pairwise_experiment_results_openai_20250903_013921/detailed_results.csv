@@ -1,0 +1,119 @@
+index,story_a,story_b,expected_comparison,predicted_comparison,correct,confidence_score,response_time,prediction_text,complexity_analysis,timestamp
+1,"As Patrick, I want to see list of versions when I'm looking at the backlog
+Considered versions: - versions which are BOTH: -- part of projects included in the board, AND -- unreleased -- not archived  Ordering: - version sequence for versions within the same project (oldest first) - overall projects are ordered by project name  Display: - version name along with project key (name on mouse hover) -- version name wraps around project key, if one or both are long - if the board only has one project, omit project name  If there are no release versions you get an empty column. In the filters story we'll add an ""all releases"" button so it doesn't look so empty.  (!) Development Notes (!)  Q: What if there are duplicate version names? A: They look the same.   Q: What if the version names are long? A: They wrap.   Q: What if a version has been renamed / deleted in the system? A: It doesn't show up (archived versions dont' show up).  Q: When reordering versions, are they bound to their container? A: The order can't be changed on this page.   Q: What can I edit about the versions? A: Nothing. Nada. Rien. Nope.  Q: What does the detail view display if a version is selected but no issues are selected? A: There is no selection of a version yet, that's part of the filter story.   Q: What if the fixVersions field doesn't exist? A: (x) Not Answered  Q: Is there a way to select another version field to be displayed here? A: (x) Not Answered  Q: What if the version is ""Archived"" in JIRA? A: It isn't included in the list. ","Change ""hide nav bar"" shortcut
+Currently it's 'z' to cycle between normal, projector and no-nav mode. Let's separate it so 'z' toggles projector mode only (as it used to), and Ctrl+Shift+F toggles the ""hide nav bar"" mode.    Rationale: this is consistent with how Confluence does it, and also Google Docs.",1,1,True,0.7,4.659476041793823,"REASONING:
+Story A involves displaying a list of versions based on specific criteria, which requires handling multiple conditions related to project inclusion, version status (unreleased and not archived), and ordering. The complexity arises from the need to manage how versions are displayed, including handling long names and duplicates, as well as ensuring that archived versions are excluded. This requires a deeper understanding of the data structures involved, potential algorithms for sorting and filtering, and considerations for UI behavior based on the state of the data.
+
+In terms of integration requirements, Story A may involve interactions with a database to fetch the relevant version data, which could necessitate changes to the database schema or queries to ensure performance and accuracy. The testing effort for Story A is likely to be significant, as it will require unit tests for the data retrieval logic, integration tests to ensure the UI correctly reflects the data, and possibly performance testing to ensure that the display of versions does not degrade the user experience.
+
+On the other hand, Story B is a straightforward change to keyboard shortcuts for toggling UI modes. This involves minimal code changes, primarily in the frontend, and does not require any significant changes to the underlying data structures or external integrations. The testing effort is also minimal, as it primarily involves verifying that the keyboard shortcuts work as intended across different environments.
+
+In summary, Story A has higher technical complexity due to its intricate requirements for data handling, potential database interactions, and extensive testing needs, while Story B is a simple UI adjustment with low complexity.
+
+ANSWER: 1",Similar complexity levels,2025-09-03T01:38:50.056776
+2,"As Patrick, I want to be able to filter my backlog to a select few versions so I can see which stories will be included in them
+","As Patrick, I want to adjust release report projections to simulate and better understand what can be achieved within a version
+- allow the percentage calculation to be adjusted (default to 10%) ",-1,-1,True,0.7,7.0646138191223145,"REASONING:
+**Technical Complexity:**
+- **Story A** involves filtering a backlog based on selected versions. This requires implementing a filtering mechanism, which may involve complex algorithms depending on how the data is structured. If the backlog is large, performance considerations will also come into play, especially if the filtering needs to be done in real-time. However, the overall complexity is relatively moderate as it primarily deals with data retrieval and display.
+  
+- **Story B**, on the other hand, requires adjusting release report projections, which involves not only changing how data is calculated (the percentage adjustment) but also simulating various scenarios to understand the impact on the release. This could involve more complex algorithms to project outcomes based on different inputs and may require a more sophisticated data model to handle these projections. The need to simulate and understand what can be achieved adds a layer of complexity that is not present in Story A.
+
+**Integration Requirements:**
+- **Story A** may require minimal integration if it simply filters existing data without needing to pull from external systems. However, if the backlog is tied to external systems or APIs, this could increase complexity.
+  
+- **Story B** might require integration with existing reporting systems or databases to fetch the necessary data for projections. If the projections need to pull data from multiple sources or require complex calculations based on historical data, this could significantly increase the integration complexity.
+
+**Testing Effort:**
+- **Story A** would require unit tests for the filtering logic and possibly some integration tests if it interacts with external data sources. The testing effort is likely straightforward.
+  
+- **Story B** would require extensive testing, including unit tests for the new calculation logic, integration tests to ensure data flows correctly, and possibly performance testing to ensure that the simulation runs efficiently under various scenarios. The complexity of testing increases with the need to validate multiple scenarios and outcomes.
+
+**Documentation Needs:**
+- **Story A** would require basic documentation for the filtering feature, likely focusing on user documentation.
+  
+- **Story B** would necessitate more comprehensive documentation, including technical specifications for the new projection logic, user documentation explaining how to use the new feature, and possibly API documentation if the projections are exposed via an API.
+
+Overall, while both stories have their complexities, Story B presents a higher technical complexity due to the need for advanced calculations, potential integration with multiple data sources, and extensive testing and documentation requirements.
+
+ANSWER: -1",Similar complexity levels,2025-09-03T01:38:57.122338
+3,"As Patrick, I want to be able to delete a version
+- allow for a version to be deleted - warn if other issues are assigned to it already - what permissions do we need for that action (TODO: team input here) ","As a user I want to be able to see the Epic Name as a column in Issue Navigator searches
+Currently, using the Epic Link column only shows the epic's issue key.",1,1,True,0.7,6.960346221923828,"REASONING:
+Story A involves the ability to delete a version, which introduces several complexities. First, there is the need to manage the relationships between versions and any issues assigned to them. This requires careful handling of data integrity and potentially complex algorithms to ensure that the deletion does not violate any constraints. Additionally, the requirement to warn users if other issues are assigned to the version adds another layer of complexity, as it necessitates checking existing relationships before allowing the deletion. The permissions aspect also introduces uncertainty, as it requires team input to determine what permissions are necessary, which could involve additional logic and security considerations.
+
+In terms of integration requirements, Story A may necessitate changes to the database schema to accommodate the deletion logic and ensure that all related data is handled correctly. This could involve migrations and updates to existing data structures.
+
+For testing effort, Story A will require comprehensive unit tests to cover the deletion logic, integration tests to ensure that the warning mechanism works correctly, and possibly performance testing to ensure that the deletion process does not degrade system performance, especially if there are many versions or issues involved.
+
+On the other hand, Story B is primarily a UI enhancement that involves displaying the Epic Name as a column in the Issue Navigator. While it does require some backend changes to fetch and display the Epic Name, the complexity is significantly lower. The integration requirements are minimal, as it likely only involves a straightforward query adjustment without major schema changes. Testing for Story B will primarily focus on UI testing and ensuring that the new column displays correctly, which is less complex than the requirements for Story A.
+
+Overall, Story A presents higher technical complexity across all dimensions compared to Story B.
+
+ANSWER: 1",Similar complexity levels,2025-09-03T01:39:04.083967
+4,"As Patrick, I want to understand the progress towards a version with a single report
+- the chart needs to show the complete history of a version (incl scope changes) - it's a burnup chart showing total estimate vs complete estimate, total vs unestimated stories - also display count of unestimated stories - start date is defined as the day when first story from that version was added to the version (to use startDate once we have it) - also display the list of stories split into complete, incomplete, incomplete unestimated (we may want to consider adding full history later on); - each story on the list should display the epic it belongs to  (!) Development Notes (!)  Q: How does the chart look if it has been archived then unarchived again? A: the same  Q: What if an issue is a part of multiple versions? Are there any implications for which version it is displayed in/ permission issues if this issue is in another project our user has no permissions to see? A: it's displayed in all of them if the user has permissions to see it  Q: What if epics are in a version, how are they counted and displayed? A: They are added to the issue count and will show up in the table.  Q: What happens to the chart when the first issue added to the version is deleted/moved/converted? A: it should show issue removed","Quick filters should collapse into a ""... Show more"" reveal pattern when they will wrap to more than one line
+We should use a pattern similar to the Reveal text pattern from the ADG.    * When there are more Quick Filters than there is horizontal screen space (eg. the screen is not wide enough, and they will wrap), we hide the remaining ones and display a ""... Show more"" link as the last Quick Filter.  * Clicking ""... Show more"" will reveal the rest of the Quick Filters  * ""... Show more"" will now change to say ""Show less"" instead  * The default state for all users is the collapsed state  * Whether the Filters are collapsed or all shown is persistent on a user level  * Reordering the Quick Filters stays the same as it is today  * When the header is collapsed (z on the keyboard), the behaviour stays the same.    ",1,1,True,0.8,11.467944860458374,"REASONING:
+Story A presents a significant level of technical complexity due to the following factors:
+
+1. TECHNICAL COMPLEXITY:
+   - Code complexity: The implementation of a burnup chart requires sophisticated algorithms to calculate and display historical data, including scope changes, and to manage the various states of stories (complete, incomplete, unestimated). This involves complex data structures to handle the relationships between stories and epics.
+   - Technical debt and legacy system integration: The need to integrate with existing systems to pull historical data and manage versioning adds to the complexity. There may be legacy code that needs to be considered or refactored.
+   - Performance requirements: The chart must efficiently handle potentially large datasets, especially if the history of versions is extensive, which could impact performance.
+
+2. INTEGRATION REQUIREMENTS:
+   - External system dependencies: The story may require integration with other systems to fetch data about stories and versions, which adds complexity.
+   - API integrations: The need to ensure that the chart reflects real-time data from various sources increases the complexity of API interactions.
+   - Database schema changes: The implementation may require changes to the database schema to accommodate new data points related to the burnup chart.
+
+3. TESTING EFFORT:
+   - Unit test coverage: The complexity of the algorithms and data handling will necessitate extensive unit testing to ensure accuracy.
+   - Integration testing: Given the multiple dependencies and potential interactions with other systems, integration testing will be complex.
+   - Performance testing: The need to ensure that the chart performs well with large datasets adds another layer of testing complexity.
+   - Cross-platform/browser testing: The chart must be tested across different platforms to ensure consistent behavior.
+
+4. DOCUMENTATION NEEDS:
+   - Technical specifications: Detailed documentation will be required to outline the algorithms and data structures used.
+   - User documentation: Users will need guidance on interpreting the burnup chart and understanding its implications.
+   - API documentation: If new APIs are introduced or existing ones modified, comprehensive documentation will be necessary.
+
+In contrast, Story B is primarily a UI enhancement with a straightforward implementation. While it does involve some considerations for user experience and state persistence, the technical complexity is significantly lower:
+
+1. TECHNICAL COMPLEXITY:
+   - Code complexity: The implementation of a ""Show more"" feature is relatively simple and does not involve complex algorithms or data structures.
+   - Technical debt: There are minimal concerns regarding legacy systems, as this is a UI change.
+   - Performance requirements: The performance impact is negligible since it deals with UI elements rather than large datasets.
+
+2. INTEGRATION REQUIREMENTS:
+   - External system dependencies: There are no significant external dependencies; this is a self-contained UI feature.
+   - API integrations: No new API integrations are required.
+   - Database schema changes: No changes to the database schema are necessary.
+
+3. TESTING EFFORT:
+   - Unit test coverage: Testing will be straightforward, focusing on UI behavior.
+   - Integration testing: Minimal integration testing is required since it does not interact with other systems.
+   - Performance testing: Performance testing is not a significant concern for this UI change.
+   - Cross-platform/browser testing: While some testing is needed, it is less complex than Story A.
+
+4. DOCUMENTATION NEEDS:
+   - Technical specifications: Minimal documentation is needed for this simple feature.
+   - User documentation: Basic user documentation may be required, but it is not extensive.
+   - API documentation: No API documentation is needed.
+
+Overall, Story A has significantly higher technical complexity across all dimensions compared to Story B.
+
+ANSWER: 1",Similar complexity levels,2025-09-03T01:39:15.552790
+5,"Add Atlassian Analytics events to GH
+All of the values below will need to be grouped by instance:    - how many instances are actually activated (measurement: for every instance with GH enabled, make sure we store first visit to an instance - most likely to be /secure/Dashboard.jspa, which is in JIRA)     - of these instances, how many find Rapid Boards (measurement: first visit to /secure/RapidStart.jspa in an instance) + how many of the ones without GH at first had them (this necessary to have the numbers right for the following points)   -- Event is ""gh.welcome.show""    - how many attempt to create a project? (measurement: opening of the dialogue to create a project)   -- Event: ""gh.welcome.create.project.start"" with type in ""label"" field    - how many create a project + how many create a project of each type (scrum, kanban, diy) + how many create sample/non-sample projects? (measurement: store project_created as an event, with type associated to it, as well as if it was a sample project).   -- Event: ""gh.welcome.create.project.sampleData"" with type in ""label"" field preceding the next event in case of simple data is used   -- Event: ""gh.welcome.create.project.complete"" with type in ""label"" field    - how many non-sample projects create a single issue (measurement: store issue_created event)   -- Event: ""gh.issue.created"" with keys array stringified in ""keys"" field    - of scrum non-sample users, how many create a sprint (measurement: sprint_created event)   -- Event: ""gh.rapidboard.sprint.backlog.addmarker""    - of scrum non-sample users, how many start a sprint (measurement: sprint_started event)   -- Event: ""gh.start.sprint.dialog.change.start"" when attempt to start the sprint   -- Event: ""gh.start.sprint.dialog.change.complete"" when they actually start it    +    - how many users use rapid boards exclusively, how many use a mix, how many use classic exclusively - the first and last is what we cannot determine at the moment (measurement: store requests to RapidBoard.jspa vs the other two classic boards, then count these per week grouping by instance). Note that this is actual usage grouped instance, as opposed to usage overall (so larger instances having more influence) or binary on/off ""has ever used a classic/rapid board""   -- Event: ""gh.rapidboard.show"" on view of rapid board   -- Event: ""gh.classic.show"" on view of classic board      From Jay:    - How many epics appear on a board   -- Event ""gh.rapidboard.epics"" with ""value"" field as count    - How many versions appear on a board   -- TBD    (!) Development Notes (!)    Q: What if 1 action triggers more than 1 event?  A: (/) It could and probably will - its up to the post-processing to effectively filter, order & group the events.","Edit startDate of a fixVersion in JIRA
+As Patrick, I want to be able to edit startDate for a fixVersion in JIRA so that the experience between GH and JIRA is consistent and not confusing.    h4. Approach for JIRA 6.0    JIRA code base:  * Modify JIRA's {{version}} table to include a start date column  * Make the above schema change on JIRA 5.2.x branch so that downgrades continue to work.  * Augment the RESTful table in JIRA's Project Admin page for Versions to show this start date and allow editing of it  * Augment the REST representation of versions to include start date  * Add the start date field to the JIRA API for a Version object    GH code base:  * Make GH aware of the capability of storing start date in either JIRA or GH, depending on the JIRA version.  * Migrate data stored in GH for start date to JIRA storage if available.    (!) Development Notes (!)    Q: How will adding a startDate to a previously released version affect the issues that apply to it?  A: (/) If a previously released version has a release date, the new start date will be validated against the release date.    Q: How will adding a startDate affect issues that have been Archived?  A: (/) Changes to version data do not affect issues.    Q: Which timezone setting will the startDate follow, user's or system's?  A: (/) Start date and release date are both stored in the JVM system time zone.    Q: Can you remove the startDate after adding it?  A: (/) Yes.    Q: What is one way to get the startDate to come after the releaseDate?  A: (/) Not possible.    Q: What happens when you add a startDate to a version that has been released but has no releaseDate?  A: (/) Start date can be added without release date.    Q: Is there a special place in the database this column/row will go? Depending on the database used, is there a way for this location to be already taken, and/or do we recycle a location/field ID? We need to protect against overwrites.  A: (/) The field {{startdate}} did not exist in the table {{projectversion}} before now.    Q: How is the data synchronised between GH AO tables and JIRA?  A: (/) When the Version meta data is asked for in GH, it will check to see if it exists in JIRA as well. If so, it will be migrated over.",-1,1,False,0.8,5.836539268493652,"REASONING:
+Story A involves adding a comprehensive set of analytics events to a system, which requires significant code complexity due to the need to track multiple user interactions and group them by instance. This involves complex algorithms to filter, order, and group events, as well as potentially intricate data structures to manage the event data. The integration with existing systems (like JIRA) and the need to ensure accurate tracking across various user actions adds to the technical debt and legacy system integration challenges. Additionally, performance requirements are critical since the analytics must be processed efficiently without degrading user experience.
+
+In contrast, Story B focuses on a more straightforward task of editing a start date for a fixVersion in JIRA. While it does involve database schema changes and some integration with the GH codebase, the overall complexity is lower. The changes are primarily focused on a single feature with a limited scope, and while there are considerations for backward compatibility and data migration, these do not introduce the same level of complexity as the multiple analytics events in Story A.
+
+In terms of integration requirements, Story A has a broader scope with multiple event types and interactions, while Story B's integration is more contained within the JIRA environment. Testing efforts for Story A will also be more extensive due to the need for unit tests, integration tests, and performance testing across various user actions, whereas Story B's testing will be more straightforward, focusing on the new field and its interactions.
+
+Documentation needs for Story A will be more extensive due to the complexity of the analytics events and their implications, while Story B will require less documentation as it is a more focused feature.
+
+Overall, Story A presents a higher technical complexity across all dimensions compared to Story B.
+
+ANSWER: 1",Story B significantly more complex,2025-09-03T01:39:21.390439

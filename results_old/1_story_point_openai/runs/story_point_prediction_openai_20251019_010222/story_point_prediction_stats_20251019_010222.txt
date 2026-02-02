@@ -1,0 +1,3 @@
+
+Few-Shot Correlation Coefficients:  Pearson: 0.026240615529262837  Spearman: 0.14674332242857688
+Few-Shot Correlation Coefficients:  Pearson: 0.16699908995146182  Pearson: 0.12983831211370114

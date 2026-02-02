@@ -1,0 +1,72 @@
+================================================================================
+OPENAI PAIRWISE COMPARISON EXPERIMENT SUMMARY
+================================================================================
+
+EXPERIMENT INFORMATION:
+----------------------------------------
+Timestamp: 2025-09-04T17:09:05.581475
+Model: gpt-4
+Data Source: Data/test_pairs.csv
+Sample Size: 20
+Methods Tested: zero_shot, few_shot
+Total Tokens Used: 42,664
+Total Requests: 42
+
+OVERALL STATISTICS:
+----------------------------------------
+Total Predictions: 40
+Correct Predictions: 23
+Failed Predictions: 0
+Overall Accuracy: 57.50%
+
+METHOD RESULTS:
+----------------------------------------
+
+ZERO_SHOT:
+  Accuracy: 45.00%
+  Correct: 9
+  Failed: 0
+  Avg Confidence: 0.605
+  Avg Response Time: 6.11s
+  Total Tokens: 19,236
+  Avg Tokens/Prediction: 961.8
+
+FEW_SHOT:
+  Accuracy: 70.00%
+  Correct: 14
+  Failed: 0
+  Avg Confidence: 0.638
+  Avg Response Time: 3.49s
+  Total Tokens: 22,115
+  Avg Tokens/Prediction: 1105.8
+
+CORRELATION COEFFICIENTS:
+----------------------------------------
+
+ZERO_SHOT:
+  Pearson Correlation: -0.264
+  Pearson P-value: 0.262
+  Spearman Correlation: -0.264
+  Spearman P-value: 0.262
+  Sample Size: 20
+
+FEW_SHOT:
+  Pearson Correlation: 0.538
+  Pearson P-value: 0.014
+  Spearman Correlation: 0.538
+  Spearman P-value: 0.014
+  Sample Size: 20
+
+PERFORMANCE SUMMARY:
+----------------------------------------
+Best Method: few_shot
+Best Accuracy: 70.00%
+
+COST ANALYSIS:
+----------------------------------------
+Total Cost: $1.6126
+Cost per Prediction: $0.0403
+
+================================================================================
+END OF SUMMARY
+================================================================================

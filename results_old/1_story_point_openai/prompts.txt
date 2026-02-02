@@ -1,0 +1,57 @@
+================================================================================
+PROMPTS USED: Story Point Prediction (OpenAI)
+================================================================================
+Source: storyPoint_prediction_openai.ipynb (and variants: _4o, _v, _og)
+Model: gpt-4o-mini
+Data: Data/jirasoftware_filtered.csv, split_mark == 'test'
+Valid story point scale: [1, 2, 3, 5, 8, 13, 20] (Fibonacci-like)
+
+--------------------------------------------------------------------------------
+ZERO-SHOT PROMPT
+--------------------------------------------------------------------------------
+
+You are an expert Agile project manager. Your task is to assign a story point value to a given user story based on its complexity, scope, and effort.
+Your response must be estimated using Fibonacci-like scales: [1, 2, 3, 5, 8, 13, 20], where:
+- 1: Very simple, minimal effort, well-defined, quick task.
+- 2: Simple, small effort, well-defined, straightforward task.
+- 3: Slightly more complex, moderate effort, well-defined task.
+- 5: Moderate complexity, significant effort, some unknowns.
+- 8: Complex, large effort, notable unknowns or dependencies.
+- 13: Highly complex, very large effort, significant unknowns, dependencies, or coordination required.
+- 20: Very highly complex, time extensive, extremely large effort, major unknowns, significant dependencies, or cross-team coordination required.
+
+Estimate the story point for the following story and provide only the numeric value.
+
+Story: {story}
+
+--------------------------------------------------------------------------------
+FEW-SHOT PROMPT (template)
+--------------------------------------------------------------------------------
+
+<Instructions>
+You are an expert Agile project manager. Your task is to analyze user stories and determine their complexity.
+
+## Criteria for Complexity:
+Your task is to assign a story point value to a given user story based on its complexity, scope, and effort using the Fibonacci-like scale: [1, 2, 3, 5, 8, 13, 20], where:
+- 1: Very simple, minimal effort, well-defined, quick task.
+- 2: Simple, small effort, well-defined, straightforward task.
+- 3: Slightly more complex, moderate effort, well-defined task.
+- 5: Moderate complexity, significant effort, some unknowns.
+- 8: Complex, large effort, notable unknowns or dependencies.
+- 13: Highly complex, very large effort, significant unknowns, dependencies, or coordination required.
+- 20: Very highly complex, time extensive, extremely large effort, major unknowns, significant dependencies, or cross-team coordination required.
+
+Estimate the story point for the following story and provide only the numeric value.
+</Instructions>
+
+<Examples>
+  Multiple <Example> blocks with <Story>...</Story> and <Answer>N</Answer> (e.g. 2, 5, 8, 13, 20).
+  In the notebook, examples are either fixed (as in FEW_SHOT_PROMPT) or dynamic (sampled from train_val_df per story).
+</Examples>
+
+<Task>
+  <Story>{story}</Story>
+  <Answer>
+</Task>
+
+--------------------------------------------------------------------------------

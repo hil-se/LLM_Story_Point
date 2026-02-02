@@ -1,0 +1,62 @@
+================================================================================
+PROMPTS USED: Gemini Pairwise + Story Point (Notebook)
+================================================================================
+Source: gemini_pairwise_predictor.ipynb
+Model: gemini-2.5-flash
+Data: Data/jirasoftware_filtered.csv (test), Data/test_pairs.csv (pairwise)
+Tasks: (1) Story point prediction (few-shot), (2) Pairwise comparison (zero-shot and few-shot)
+
+--------------------------------------------------------------------------------
+STORY POINT – FEW-SHOT PROMPT (create_few_shot_prompt)
+--------------------------------------------------------------------------------
+
+Five pairwise-style examples: "Backlog item i: {story_i}, Backlog item j: {story_j}, Decision: {Backlog item i has more/fewer story points than item j}."
+
+Closing instruction: "Carefully study the examples above to understand how decisions are made. Learn from the patterns in complexity, scope, and effort shown in the examples. Now apply this learning to estimate story points for the new backlog item below."
+
+Task: Story: {story_text}
+
+Estimated Story Points:
+
+--------------------------------------------------------------------------------
+PAIRWISE – ZERO-SHOT PROMPT (create_pairwise_zero_shot_prompt)
+--------------------------------------------------------------------------------
+
+Compare these two user stories and determine which requires more development effort:
+
+**STORY A:**
+{story_a}
+
+**STORY B:**
+{story_b}
+
+**ANALYSIS FRAMEWORK:**
+- Technical complexity (algorithms, integrations, data processing)
+- Implementation scope (UI changes, backend logic, database modifications)
+- Testing requirements (unit tests, integration tests, user acceptance)
+- Risk factors (dependencies, unknowns, potential issues)
+
+**IMPORTANT: You must choose one story as requiring more effort. Equal complexity is very rare in software development.**
+
+**OUTPUT FORMAT:**
+Analysis: [brief comparison of complexity factors]
+Decision: [1 if Story A requires more effort, -1 if Story B requires more effort]
+Confidence: [0.0 to 1.0]
+
+--------------------------------------------------------------------------------
+PAIRWISE – FEW-SHOT PROMPT (create_pairwise_few_shot_prompt)
+--------------------------------------------------------------------------------
+
+Same five "Backlog item i / Backlog item j / Decision" examples as story-point few-shot.
+
+Instruction: "Carefully study the examples above to understand how decisions are made. Learn from the patterns in complexity, scope, and effort shown in the examples. Now apply this learning to compare the stories below."
+
+Task: **STORY A:** {story_a}  **STORY B:** {story_b}
+
+**IMPORTANT: You must choose one story as requiring more effort. Equal complexity is very rare in software development.**
+
+Analysis: [brief comparison]
+Decision: [1 if Story A requires more effort, -1 if Story B requires more effort]
+Confidence: [0.0 to 1.0]
+
+--------------------------------------------------------------------------------

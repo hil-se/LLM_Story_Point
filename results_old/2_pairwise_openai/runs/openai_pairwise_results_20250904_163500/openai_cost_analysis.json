@@ -1,0 +1,21 @@
+{
+  "total_cost": 1.4241300000000001,
+  "cost_per_method": {
+    "zero_shot": {
+      "total_cost": 0.5637300000000001,
+      "cost_per_prediction": 0.028186500000000003,
+      "tokens_used": 14456,
+      "input_tokens": 10119,
+      "output_tokens": 4336
+    },
+    "few_shot": {
+      "total_cost": 0.8604,
+      "cost_per_prediction": 0.04302,
+      "tokens_used": 22063,
+      "input_tokens": 15444,
+      "output_tokens": 6618
+    }
+  },
+  "cost_per_prediction": 0.03560325,
+  "token_distribution": {}
+}

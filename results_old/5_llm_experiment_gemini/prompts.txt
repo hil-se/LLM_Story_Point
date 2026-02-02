@@ -1,0 +1,28 @@
+================================================================================
+PROMPTS USED: LLM Experiment – Gemini (Python scripts, not in this repo)
+================================================================================
+Source: Python scripts (e.g. llm_story_point_predictor_jirasoftware_filtered.py) from another project.
+Model: gemini-2.5-flash (dual/multiple API keys)
+Data: jirasoftware_filtered.csv, 65 test samples, Few-shot Examples: 5
+
+--------------------------------------------------------------------------------
+What summary reports indicate
+--------------------------------------------------------------------------------
+
+- Dataset: jirasoftware_filtered.csv
+- Test Samples: 65
+- Few-shot Examples: 5
+- Zero-shot and few-shot story point prediction
+- Valid scale inferred: Fibonacci-like story points (e.g. 1, 2, 3, 5, 8, 13, 20)
+
+The exact prompt text is not stored in result files. To reproduce, use the original scripts (e.g. llm_story_point_predictor_jirasoftware_filtered.py) or the notebook-based prompts in 3_gemini_pairwise or 4_gemini_story_points as a close match.
+
+--------------------------------------------------------------------------------
+Runs in this folder
+--------------------------------------------------------------------------------
+
+- llm_experiment_results_* (Gemini, dual API keys)
+- llm_experiment_results_gemini_*
+- gemini_story_point_results_*
+
+--------------------------------------------------------------------------------

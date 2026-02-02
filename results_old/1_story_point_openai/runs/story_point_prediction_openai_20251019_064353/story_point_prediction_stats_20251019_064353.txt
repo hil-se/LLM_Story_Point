@@ -1,0 +1,16 @@
+Zero-Shot Correlation Coefficients:
+  Pearson: 0.4035391935422496
+  Spearman: 0.404214265692871
+
+Few-Shot Correlation Coefficients:
+  Pearson: 0.40091927479426664
+  Spearman: 0.3998406101559546
+
+Few-Shot Example Analysis:
+Number of few-shot selections with repeated story points: 59
+  Predictions with repeated story points in examples:
+    Correct: 5
+    Wrong: 54
+  Predictions without repeated story points in examples:
+    Correct: 1
+    Wrong: 5

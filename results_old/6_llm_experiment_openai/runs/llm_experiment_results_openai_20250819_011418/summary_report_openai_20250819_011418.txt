@@ -1,0 +1,27 @@
+OpenAI Story Point Prediction Experiment Summary
+==================================================
+
+Dataset: jirasoftware_filtered
+Model: gpt-4o
+Timestamp: 2025-08-19T01:14:18.480929
+Total Test Cases: 65
+
+Zero-Shot Results:
+  Pearson Correlation: 0.448
+  Spearman Correlation: 0.422
+  MAE: 3.517
+  RMSE: 4.283
+  Accuracy within 1 point: 0.200
+  Accuracy within 2 points: 0.338
+
+Few-Shot Results:
+  Pearson Correlation: 0.428
+  Spearman Correlation: 0.432
+  MAE: 2.330
+  RMSE: 3.306
+  Accuracy within 1 point: 0.354
+  Accuracy within 2 points: 0.631
+
+Best Pearson Correlation: 0.448
+Best Spearman Correlation: 0.432
+Average Prediction Error: 2.924

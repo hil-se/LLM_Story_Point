@@ -1,0 +1,36 @@
+LLM Story Point Prediction Experiment Summary
+==================================================
+
+LLM Model Used: gemini-2.5-flash (Dual API Keys)
+Dataset: jirasoftware_filtered.csv
+Test Samples: 65
+Few-shot Examples: 5
+
+Detailed Results:
+--------------------------------------------------
+
+Dataset: jirasoftware_filtered.csv
+Test Samples: 65
+Zero-shot Pearson: 0.317
+Few-shot Pearson: 0.464
+Zero-shot Spearman: 0.335
+Few-shot Spearman: 0.542
+Zero-shot MAE: 5.58
+Few-shot MAE: 1.38
+Zero-shot Accuracy ±1: 13.8%
+Few-shot Accuracy ±1: 61.5%
+Zero-shot Accuracy ±2: 21.5%
+Few-shot Accuracy ±2: 81.5%
+Zero-shot RMSE: 7.09
+Few-shot RMSE: 2.19
+Zero-shot Success Rate: 100.0%
+Few-shot Success Rate: 100.0%
+Zero-shot Avg Response Time: 12.14s
+Few-shot Avg Response Time: 14.26s
+------------------------------
+
+Performance Comparison:
+------------------------------
+✅ Few-shot performed better than zero-shot for Pearson correlation
+✅ Few-shot performed better than zero-shot for Spearman correlation
+✅ Few-shot performed better than zero-shot for MAE

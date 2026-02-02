@@ -1,0 +1,35 @@
+Gemini LLM Story Point Prediction Experiment Summary
+==================================================
+
+Dataset: jirasoftware_filtered
+Model: gemini-2.5-flash (Dual API Keys)
+Timestamp: 2025-08-27T00:12:34.819368
+Total Test Cases: 65
+
+Zero-Shot Results:
+  Pearson Correlation: 0.368
+  Spearman Correlation: 0.371
+  MAE: 5.338
+  RMSE: 6.671
+  Accuracy within 1 point: 0.154
+  Accuracy within 2 points: 0.277
+
+Few-Shot Results:
+  Pearson Correlation: 0.504
+  Spearman Correlation: 0.531
+  MAE: 1.400
+  RMSE: 2.123
+  Accuracy within 1 point: 0.569
+  Accuracy within 2 points: 0.815
+
+Best Pearson Correlation: 0.504
+Best Spearman Correlation: 0.531
+Average Prediction Error: 3.369
+
+==================================================
+PAIRWISE COMPARISON EXPERIMENT
+==================================================
+This experiment includes comprehensive pairwise comparison analysis
+using the test_pairs.csv dataset with 2080 story comparisons.
+Results are saved separately in JSON format for detailed analysis.
+To run pairwise comparison: predictor.run_pairwise_comparison_experiment()

@@ -1,0 +1,27 @@
+issue_key,title,description,true_story_points,predicted_story_points,confidence,reasoning,model_used,response_time,retry_count,prediction_error
+OPENAI-ZEROSHOT-001,Test story 1,Simple test,3,1.0,0.8,"Based on the provided backlog item 'Test story 1: Simple test' and the analysis framework:
+
+1. **Core Functionality**: The task is labeled as a ""simple test,"" which suggests it is likely straightforward and does not involve complex logic or multiple components.
+2. **Components/Systems**: Since it is a simple test, it likely involves a single component or system.
+3. **Testing Complexity**: The complexity of testing is likely low, given that it is described as simple.
+4. **Integration Challenges/Dependencies**: There are no indications of significant integration challenges or dependencies.
+5. **Documentation and Deployment Effort**: The effort for documentation and deployment is expected to be minimal for a simple test.
+
+Considering these factors, the task aligns with the estimation guidelines for simple tasks. Therefore, I would estimate this backlog item at:
+
+**Story Points: 2**",gpt-4o-mini,3.4966537952423096,0,2.0
+OPENAI-ZEROSHOT-002,Test story 2,Another test,5,2.0,0.8,"To provide an accurate story point estimate for the backlog item 'Test story 2: Another test', let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The title suggests it is related to testing, but without additional context, it's unclear what specific functionality is being tested. If it's a simple test case for an existing feature, it may be straightforward.
+
+2. **Components/Systems**: If this test involves multiple components or systems, it could increase complexity. However, if it is a unit test for a single component, it would be simpler.
+
+3. **Testing Complexity**: The complexity of the tests themselves is crucial. If they are basic tests (e.g., verifying outputs for known inputs), they would be simpler. If they involve complex scenarios or multiple conditions, they would be more complex.
+
+4. **Integration Challenges/Dependencies**: If the tests require integration with other systems or components, this could add to the complexity. If they are isolated tests, this would be less of a concern.
+
+5. **Documentation and Deployment Effort**: If the tests require significant documentation or deployment considerations, this could also affect the estimate.
+
+Given the lack of specific details, I will assume this is a straightforward test case for an existing feature with minimal complexity and dependencies. Therefore, based on the guidelines and typical estimation practices:
+
+**Story Points: 2**",gpt-4o-mini,5.170850038528442,0,3.0

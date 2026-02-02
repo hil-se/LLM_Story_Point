@@ -1,0 +1,37 @@
+================================================================================
+PROMPTS USED: Gemini Story Points Only (Few-Shot)
+================================================================================
+Source: few_shot_storypoint_gemini.ipynb (or story-point section of gemini_pairwise_predictor.ipynb)
+Model: gemini-1.5-flash (few_shot notebook) or gemini-2.5-flash (gemini_pairwise)
+Data: Data/jirasoftware_filtered.csv, split_mark == 'test'
+
+--------------------------------------------------------------------------------
+FEW-SHOT PROMPT (create_few_shot_prompt_for_story_points – 3 fixed examples)
+--------------------------------------------------------------------------------
+
+Example 1:
+Title: Improve performance of search functionality
+Description: Optimize the search query to reduce latency by 50%.
+Estimated Story Points: 3
+
+Example 2:
+Title: Add a new button to the user interface
+Description: Add a 'Download' button to the main dashboard.
+Estimated Story Points: 1
+
+Example 3:
+Title: Refactor the authentication module
+Description: Rewrite the entire login and session management system to improve security and scalability.
+Estimated Story Points: 8
+
+Instruction: "Carefully study the examples below to understand how story points are estimated. Story points reflect the relative complexity, scope, and effort. Now, apply this learning to estimate a single story point value for the new backlog item below."
+
+Task:
+Title: {title}
+Description: {description}
+Estimated Story Points:
+
+--------------------------------------------------------------------------------
+(If run from gemini_pairwise_predictor.ipynb, the story-point prompt is the same
+ "Backlog item i/j, Decision" few-shot style as in 3_gemini_pairwise/prompts.txt)
+--------------------------------------------------------------------------------

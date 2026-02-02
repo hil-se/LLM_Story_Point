@@ -1,0 +1,31 @@
+OpenAI Story Point Prediction Experiment Summary
+================================================
+Experiment Date: 2025-09-03 00:10:58
+Model Used: gpt-4o-mini
+Project: structure_test
+
+ZERO-SHOT RESULTS:
+- Pearson Correlation: 0.945
+- Spearman Correlation: 0.866
+- Mean Absolute Error: 1.33
+- Root Mean Squared Error: 1.41
+- Accuracy within 1 story point: 66.7%
+- Accuracy within 2 story points: 100.0%
+- Average Response Time: 0.70s
+- Total Predictions: 3
+
+FEW-SHOT RESULTS:
+- Pearson Correlation: 0.945
+- Spearman Correlation: 0.866
+- Mean Absolute Error: 1.33
+- Root Mean Squared Error: 1.41
+- Accuracy within 1 story point: 66.7%
+- Accuracy within 2 story points: 100.0%
+- Average Response Time: 0.78s
+- Total Predictions: 3
+
+COMPARISON:
+- Zero-shot Pearson: 0.945 vs Few-shot: 0.945
+- Zero-shot Spearman: 0.866 vs Few-shot: 0.866
+- Zero-shot MAE: 1.33 vs Few-shot: 1.33
+- Zero-shot Response Time: 0.70s vs Few-shot: 0.78s

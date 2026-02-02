@@ -1,0 +1,185 @@
+story_a,story_b,true_comparison,predicted_comparison,correct,confidence,response_time,tokens_used,reasoning
+"As Patrick, I want to see list of versions when I'm looking at the backlog
+Considered versions: - v","Change ""hide nav bar"" shortcut
+Currently it's 'z' to cycle between normal, projector and no-nav mod",1,1,False,0.7,2.271944046020508,1059,"Story A Score: 15, Story B Score: 8, Comparison: 1
+Reasoning: Story A involves creating a new feature with complex business logic and multiple edge cases, while Story B is a simple change to an existi"
+"As Patrick, I want to be able to filter my backlog to a select few versions so I can see which stori","As Patrick, I want to adjust release report projections to simulate and better understand what can b",-1,-1,False,0.85,2.760221242904663,679,"Story A Score: 12, Story B Score: 15, Comparison: -1
+Reasoning: Story B has a higher complexity score due to the need for more complex calculations and adjustments in the release report projections. T"
+"As Patrick, I want to be able to delete a version
+- allow for a version to be deleted - warn if oth","As a user I want to be able to see the Epic Name as a column in Issue Navigator searches
+Currently,",1,1,False,0.75,2.531641960144043,711,"Story A Score: 14, Story B Score: 10, Comparison: 1
+Reasoning: Story A has a higher complexity score than Story B. This is due to the fact that Story A involves deletion functionality, which requires "
+"As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne","Quick filters should collapse into a ""... Show more"" reveal pattern when they will wrap to more than",1,1,False,0.85,3.075326919555664,1092,"Story A Score: 16, Story B Score: 12, Comparison: 1
+Reasoning: Story A has a higher complexity score due to the need for more complex charting functionality, handling of multiple edge cases, and the p"
+"Add Atlassian Analytics events to GH
+All of the values below will need to be grouped by instance:  ","Edit startDate of a fixVersion in JIRA
+As Patrick, I want to be able to edit startDate for a fixVer",-1,1,False,0.75,3.1181161403656006,1816,"Story A Score: 16, Story B Score: 14, Comparison: 1
+Reasoning: Story A involves adding multiple analytics events, which requires a broader scope of changes across different parts of the system, and mo"
+"As a user, I want to be able to create a GH board straight from the JIRA create project dialog so it","Change ""hide nav bar"" shortcut
+Currently it's 'z' to cycle between normal, projector and no-nav mod",1,1,False,0.75,4.346991777420044,959,"Story A Score: 16, Story B Score: 8, Comparison: 1
+Reasoning: Story A involves integration with an external system (GH), creating a new workflow, and dealing with permissions. It's technically complex"
+"Update the open/close epic/versions panel(s)
+COS:  Went through some variations on design before Ma","Update close icon in Detail View to be a font icon
+",1,1,False,0.75,6.017727851867676,811,"Story A Score: 8, Story B Score: 4, Comparison: 1
+Reasoning: Story A involves updating the open/close epic/versions panel(s) which requires a slight deviation from the current design. This includes im"
+"As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne","Swimlane by epic
+As Patrick, I want to use epics for swimlanes so I can see progress of each epic w",1,1,False,0.85,2.8337409496307373,1009,"Story A Score: 16, Story B Score: 12, Comparison: 1
+Reasoning: Story A has a higher complexity score due to the need for more complex charting and data manipulation, as well as the need to handle mult"
+"As Patrick, I want to see the version assigned to an issue in the list view so I can quickly identif","In order to be able to select report options easily, I want a better control to use
+When opening a ",-1,1,False,0.75,3.6435089111328125,1218,"Story A Score: 16, Story B Score: 14, Comparison: 1
+Reasoning: Story A has a higher complexity score due to the need to handle multiple versions, truncation, and the interaction with other elements su"
+"Bring context menu to work mode
+- allow for multiple select (with current limitations)  actions:  -","As a user I want to be able to see the Epic Name as a column in Issue Navigator searches
+Currently,",1,1,False,0.65,4.7036452293396,893,"Story A Score: 16, Story B Score: 8, Comparison: 1
+Reasoning: Story A involves multiple functionalities and interactions with other parts of the system, making it technically complex. It also has a br"
+"As Patrick, I want to be able to edit details of a version
+https://extranet.atlassian.com/display/G","As Patrick, I want to see the version assigned to an issue in the list view so I can quickly identif",1,-1,False,0.7,2.100342035293579,961,"Story A Score: 13, Story B Score: 16, Comparison: -1
+Reasoning: Story B has a higher complexity score due to its wider implementation scope, more extensive testing requirements, and higher risk assess"
+"Promote Release Planning out of labs
+COS:  # Remove the advertisement from Getting Started page # R","As a reviewer to be able to review articles and add comments
+",-1,-1,False,0.85,2.591944932937622,659,"Story A Score: 10, Story B Score: 15, Comparison: -1
+Reasoning: Story B has a higher complexity score than Story A, indicating it requires more story points. This is due to the fact that Story B invol"
+"In order to be able to select report options easily, I want a better control to use
+When opening a ","Change activity stream documentation regarding repository commits
+It is not clear in [the documenta",-1,1,False,0.75,5.007904052734375,1006,"Story A Score: 14, Story B Score: 6, Comparison: 1
+Reasoning: Story A involves implementing a new control with autocomplete and single select style, updating four different reports, and ensuring the i"
+"As a BTF user, I want to be able to install GH via UPM when creating a project
+This is to allow us ","As a writer I want to create multiple articles so that they can be published
+",0,1,False,0.6,2.89851713180542,692,"Story A Score: 14, Story B Score: 12, Comparison: 1
+Reasoning: Story A involves integration with external systems (UPM and GH), which increases its technical complexity and risk. Story B, while also c"
+"As Patrick, I want to be able to delete a version
+- allow for a version to be deleted - warn if oth","As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne",-1,-1,False,0.75,7.829809904098511,989,"Story A Score: 12, Story B Score: 18, Comparison: -1
+Reasoning: Story B is more complex than Story A. Story B requires a new feature to be developed that includes a chart and a list of stories, which "
+"GH further ADG updates
+* *DONE* https://confluence.atlassian.com/display/GH/Configuring+a+Board *PL","Quick filters should collapse into a ""... Show more"" reveal pattern when they will wrap to more than",-1,1,False,0.75,5.6922218799591064,981,"Story A Score: 15, Story B Score: 14, Comparison: 1
+Reasoning: Story A involves updating multiple documents and postponing certain tasks until a later version, which increases its complexity and scope"
+"As Patrick, I want to be able to create a new version
+# Dialog is shown  # fields we need to popula","As Patrick, I want to choose a colour for a version so I can identify it easier in the backlog
+- th",-1,1,False,0.75,5.8679039478302,856,"Story A Score: 14, Story B Score: 10, Comparison: 1
+Reasoning: Story A involves creating a new version with multiple fields and validation, including permission checks and analytics tracking. This req"
+"As Patrick, I want to be able to filter my backlog to a specific version so I can easily see which s","As Patrick, I want to be able to see a projection of possible end date of a version
+This is to be c",0,-1,False,0.7,2.5979650020599365,1776,"Story A Score: 16, Story B Score: 18, Comparison: -1
+Reasoning: Story B is more complex due to the need for advanced calculations, handling of edge cases, and potential for high risk if not implemente"
+"As Patrick, I want to see list of versions when I'm looking at the backlog
+Considered versions: - v","Autocomplete for Epic Link in JQL
+As Patrick, I want to be able to see autocomplete when querying E",1,1,False,0.75,4.631639003753662,1082,"Story A Score: 16, Story B Score: 10, Comparison: 1
+Reasoning: Story A involves displaying a list of versions with specific conditions and ordering, which requires more complex logic and testing. It a"
+"As Patrick, I want to see the version assigned to an issue in the list view so I can quickly identif","As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne",-1,-1,False,0.7,2.7936599254608154,1217,"Story A Score: 14, Story B Score: 16, Comparison: -1
+Reasoning: Story B is more complex due to the need to create a new report with a burnup chart and handle various edge cases. Story A, while also co"
+"Change activity stream documentation regarding repository commits
+It is not clear in [the documenta","As a reviewer I want to have an account so that i can review an article
+",0,-1,False,0.75,5.208984851837158,780,"Story A Score: 7, Story B Score: 14, Comparison: -1
+Reasoning: Story A involves updating documentation, which is a relatively simple task with low technical complexity (1), small implementation scope "
+"As Patrick, I want to be able to filter my backlog to a select few versions so I can see which stori","ADG GH: Resizable Detail View
+- For this story, Plan Mode only - Idea is that we have a draggable l",-1,-1,False,0.7,2.350722074508667,723,"Story A Score: 12, Story B Score: 16, Comparison: -1
+Reasoning: Story B has a higher complexity score due to the need for more extensive UI changes and testing requirements. It also has a higher risk "
+"As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne","Wizard-like Create Board dialog
+As Patrick, I want to be guided when creating a board so I don't ge",-1,-1,False,0.75,6.705624103546143,1741,"Story A Score: 16, Story B Score: 18, Comparison: -1
+Reasoning: Story A involves creating a single report with a burnup chart and a list of stories, which requires a moderate level of technical comple"
+"As Patrick, I want to assign issues to a version
+- permissions  - only one version can be associate","Use the startDate in version report calculations
+# include the startDate for calculations in Versio",1,1,False,0.7,3.623914957046509,1136,"Story A Score: 16, Story B Score: 12, Comparison: 1
+Reasoning: Story A has a higher complexity score due to its extensive requirements for permissions, handling of multiple issues and projects, and th"
+"As Patrick, I want to be able to delete a version
+- allow for a version to be deleted - warn if oth","Update close icon in Detail View to be a font icon
+",1,1,False,0.75,5.053292989730835,704,"Story A Score: 13, Story B Score: 4, Comparison: 1
+Reasoning: Story A involves deleting a version with checks for assigned issues and permissions, which is technically complex, has a broad implementat"
+"As Patrick, I want to be able to filter my backlog to a specific version so I can easily see which s","ADG GH: Resizable Detail View
+- For this story, Plan Mode only - Idea is that we have a draggable l",0,1,False,0.85,2.534599781036377,1025,"Story A Score: 16, Story B Score: 14, Comparison: 1
+Reasoning: Story A has a higher complexity score due to the number of unanswered questions and the need for more complex filtering logic. Story B, w"
+"As Patrick, I want to be able to edit details of a version
+https://extranet.atlassian.com/display/G","GH updates for JIRA 6.0 ADG changes (mainly Admin nav?) plus Gadgets
+See https://extranet.atlassian",1,-1,False,0.75,4.306093215942383,807,"Story A Score: 12, Story B Score: 16, Comparison: -1
+Reasoning: Story B has a higher complexity score due to the need for more extensive updates and changes, including updates to the admin navigation "
+"Swimlane by epic
+As Patrick, I want to use epics for swimlanes so I can see progress of each epic w","Promote Release Planning out of labs
+COS:  # Remove the advertisement from Getting Started page # R",1,1,False,0.65,3.9294161796569824,795,"Story A Score: 16, Story B Score: 8, Comparison: 1
+Reasoning: Story A involves creating a new feature with complex business logic, which increases its technical complexity and implementation scope. It"
+"As Patrick, I want to be able to delete a version
+- allow for a version to be deleted - warn if oth","Add Atlassian Analytics events to GH
+All of the values below will need to be grouped by instance:  ",-1,-1,False,0.7,3.1074681282043457,1272,"Story A Score: 13, Story B Score: 20, Comparison: -1
+Reasoning: Story B requires more story points due to its higher complexity in terms of technical complexity, implementation scope, testing requirem"
+"GH code fixes required for latest 6.0-breakit version
+In 6.0-breakit-SNAPSHOT since Jan 3rd, last u","As a BTF user, I want to be able to install GH via UPM when creating a project
+This is to allow us ",1,1,False,0.75,12.510342836380005,895,"Story A Score: 16, Story B Score: 10, Comparison: 1
+Reasoning: Story A involves code fixes for a new version, which requires a deep understanding of the codebase and the changes made in the new versio"
+"Write soke tests to measure UI performance on the plan mode
+Scenarios to cover:  - rerank within th","Wizard-like Create Board dialog
+As Patrick, I want to be guided when creating a board so I don't ge",-1,-1,False,0.75,8.828709125518799,1447,"Story A Score: 14, Story B Score: 18, Comparison: -1
+Reasoning: Story B has a higher complexity score than Story A. This is due to the fact that Story B involves creating a new wizard-like board dialo"
+"Autocomplete for Epic Link in JQL
+As Patrick, I want to be able to see autocomplete when querying E","Flagging on stories as swimlanes in work mode
+This needs to cover wallboards too.  CoS:  # Right cl",1,-1,False,0.85,5.61286997795105,919,"Story A Score: 12, Story B Score: 16, Comparison: -1
+Reasoning: Story B has a higher complexity score than Story A. This is due to the fact that Story B involves more complex functionality, including "
+"As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne","Edit startDate of a fixVersion in JIRA
+As Patrick, I want to be able to edit startDate for a fixVer",-1,-1,False,0.75,5.707367897033691,1530,"Story A Score: 16, Story B Score: 18, Comparison: -1
+Reasoning: Story B requires more story points due to its higher complexity in terms of technical complexity, implementation scope, testing requirem"
+"As Patrick I'd like to be able to hide the versions panel
+* State persisted in URL * Default view i","Assign a story to future sprint
+As Patrick I want to be able to assign a story to a future sprint s",-1,-1,False,0.75,3.146778106689453,1082,"Story A Score: 12, Story B Score: 18, Comparison: -1
+Reasoning: Story B has a higher complexity score due to the need for database changes, handling multiple scenarios, and dealing with unanswered que"
+"Expose GH defaults as an API
+Currently other plugins can't access GH defaults such as Epic Issue Ty","As an Admin I want to be able to assign roles
+",-1,1,False,0.65,4.308110952377319,703,"Story A Score: 16, Story B Score: 10, Comparison: 1
+Reasoning: Story A involves creating a new API, which is technically complex and has a broad implementation scope. It also requires extensive testin"
+"Enable GH on OD instances from the Create Project dialog
+COS  The user will go through these steps:","Excel export - plan mode
+As Patrick, I want to be able to export selected stories to excel straight",0,1,False,0.75,3.2817840576171875,1003,"Story A Score: 16, Story B Score: 10, Comparison: 1
+Reasoning: Story A involves a more complex workflow with multiple steps, dependencies on external systems, and a higher degree of risk due to potent"
+"Use the startDate in version report calculations
+# include the startDate for calculations in Versio","Update close icon in Detail View to be a font icon
+",1,1,False,0.7,3.1805548667907715,731,"Story A Score: 14, Story B Score: 6, Comparison: 1
+Reasoning: Story A has a higher complexity score due to the need for changes in calculations, potential branching, and additional stories. Story B is"
+"GH code fixes required for latest 6.0-breakit version
+In 6.0-breakit-SNAPSHOT since Jan 3rd, last u","As Patrick, I want to choose a colour for a version so I can identify it easier in the backlog
+- th",0,1,False,0.65,4.725198984146118,805,"Story A Score: 16, Story B Score: 10, Comparison: 1
+Reasoning: Story A involves code fixes and updates to the JIRA API, which increases its technical complexity and implementation scope. It also requi"
+"As an administrator, I would like to be able to turn on/off the Release Planning feature as a Labs F","Change activity stream documentation regarding repository commits
+It is not clear in [the documenta",-1,1,False,0.65,3.7602479457855225,776,"Story A Score: 13, Story B Score: 8, Comparison: 1
+Reasoning: Story A involves adding a new feature which requires changes in the system configuration, user interface, and possibly the database. This "
+"As Patrick, I want to see list of versions when I'm looking at the backlog
+Considered versions: - v","Write soke tests to measure UI performance on the plan mode
+Scenarios to cover:  - rerank within th",1,1,False,0.75,3.5792407989501953,1063,"Story A Score: 15, Story B Score: 12, Comparison: 1
+Reasoning: Story A involves more complex operations such as handling versions, dealing with potential duplicates, and managing long names. It also r"
+"As Patrick, I want to be able to delete a version
+- allow for a version to be deleted - warn if oth","Change activity stream documentation regarding repository commits
+It is not clear in [the documenta",-1,1,False,0.7,2.0921630859375,713,"Story A Score: 14, Story B Score: 8, Comparison: 1
+Reasoning: Story A involves developing a new feature with potential impact on existing issues and requires permissions handling, making it more compl"
+"As Patrick, I want to be able to edit details of a version
+https://extranet.atlassian.com/display/G","Promote Release Planning out of labs
+COS:  # Remove the advertisement from Getting Started page # R",1,1,False,0.75,3.1035780906677246,703,"Story A Score: 14, Story B Score: 12, Comparison: 1
+Reasoning: Story A has a higher complexity score than Story B. This is due to the fact that Story A involves editing details of a version which requ"
+"Promote Release Planning out of labs
+COS:  # Remove the advertisement from Getting Started page # R","As an Admin I want to create MediaManager accounts
+",-1,-1,False,0.75,2.264686107635498,653,"Story A Score: 10, Story B Score: 14, Comparison: -1
+Reasoning: Story B has a higher complexity score due to the need for creating new functionality (MediaManager accounts), which requires more techni"
+"Align project creation dialog to JIRA style
+There are some differences in our project creation dial","Change activity stream documentation regarding repository commits
+It is not clear in [the documenta",-1,1,False,0.75,5.13963508605957,746,"Story A Score: 10, Story B Score: 8, Comparison: 1
+Reasoning: Story A involves changes to the user interface, which requires more technical complexity and testing requirements. Story B, on the other h"
+"As Patrick, I want to be able to filter my backlog to a specific version so I can easily see which s","Change activity stream documentation regarding repository commits
+It is not clear in [the documenta",1,1,False,0.7,2.08925199508667,989,"Story A Score: 16, Story B Score: 6, Comparison: 1
+Reasoning: Story A has a higher complexity score due to the need for new functionality, multiple unanswered questions, and potential for high risk. S"
+"As Patrick, I want to be able to filter my backlog to a specific version so I can easily see which s","As an Admin I want to create Writer accounts
+",1,1,False,0.75,6.392505884170532,955,"Story A Score: 16, Story B Score: 8, Comparison: 1
+Reasoning: Story A involves adding a new feature with multiple sub-features and has many unanswered questions, which increases its complexity, scope,"
+Display a invalid drop target icon on the version list when trying to assign story for a different p,"GH further ADG updates
+* *DONE* https://confluence.atlassian.com/display/GH/Configuring+a+Board *PL",0,-1,False,0.65,4.298029899597168,824,"Story A Score: 10, Story B Score: 15, Comparison: -1
+Reasoning: Story B has a higher total complexity score due to its larger implementation scope and higher risk assessment. This is due to the fact t"
+"GH code fixes required for latest 6.0-breakit version
+In 6.0-breakit-SNAPSHOT since Jan 3rd, last u","As an Admin I want to be able to assign roles
+",1,1,False,0.65,4.566941976547241,766,"Story A Score: 16, Story B Score: 8, Comparison: 1
+Reasoning: Story A involves code fixes in multiple components and requires the use of a different API, which increases its technical complexity, impl"
+Display a invalid drop target icon on the version list when trying to assign story for a different p,"As a writer I want to create multiple articles so that they can be published
+",-1,-1,False,0.75,2.3611769676208496,661,"Story A Score: 12, Story B Score: 16, Comparison: -1
+Reasoning: Story B requires more story points as it has a higher total complexity score. This is due to the fact that creating multiple articles in"
+"Change visual treatment on issue count in swimlane header to not use AUI badge
+See attached screens","Change activity stream documentation regarding repository commits
+It is not clear in [the documenta",-1,-1,False,0.75,2.5860280990600586,735,"Story A Score: 8, Story B Score: 10, Comparison: -1
+Reasoning: Story B has a higher complexity score due to the need for more extensive documentation review and potential changes to the system's behav"

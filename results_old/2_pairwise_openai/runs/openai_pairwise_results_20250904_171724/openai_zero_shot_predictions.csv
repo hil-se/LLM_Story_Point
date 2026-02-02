@@ -1,0 +1,108 @@
+story_a,story_b,true_comparison,predicted_comparison,correct,confidence,response_time,tokens_used,reasoning
+"As Patrick, I want to see list of versions when I'm looking at the backlog
+Considered versions: - v","Change ""hide nav bar"" shortcut
+Currently it's 'z' to cycle between normal, projector and no-nav mod",1,1,True,0.65,4.5611279010772705,1050,"**STORY A:**
+Technical Depth: 3 (New feature)
+Integration Scope: 3 (Multiple components involved)
+Testing Complexity: 3 (Unit tests required)
+Implementation Risk: 2 (Some unknowns, but mostly standard"
+"As Patrick, I want to be able to filter my backlog to a select few versions so I can see which stori","As Patrick, I want to adjust release report projections to simulate and better understand what can b",-1,-1,True,0.65,11.77883791923523,688,"Story A scores: [2, 2, 2, 2] = 8
+Story B scores: [3, 2, 3, 3] = 11
+Decision: -1
+
+Story A involves filtering a backlog, which is a relatively simple UI change with a low integration scope. Testing comp"
+"As Patrick, I want to be able to delete a version
+- allow for a version to be deleted - warn if oth","As a user I want to be able to see the Epic Name as a column in Issue Navigator searches
+Currently,",1,1,True,0.55,5.746093034744263,750,"**STORY A:**
+- Technical Depth: Deleting a version involves backend changes and possibly frontend changes for warnings. Score: 3
+- Integration Scope: This story affects the versioning system and poten"
+"As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne","Quick filters should collapse into a ""... Show more"" reveal pattern when they will wrap to more than",1,0,False,0.55,7.996610641479492,1134,"**STORY A:**
+- Technical Depth: This story involves creating a new chart with complex business logic, so it's a 4.
+- Integration Scope: The story requires integration with the existing versioning syst"
+"Add Atlassian Analytics events to GH
+All of the values below will need to be grouped by instance:  ","Edit startDate of a fixVersion in JIRA
+As Patrick, I want to be able to edit startDate for a fixVer",-1,-1,True,0.55,6.865500211715698,1846,"Story A involves adding analytics events to a software, which requires understanding of the software's existing structure, event tracking, and data analysis. It involves multiple components of the sof"
+"As a user, I want to be able to create a GH board straight from the JIRA create project dialog so it","Change ""hide nav bar"" shortcut
+Currently it's 'z' to cycle between normal, projector and no-nav mod",1,1,True,0.65,4.000473737716675,931,"**STORY A SCORES:**
+- Technical Depth: 4 (New feature with integration between JIRA and GH)
+- Integration Scope: 4 (Involves integration between two systems)
+- Testing Complexity: 4 (Requires comprehe"
+"Update the open/close epic/versions panel(s)
+COS:  Went through some variations on design before Ma","Update close icon in Detail View to be a font icon
+",1,1,True,0.65,5.442839860916138,724,"**STORY A:**
+Technical Depth: 2 (Minor UI changes)
+Integration Scope: 2 (Affects multiple components)
+Testing Complexity: 2 (Requires manual verification and some unit tests)
+Implementation Risk: 2 (S"
+"As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne","Swimlane by epic
+As Patrick, I want to use epics for swimlanes so I can see progress of each epic w",1,1,True,0.65,10.442732572555542,1037,"**STORY A:**
+Technical Depth: 4 (Complex feature with multiple components)
+Integration Scope: 4 (Integration with version history, user permissions, and issue tracking)
+Testing Complexity: 4 (Requires"
+"As Patrick, I want to see the version assigned to an issue in the list view so I can quickly identif","In order to be able to select report options easily, I want a better control to use
+When opening a ",-1,1,False,0.65,3.4781479835510254,1182,"Story A scores: [3, 3, 3, 2] = 11
+Story B scores: [2, 2, 2, 2] = 8
+Decision: 1
+
+Story A involves more complex UI changes, integration with JIRA versions, and has more complex testing requirements due "
+"Bring context menu to work mode
+- allow for multiple select (with current limitations)  actions:  -","As a user I want to be able to see the Epic Name as a column in Issue Navigator searches
+Currently,",1,0,False,0.65,6.67271089553833,883,"**STORY A:**
+
+Technical Depth: This story involves multiple UI changes, permissions checks, and potential interactions with other board actions. It's not a system redesign, but it's more complex than "
+"As Patrick, I want to be able to edit details of a version
+https://extranet.atlassian.com/display/G","As Patrick, I want to see the version assigned to an issue in the list view so I can quickly identif",1,1,True,0.55,8.04195499420166,1033,"**STORY A:**
+- Technical Depth: This story involves editing details of a version, which is a new feature. Score: 3
+- Integration Scope: The story seems to be focused on a single component (the version"
+"Promote Release Planning out of labs
+COS:  # Remove the advertisement from Getting Started page # R","As a reviewer to be able to review articles and add comments
+",-1,1,False,0.55,10.198747873306274,707,"**STORY A: Promote Release Planning out of labs**
+- Technical Depth: This involves removing code and a UI change, which is relatively simple. Score: 2
+- Integration Scope: This seems to be confined to"
+"In order to be able to select report options easily, I want a better control to use
+When opening a ","Change activity stream documentation regarding repository commits
+It is not clear in [the documenta",-1,1,False,0.65,5.440465927124023,976,"**STORY A:**
+Technical Depth: 3 (New feature)
+Integration Scope: 3 (Multiple components involved)
+Testing Complexity: 3 (Unit tests required)
+Implementation Risk: 2 (Some uncertainties, but generally "
+"As a BTF user, I want to be able to install GH via UPM when creating a project
+This is to allow us ","As a writer I want to create multiple articles so that they can be published
+",0,0,True,0.65,7.251320123672485,752,"**STORY A:**
+Technical Depth: This story involves integration with UPM and GH, which is more complex than a simple UI change. Score: 3
+Integration Scope: The story requires interaction with multiple s"
+"As Patrick, I want to be able to delete a version
+- allow for a version to be deleted - warn if oth","As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne",-1,0,False,0.55,8.031843185424805,1001,"**STORY A:**
+
+1. **TECHNICAL DEPTH:** This story involves adding a new feature that includes warning mechanisms and permission checks. It's not a simple UI change, but it's also not a system redesign."
+"GH further ADG updates
+* *DONE* https://confluence.atlassian.com/display/GH/Configuring+a+Board *PL","Quick filters should collapse into a ""... Show more"" reveal pattern when they will wrap to more than",-1,1,False,0.65,5.898124933242798,976,"**STORY A:**
+- Technical Depth: This story involves updating documentation and guides, which is a simple task. Score: 1
+- Integration Scope: The task is limited to a single component, the documentatio"
+"As Patrick, I want to be able to create a new version
+# Dialog is shown  # fields we need to popula","As Patrick, I want to choose a colour for a version so I can identify it easier in the backlog
+- th",-1,1,False,0.65,7.986291885375977,827,"**STORY A SCORES:**
+- Technical Depth: 3 (New feature)
+- Integration Scope: 3 (Multiple components: UI, permissions, analytics)
+- Testing Complexity: 3 (Unit tests for new functionality)
+- Implementat"
+"As Patrick, I want to be able to filter my backlog to a specific version so I can easily see which s","As Patrick, I want to be able to see a projection of possible end date of a version
+This is to be c",0,1,False,0.65,4.956779956817627,1785,"Story A scores: [3, 3, 3, 3] = 12
+Story B scores: [4, 3, 4, 4] = 15
+Decision: -1
+
+Story B appears to be more complex than Story A. It involves more technical depth due to the need for calculations and"
+"As Patrick, I want to see list of versions when I'm looking at the backlog
+Considered versions: - v","Autocomplete for Epic Link in JQL
+As Patrick, I want to be able to see autocomplete when querying E",1,1,True,0.65,5.77480673789978,1060,"Story A scores: [3, 3, 3, 2] = 11
+Story B scores: [2, 2, 2, 1] = 7
+Decision: 1
+
+Story A involves displaying a list of versions with specific conditions and ordering, which requires a moderate level of"
+"As Patrick, I want to see the version assigned to an issue in the list view so I can quickly identif","As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne",-1,0,False,0.65,7.15382981300354,1281,"**STORY A:**
+- Technical Depth: This story involves UI changes, handling of multiple versions, and truncation logic. It's not a simple UI change, but it's not a system redesign either. Score: 3
+- Inte"

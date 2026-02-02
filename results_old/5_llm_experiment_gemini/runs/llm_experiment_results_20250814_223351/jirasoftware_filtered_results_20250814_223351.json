@@ -1,0 +1,23 @@
+{
+  "project_name": "jirasoftware_filtered",
+  "test_samples": 65,
+  "few_shot_examples": 5,
+  "zero_shot_metrics": {
+    "pearson_correlation": 0.22066572592284917,
+    "spearman_correlation": 0.286317304521091,
+    "mean_absolute_error": 2.9076923076923076,
+    "root_mean_squared_error": 3.9046323573614257,
+    "accuracy_within_1": 0.2923076923076923,
+    "accuracy_within_2": 0.5692307692307692,
+    "total_predictions": 65
+  },
+  "few_shot_metrics": {
+    "pearson_correlation": 0.44183312454895174,
+    "spearman_correlation": 0.45441414700095395,
+    "mean_absolute_error": 4.953846153846154,
+    "root_mean_squared_error": 6.616994437402481,
+    "accuracy_within_1": 0.18461538461538463,
+    "accuracy_within_2": 0.3230769230769231,
+    "total_predictions": 65
+  }
+}

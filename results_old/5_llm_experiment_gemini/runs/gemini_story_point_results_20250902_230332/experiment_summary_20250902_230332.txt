@@ -1,0 +1,16 @@
+Gemini Story Point Prediction Experiment Summary
+=======================================================
+
+Dataset Information:
+  Project: jirasoftware_improved_prompts
+  Total test samples: 65
+  Model used: gemini-2.5-flash
+  API keys: Multiple Gemini Keys
+
+Performance Results:
+  Zero-shot Pearson: 0.455
+  Zero-shot Spearman: 0.456
+  Zero-shot MAE: 0.000
+  Few-shot Pearson: 0.455
+  Few-shot Spearman: 0.524
+  Few-shot MAE: 0.000

@@ -1,0 +1,56 @@
+story_a,story_b,true_comparison,predicted_comparison,correct,confidence,response_time,tokens_used,reasoning
+"As Patrick, I want to see list of versions when I'm looking at the backlog
+Considered versions: - v","Change ""hide nav bar"" shortcut
+Currently it's 'z' to cycle between normal, projector and no-nav mod",1,1,True,0.6,1.7306442260742188,1156,"Story A involves creating a list of versions with specific conditions and display rules, which requires database querying, UI changes, and handling of various edge cases. Story B is a simple shortcut "
+"As Patrick, I want to be able to filter my backlog to a select few versions so I can see which stori","As Patrick, I want to adjust release report projections to simulate and better understand what can b",-1,-1,True,0.6,1.7432401180267334,764,"Story A involves adding a filter feature to the backlog, which is a UI change with some logic. Story B requires the implementation of a simulation feature that adjusts release report projections, whic"
+"As Patrick, I want to be able to delete a version
+- allow for a version to be deleted - warn if oth","As a user I want to be able to see the Epic Name as a column in Issue Navigator searches
+Currently,",1,1,True,0.6,2.898179054260254,761,"Story A involves deletion functionality with warnings and permission considerations. Story B is about displaying additional information in an existing UI component. 
+
+Decision: 1 (Story A more complex"
+"As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne","Quick filters should collapse into a ""... Show more"" reveal pattern when they will wrap to more than",1,1,True,0.65,2.8517861366271973,1204,"Story A involves creating a comprehensive report with a burnup chart, handling various edge cases, and displaying a list of stories with specific details. It requires dealing with data manipulation, U"
+"Add Atlassian Analytics events to GH
+All of the values below will need to be grouped by instance:  ","Edit startDate of a fixVersion in JIRA
+As Patrick, I want to be able to edit startDate for a fixVer",-1,-1,True,0.65,4.5370800495147705,1943,"Story A involves implementing a series of analytics events, which requires understanding of the system's event handling and analytics tracking. It involves a lot of measurements and event triggers, bu"
+"As a user, I want to be able to create a GH board straight from the JIRA create project dialog so it","Change ""hide nav bar"" shortcut
+Currently it's 'z' to cycle between normal, projector and no-nav mod",1,1,True,0.6,1.9539408683776855,1003,"Story A involves integration with an existing system, creating a new board with specific parameters, and redirecting users. It also mentions potential differences in implementation and application per"
+"Update the open/close epic/versions panel(s)
+COS:  Went through some variations on design before Ma","Update close icon in Detail View to be a font icon
+",1,1,True,0.6,1.3361330032348633,763,"Story A involves UI changes with some design variations and the addition of interactive elements. Story B is a simple icon update. 
+
+Decision: 1 (Story A more complex)"
+"As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne","Swimlane by epic
+As Patrick, I want to use epics for swimlanes so I can see progress of each epic w",1,1,True,0.65,3.257249116897583,1130,"Story A involves creating a comprehensive report with a burnup chart, handling various scenarios and edge cases, and displaying a list of stories with specific details. It requires complex data manipu"
+"As Patrick, I want to see the version assigned to an issue in the list view so I can quickly identif","In order to be able to select report options easily, I want a better control to use
+When opening a ",-1,1,False,0.65,2.1819801330566406,1317,"Story A involves UI changes, handling of multiple conditions and states, and requires careful consideration of edge cases. It also requires integration with existing JIRA functionality. Story B is abo"
+"Bring context menu to work mode
+- allow for multiple select (with current limitations)  actions:  -","As a user I want to be able to see the Epic Name as a column in Issue Navigator searches
+Currently,",1,1,True,0.65,2.4705779552459717,948,"Story A involves implementing a context menu with multiple select and various actions, which requires checking interoperability with other actions, permissions, and various board configurations. It al"
+"As Patrick, I want to be able to edit details of a version
+https://extranet.atlassian.com/display/G","As Patrick, I want to see the version assigned to an issue in the list view so I can quickly identif",1,-1,False,0.65,3.2807137966156006,1091,"Story A involves editing details of a version, which is a relatively straightforward task. Story B, on the other hand, requires displaying the version assigned to an issue in the list view with severa"
+"Promote Release Planning out of labs
+COS:  # Remove the advertisement from Getting Started page # R","As a reviewer to be able to review articles and add comments
+",-1,-1,True,0.6,3.0797948837280273,746,"Story A involves removing certain elements from a page and codebase, which is a relatively straightforward task. Story B, on the other hand, requires the implementation of a review and comment system,"
+"In order to be able to select report options easily, I want a better control to use
+When opening a ","Change activity stream documentation regarding repository commits
+It is not clear in [the documenta",-1,1,False,0.6,1.8826401233673096,1042,"Story A involves UI changes, autocomplete functionality, and handling of various edge cases, which requires a moderate level of complexity. Story B is a documentation update, which is generally less c"
+"As a BTF user, I want to be able to install GH via UPM when creating a project
+This is to allow us ","As a writer I want to create multiple articles so that they can be published
+",0,1,False,0.6,1.8255259990692139,780,"Story A involves integration with UPM, installation processes, and UI changes for the banner text. Story B is a simple feature for creating multiple articles, which is a standard feature in most conte"
+"As Patrick, I want to be able to delete a version
+- allow for a version to be deleted - warn if oth","As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne",-1,-1,True,0.65,2.8735580444335938,1039,"Story A involves deleting a version with some checks and permissions, which is a moderate complexity task. Story B requires the creation of a comprehensive report with a burnup chart, handling of vari"
+"GH further ADG updates
+* *DONE* https://confluence.atlassian.com/display/GH/Configuring+a+Board *PL","Quick filters should collapse into a ""... Show more"" reveal pattern when they will wrap to more than",-1,-1,True,0.65,2.156351089477539,1022,"Story A involves updating documentation and postponing certain tasks, which doesn't involve any code changes or feature development. Story B, on the other hand, requires implementing a new UI feature "
+"As Patrick, I want to be able to create a new version
+# Dialog is shown  # fields we need to popula","As Patrick, I want to choose a colour for a version so I can identify it easier in the backlog
+- th",-1,1,False,0.65,3.48294997215271,927,"Story A involves creating a new version with various fields, permissions, and analytics. It requires backend logic for permissions and error handling, as well as frontend development for the dialog. S"
+"As Patrick, I want to be able to filter my backlog to a specific version so I can easily see which s","As Patrick, I want to be able to see a projection of possible end date of a version
+This is to be c",0,-1,False,0.65,12.242484092712402,1964,"Story A involves adding a filtering feature to the backlog, which includes UI changes, URL parameter handling, and some logic for filter interactions. There are several unanswered questions that could"
+"As Patrick, I want to see list of versions when I'm looking at the backlog
+Considered versions: - v","Autocomplete for Epic Link in JQL
+As Patrick, I want to be able to see autocomplete when querying E",1,1,True,0.65,4.881274223327637,1127,"Story A involves displaying a list of versions with specific conditions and rules, handling various edge cases, and requires a good understanding of the system's data structure. Story B is about imple"
+"As Patrick, I want to see the version assigned to an issue in the list view so I can quickly identif","As Patrick, I want to understand the progress towards a version with a single report
+- the chart ne",-1,-1,True,0.65,9.527051210403442,1336,"Story A involves UI changes, handling of multiple versions, and some logic for displaying versions. Story B requires the creation of a complex report, handling of scope changes, and dealing with permi"

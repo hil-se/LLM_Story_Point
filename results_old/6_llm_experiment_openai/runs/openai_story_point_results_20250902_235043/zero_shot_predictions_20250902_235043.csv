@@ -1,0 +1,912 @@
+issue_key,title,description,true_story_points,predicted_story_points,confidence,reasoning,model_used,response_time,retry_count,prediction_error
+OPENAI-ZEROSHOT-001,Update close icon in Detail View to be a font icon,,1,1.0,0.8,"Based on the analysis framework provided, let's break down the backlog item ""Update close icon in Detail View to be a font icon"":
+
+1. **Core Functionality**: The task involves changing the close icon to a font icon, which is primarily a UI change.
+2. **Components/Systems**: This change is likely localized to the Detail View component, assuming no other components are directly affected.
+3. **Testing Complexity**: Testing would involve ensuring that the new icon displays correctly across different devices and screen sizes, but this is relatively straightforward.
+4. **Integration Challenges/Dependencies**: There are no significant integration challenges or dependencies mentioned for this task.
+5. **Documentation and Deployment Effort**: The documentation effort would be minimal, as this is a simple UI update.
+
+Given these considerations, the task is primarily a simple UI change with low complexity and minimal impact on other components. Therefore, it aligns with the estimation guidelines for a very simple task.
+
+**Story Points: 1**",gpt-4o-mini,2.9360618591308594,0,0.0
+OPENAI-ZEROSHOT-002,As a reviewer I want to have an account so that i can review an article,,4,1.0,0.8,"To estimate the backlog item ""As a reviewer I want to have an account so that I can review an article,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves creating an account for a reviewer, which typically includes user registration, authentication, and possibly user role management.
+
+2. **Components/Systems Modified**: This task likely involves:
+   - User interface changes for the registration/login forms.
+   - Backend changes for user account management (database schema, API endpoints).
+   - Potential integration with an authentication system (if not already in place).
+
+3. **Testing Complexity**: Testing will involve:
+   - Unit tests for the backend logic.
+   - Integration tests for the API.
+   - UI testing for the registration and login forms.
+   - User acceptance testing to ensure the feature meets the requirements.
+
+4. **Integration Challenges/Dependencies**: If there are existing systems for user management or authentication, there may be integration challenges. If this is a new feature without existing infrastructure, it could be more straightforward.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed for the new feature, including user guides and API documentation. Deployment should be manageable if the infrastructure is already in place.
+
+Considering all these factors, the task involves multiple components and moderate complexity, but it does not seem to reach the level of very complex or epic tasks. Therefore, I would estimate this task as:
+
+**Story Points: 5**",gpt-4o-mini,4.1223790645599365,0,3.0
+OPENAI-ZEROSHOT-003,Align project creation dialog to JIRA style,"There are some differences in our project creation dialog to the JIRA one.  * Remove ""Project"" from ""Name"" and ""Key"" field labels * Standardise on field descriptions for Name and Key (maximum length) ** Enforce maximum lengths on those fields  ",1,1.0,0.8,"To estimate the backlog item ""Align project creation dialog to JIRA style,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The task involves modifying the project creation dialog to align with JIRA's style, which includes changing field labels, standardizing descriptions, and enforcing maximum lengths on fields. This is primarily a UI change but involves some backend validation.
+
+2. **Components/Systems Modified**: The task affects the UI components (dialog) and potentially the backend (to enforce maximum lengths). However, it does not seem to involve multiple systems or components beyond these two.
+
+3. **Testing Complexity**: Testing will involve verifying the UI changes and ensuring that the maximum length enforcement works correctly. This is straightforward but requires both UI and backend testing.
+
+4. **Integration Challenges/Dependencies**: There are no significant integration challenges mentioned. The task appears to be self-contained without dependencies on other systems.
+
+5. **Documentation and Deployment Effort**: Documentation updates may be required to reflect the changes in the project creation dialog, but this is likely minimal.
+
+Considering all these factors, the task is primarily a UI change with some backend validation, which suggests a moderate level of complexity. Given that it involves multiple components (UI and backend) but does not introduce significant new features or architectural changes, I would estimate this task at **5 story points**. 
+
+**Story Points: 5**",gpt-4o-mini,3.447550058364868,0,0.0
+OPENAI-ZEROSHOT-004,Assign a story to future sprint,"As Patrick I want to be able to assign a story to a future sprint so that it's query-able (via sprint id).  A/C:  1. I am able to create future sprints which I can assign issues to 2. I'm able to remove future sprints and the issues are removed from them 3. I'm able to move issues between future sprints and out of future sprints and the db is updated accordingly 4. The backlog shows all future sprints, regardless of whether they are empty or not  Notes:  - as part of this, the necessary DB work to enable future sprints needs to happen  (!) Dev Notes (!)  h4. Functionality that changes: - Send to Top (from JIRA) - Sprint dragging will not include filtered issues  Q: What happens if a sprint becomes orphaned aka all assigned boards are deleted? A: (x) Not Answered  Q: What if the sprint's owning board was deleted but it was visible on a second board? A: (x) Not Answered  Q: What if a non-visible orphaned sprint was included in the filter of a new board? Is it reassigned? A: (x) Not Answered  Q: What if there are multiple rank fields? A: (x) Not Answered  Q: Do sprints need their own rank field? If so, is it locked? What if it is deleted/modified in JIRA 5.1? A: (x) Not Answered  Q: What are the conditions for the migration task? A: (x) Not Answered  Q: What happens to sprints for which all issues have been deleted? A: (x) Not Answered  Q: What if an issue is assigned to more than 1 future sprint via different boards? A: (x) Not Answered",13,1.0,0.8,"Based on the analysis of the backlog item, here’s the breakdown:
+
+1. **Core Functionality**: The main functionality involves creating, managing, and querying future sprints, which includes assigning issues to these sprints and ensuring the database reflects these changes. This requires a solid understanding of the current sprint and issue management system.
+
+2. **Components/Systems Modified**: 
+   - Database changes to support future sprints.
+   - User interface changes to allow for the creation, assignment, and management of future sprints.
+   - Potential changes to the existing sprint management logic to accommodate the new functionality.
+
+3. **Testing Complexity**: 
+   - Testing will need to cover various scenarios, including edge cases related to orphaned sprints, moving issues between sprints, and ensuring the backlog displays future sprints correctly.
+   - The complexity is increased by the need to validate the behavior of the system when certain conditions (like deletion of boards or issues) occur.
+
+4. **Integration Challenges/Dependencies**: 
+   - There are dependencies on how the current sprint and issue management system works, and how it interacts with the database.
+   - The need to ensure that existing functionality (like sprint dragging and filtering) is not adversely affected adds to the complexity.
+
+5. **Documentation and Deployment Effort**: 
+   - Documentation will need to be updated to reflect the new functionality and any changes to existing processes.
+   - Deployment may require careful planning to ensure that the new database schema and functionality integrate smoothly with the existing system.
+
+Considering all these factors, the task involves multiple components, significant testing complexity, and potential integration challenges. Given the scope and complexity, I would estimate this task at **13 story points**. 
+
+**Story Points: 13**",gpt-4o-mini,4.411327838897705,0,12.0
+OPENAI-ZEROSHOT-005,"As Patrick, I want to be able to delete a version",- allow for a version to be deleted - warn if other issues are assigned to it already - what permissions do we need for that action (TODO: team input here) ,3,1.0,0.8,"To estimate the story points for the backlog item ""As Patrick, I want to be able to delete a version,"" let's analyze the requirements based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves implementing the ability to delete a version. This includes:
+   - Deleting the version itself.
+   - Implementing a warning mechanism if other issues are assigned to that version.
+   - Determining the necessary permissions for this action.
+
+2. **Components/Systems Modified**: 
+   - The version management system will need to be modified to handle deletions.
+   - The warning mechanism will require checks against the issues assigned to the version.
+   - Permissions management will need to be reviewed and possibly updated.
+
+3. **Testing Complexity**: 
+   - Testing will involve ensuring that the version can be deleted successfully.
+   - Testing the warning mechanism when issues are assigned to the version.
+   - Testing the permissions to ensure that only authorized users can delete a version.
+
+4. **Integration Challenges/Dependencies**: 
+   - There may be dependencies on the issue management system to check for assigned issues.
+   - If there are existing permissions systems in place, those will need to be integrated and tested.
+
+5. **Documentation and Deployment Effort**: 
+   - Documentation will need to be updated to reflect the new functionality and any changes to permissions.
+   - Deployment effort should be minimal unless there are significant changes to the underlying architecture.
+
+Considering the above factors, the task involves moderate complexity due to the need for multiple components to be modified (version deletion, warning mechanism, permissions). The testing complexity is also moderate, as it requires ensuring that all aspects work together correctly.
+
+Given these considerations, I would estimate this task at **5 story points**.",gpt-4o-mini,4.602402687072754,0,2.0
+OPENAI-ZEROSHOT-006,As an Admin I want to be able to assign roles,,4,1.0,0.8,"To estimate the backlog item ""As an Admin I want to be able to assign roles,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves implementing a role assignment feature for an admin. This typically requires a user interface for role selection, backend logic to handle role assignments, and possibly updates to user permissions.
+
+2. **Components/Systems**: This feature likely involves:
+   - A user interface component for the admin to select and assign roles.
+   - Backend logic to process the role assignment.
+   - Potential updates to the database to reflect the new roles.
+   - Integration with existing user management systems.
+
+3. **Testing Complexity**: Testing will involve:
+   - Verifying that roles can be assigned correctly.
+   - Ensuring that users have the appropriate permissions after roles are assigned.
+   - Testing edge cases (e.g., what happens if an invalid role is assigned).
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing user management systems or databases. If these systems are well-defined and stable, the integration complexity may be lower. However, if there are existing issues or unclear requirements, this could increase complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed to explain the new functionality to admins and possibly update user manuals. Deployment should be straightforward if the existing systems are stable.
+
+Considering all these factors, the task involves moderate complexity due to the need for UI, backend logic, and testing across multiple components. Therefore, I would estimate this task at **5 story points**. 
+
+Story Points: 5",gpt-4o-mini,4.4611992835998535,0,3.0
+OPENAI-ZEROSHOT-007,"As an administrator, I would like to be able to turn on/off the Release Planning feature as a Labs Feature",* Surfaced in the GH Labs Configuration tab * Controls the visibility of any Release Planning feature/story ,1,1.0,0.8,"To estimate the story points for the backlog item ""As an administrator, I would like to be able to turn on/off the Release Planning feature as a Labs Feature,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves adding a toggle for the Release Planning feature in the GH Labs Configuration tab. This requires both UI changes and backend logic to control the visibility of the feature.
+
+2. **Components/Systems Modified**: 
+   - **Frontend**: The GH Labs Configuration tab will need to be updated to include the toggle.
+   - **Backend**: Logic will need to be implemented to handle the state of the toggle and its effect on the visibility of the Release Planning feature.
+   - **Database**: If the toggle state needs to be stored, there may be database changes required.
+
+3. **Testing Complexity**: Testing will involve:
+   - Verifying the toggle functionality (on/off).
+   - Ensuring that the visibility of the Release Planning feature responds correctly to the toggle state.
+   - Regression testing to ensure no other features are affected.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing configurations and how they interact with the Release Planning feature. However, since this is a toggle feature, the integration complexity is moderate.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed to explain the new feature to administrators, but this is not overly complex. Deployment should also be straightforward.
+
+Considering all these factors, the task involves multiple components and moderate complexity, but it does not reach the level of a major architectural change or complex integration. Therefore, it fits into the medium task category.
+
+**Story Points: 5**",gpt-4o-mini,4.75136399269104,0,0.0
+OPENAI-ZEROSHOT-008,"As Patrick, I want to understand the progress towards a version with a single report","- the chart needs to show the complete history of a version (incl scope changes) - it's a burnup chart showing total estimate vs complete estimate, total vs unestimated stories - also display count of unestimated stories - start date is defined as the day when first story from that version was added to the version (to use startDate once we have it) - also display the list of stories split into complete, incomplete, incomplete unestimated (we may want to consider adding full history later on); - each story on the list should display the epic it belongs to  (!) Development Notes (!)  Q: How does the chart look if it has been archived then unarchived again? A: the same  Q: What if an issue is a part of multiple versions? Are there any implications for which version it is displayed in/ permission issues if this issue is in another project our user has no permissions to see? A: it's displayed in all of them if the user has permissions to see it  Q: What if epics are in a version, how are they counted and displayed? A: They are added to the issue count and will show up in the table.  Q: What happens to the chart when the first issue added to the version is deleted/moved/converted? A: it should show issue removed",5,1.0,0.8,"Based on the analysis of the backlog item, here’s the breakdown:
+
+1. **Core Functionality**: The main functionality involves creating a burnup chart that tracks the progress of a version, including various metrics and lists of stories. This requires a solid understanding of the data model and how to visualize it effectively.
+
+2. **Components/Systems**: The implementation will likely involve multiple components:
+   - Data retrieval for stories and their statuses.
+   - Logic to calculate estimates and display them correctly.
+   - UI components for the chart and the list of stories.
+   - Handling edge cases related to archiving, permissions, and epic associations.
+
+3. **Testing Complexity**: The testing will be moderately complex due to the need to verify:
+   - Correct data representation in the chart.
+   - Handling of various edge cases (e.g., unarchiving, permissions).
+   - Ensuring that the UI updates correctly based on the underlying data changes.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing systems for fetching story data and handling permissions. Additionally, if the chart interacts with other features or components, those integrations need to be considered.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed to explain the new chart functionality, how to interpret it, and any changes to existing workflows. Deployment may also require coordination with other teams if there are dependencies.
+
+Considering all these factors, the task involves multiple components, moderate complexity, and integration challenges. Therefore, I would estimate this backlog item at **8 story points**.",gpt-4o-mini,4.621063232421875,0,4.0
+OPENAI-ZEROSHOT-009,As an Admin I want to create MediaManager accounts,,4,1.0,0.8,"To estimate the backlog item ""As an Admin I want to create MediaManager accounts,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves creating accounts, which typically includes user input forms, validation, and possibly some backend logic to handle account creation.
+
+2. **Components/Systems**: This task likely involves:
+   - A user interface for the Admin to input account details.
+   - Backend services to process the account creation.
+   - Potential integration with a database to store account information.
+   - Possibly some notification system to inform users of account creation.
+
+3. **Testing Complexity**: Testing will involve:
+   - Verifying the UI for proper input handling.
+   - Ensuring backend logic correctly processes account creation.
+   - Testing for edge cases (e.g., duplicate accounts, invalid input).
+   - Integration testing with the database and any notification systems.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing user management systems or databases. If the MediaManager accounts need to integrate with other systems (e.g., authentication services), this could add complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed for the new functionality, including user guides for Admins and technical documentation for developers. Deployment may require coordination with other teams if there are dependencies.
+
+Considering all these factors, the task involves multiple components, moderate complexity, and some integration challenges. Therefore, it does not fall into the very simple or simple task categories.
+
+Based on this analysis, I would estimate this task at **5 points**.",gpt-4o-mini,4.181595087051392,0,3.0
+OPENAI-ZEROSHOT-010,Enable GH on OD instances from the Create Project dialog,"COS  The user will go through these steps: # Click to create a project # Select Scrum / Kanban # If GreenHopper is NOT installed, display an installation message tailored to the type of instance (BTF/OD) # For OnDemand, click a link to go to MAC and get the license # Once license is purchased, go to welcome page for GH with create project dialog open and scrum/kanban selected  # If user cancels, return to previous page (can create project dialog be open?) # Add analytics events for every step as much as possible  This should use the existing API as provided by the Internal Systems team (meaning we need to open a new page with MAC and they'll need to log in).  # Copy to be provided. Note to self: make sure to include a warning that you need to be the account owner to enable it. Also that the trial only works if you haven't installed GH before (otherwise you'll be charged). Copy: https://extranet.atlassian.com/display/GHDEV/GHS-7876+OD+Create+Project+Sequence   (!) Development Notes (!)  Q: What if MAC is inaccessible? A: (x) Not Answered - I guess the user will get a 404 when they click the link.   Q: What if a GH jar is present but not enabled? A: (x) Not Answered - if GH is not licensed, the message will display.   ",3,1.0,0.8,"To estimate the story points for the backlog item ""Enable GH on OD instances from the Create Project dialog,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves enabling GreenHopper (GH) on OnDemand (OD) instances through a series of user interactions in the Create Project dialog. This includes displaying messages based on the installation status of GH, guiding users to purchase a license, and handling user cancellations.
+
+2. **Components/Systems Modified**: 
+   - The Create Project dialog itself.
+   - Integration with the Internal Systems team’s API for license management.
+   - Analytics tracking for user interactions.
+   - Potentially, the messaging system for displaying installation messages.
+
+3. **Testing Complexity**: 
+   - Testing will need to cover various scenarios: 
+     - GH not installed (both BTF and OD).
+     - User purchasing a license and navigating to the welcome page.
+     - User cancellation and returning to the previous page.
+     - Handling of analytics events for each step.
+   - There are multiple paths to test, which increases complexity.
+
+4. **Integration Challenges/Dependencies**: 
+   - Dependency on the Internal Systems team for the API.
+   - Handling scenarios where the MAC is inaccessible or if GH is present but not enabled adds complexity.
+   - The need to ensure that the user experience is seamless and informative.
+
+5. **Documentation and Deployment Effort**: 
+   - Documentation will need to be updated to reflect the new functionality, including user instructions and warnings about account ownership and trial limitations.
+   - Deployment effort may involve coordination with the Internal Systems team and ensuring that all components are functioning correctly post-deployment.
+
+Considering all these factors, the task involves multiple components, moderate complexity, and significant testing and documentation efforts. Given the nature of the task and the potential integration challenges, I would estimate this task at **8 story points**. 
+
+**Story Points: 8**",gpt-4o-mini,5.531001091003418,0,2.0
+OPENAI-ZEROSHOT-011,Adjust the shading for epic & version report,"# Use the same shades as Jay indicated in ""Sexy charts"" doc: https://extranet.atlassian.com/display/GHDEV/GHS-7825+Sexy+Chart  # don't display the lines on the edge of the projection",2,1.0,0.8,"Based on the provided backlog item and the analysis framework, here's the breakdown:
+
+1. **Core Functionality**: The task involves adjusting the shading for an epic and version report based on specific design guidelines. This is primarily a UI change.
+
+2. **Components/Systems**: The task likely involves modifying the UI component that renders the report. Depending on the existing architecture, this could be a single component or involve minor adjustments across a couple of related components.
+
+3. **Testing Complexity**: Testing will involve verifying the visual changes and ensuring that the report displays correctly across different scenarios. This is relatively straightforward but may require some visual regression testing.
+
+4. **Integration Challenges/Dependencies**: There don't appear to be significant integration challenges or dependencies mentioned, as this seems to be a localized change.
+
+5. **Documentation and Deployment Effort**: The documentation effort may be minimal, as this is a visual change. Deployment should also be straightforward.
+
+Considering these factors, the task is primarily a UI adjustment with low complexity and minimal dependencies. Therefore, it aligns with the guideline for simple tasks.
+
+**Story Points: 2**",gpt-4o-mini,3.482196092605591,0,1.0
+OPENAI-ZEROSHOT-012,"As Patrick, I want to see the version assigned to an issue in the list view so I can quickly identify which issues belong to which versions","* Estimate column spacing still honoured * If there is no epic associated, version lozenge will be right-justified next to estimate * All version lozenges use the same colour, which is not a colour available to epics * Truncation assessed by the width (similar to epic lozenges) * What happens when an issue is associated with multiple fix versions through JIRA? ** Show somehow that there's more than one version on the lozenge ** The primary version is the first unreleased version in the sequence * Released versions are displayed * Archived versions are not  (!) Development Notes (!)  Q: What if the version name is very long? A: it's truncated (via CSS - martin to review)  Q: Shouldn't the primary version in a multi-version be the soonest version, rather than the alphabetical one? A: (x) it's currently ordered alphabetically, please talk to Tokes / Tom if you think it should be different  Q: How does this play with the epics / DV being open / closed? A: not affected  Q: How do you remove an issue from a single version if it has multiple? A: you can't remove a fix version at all  Q: What if one of the versions is / has been released? A: it still shows up  Q: What if the version is ""Archived"" in JIRA? A: (x) Not Answered",2,1.0,0.8,"Based on the analysis of the backlog item, here’s the breakdown:
+
+1. **Core Functionality**: The main functionality involves displaying version information in the issue list view, which includes handling multiple versions, truncation, and ensuring proper alignment and color coding. This requires a clear understanding of the existing UI and how to integrate the new version lozenges.
+
+2. **Components/Systems**: This task will likely involve modifications to the front-end UI components that display issues, as well as potentially some back-end logic to fetch and manage version data. The need to handle multiple versions adds complexity.
+
+3. **Testing Complexity**: Testing will need to cover various scenarios, including single and multiple versions, released and archived versions, and ensuring that truncation works correctly. This adds to the testing complexity.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on how versions are managed in JIRA and how they are represented in the UI. Coordination with other team members (as indicated by the questions) suggests that there may be some integration challenges.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed to explain the new functionality and any changes to existing processes. Deployment may also require coordination with other features or releases.
+
+Considering all these factors, the task appears to be complex due to the multiple components involved, the need for careful handling of version information, and the testing requirements. Therefore, I would estimate this task at **8 story points**.",gpt-4o-mini,5.014216899871826,0,1.0
+OPENAI-ZEROSHOT-013,GH updates for JIRA 6.0 ADG changes (mainly Admin nav?) plus Gadgets,See https://extranet.atlassian.com/display/TECHWRITING/ADG+Changes+for+JIRA+6.0  Main functionality changes: * admin nav?  GH docs to be updated: * *TO DO* https://confluence.atlassian.com/display/GH/GreenHopper+Administrator%27s+Guide *(CHILDREN)* * *TO DO*  https://confluence.atlassian.com/display/GH/GreenHopper+Installation+and+Upgrade+Guide * *TO DO (WILL INHERIT MINOR PAGE CHANGES IN JIRA 6.0)* Gadgets - screenshots,2,1.0,0.8,"Based on the provided backlog item and the analysis framework, here’s the breakdown:
+
+1. **Core Functionality**: The task involves updating the GreenHopper (GH) documentation for JIRA 6.0, specifically focusing on changes related to the Admin navigation and Gadgets. This indicates a need to understand both the existing documentation and the new features introduced in JIRA 6.0.
+
+2. **Components/Systems**: The updates will likely require modifications to multiple documentation pages (Administrator's Guide, Installation and Upgrade Guide) and possibly involve changes to screenshots and other visual elements. This suggests multiple components are affected.
+
+3. **Testing Complexity**: While the task is primarily documentation-focused, ensuring that the documentation accurately reflects the new functionality will require some level of verification against the actual changes in the software. This could involve testing the new admin navigation and gadgets to ensure the documentation is correct.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on the actual implementation of JIRA 6.0 changes, which could introduce some risk if those changes are not finalized or if there are delays. However, since this is primarily documentation, the integration challenges are likely minimal.
+
+5. **Documentation and Deployment Effort**: Updating documentation can be time-consuming, especially if it involves multiple pages and ensuring consistency across them. The effort to update screenshots and ensure clarity in the documentation adds to the complexity.
+
+Considering all these factors, the task involves moderate complexity due to the need to update multiple documentation components, verify against new functionality, and ensure accuracy. Therefore, I would estimate this task at **5 story points**. 
+
+Story Points: **5**",gpt-4o-mini,4.197840929031372,0,1.0
+OPENAI-ZEROSHOT-014,"As Patrick, I want to adjust release report projections to simulate and better understand what can be achieved within a version",- allow the percentage calculation to be adjusted (default to 10%) ,13,10.0,0.8,"To estimate the backlog item ""As Patrick, I want to adjust release report projections to simulate and better understand what can be achieved within a version: - allow the percentage calculation to be adjusted (default to 10%)"", let's analyze it using the provided framework:
+
+1. **Core Functionality**: The core functionality involves allowing users to adjust a percentage calculation in release report projections. This requires modifying the existing logic for how projections are calculated and displayed.
+
+2. **Components/Systems**: Depending on the current architecture, this could involve changes to:
+   - The backend logic that calculates projections.
+   - The frontend UI where users interact with the projections.
+   - Possibly the database if the percentage needs to be stored or retrieved.
+
+3. **Testing Complexity**: Testing will involve:
+   - Unit tests for the new logic.
+   - Integration tests to ensure that the frontend and backend work together correctly.
+   - User acceptance testing to validate that the feature meets user needs.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing projection logic and how it interacts with other features. If the percentage adjustment impacts other areas of the application, this could increase complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will need to be updated to reflect the new functionality, and deployment should be straightforward unless there are significant changes to the underlying architecture.
+
+Considering these factors, the task involves moderate complexity due to the need for changes across multiple components and the requirement for thorough testing. However, it does not appear to be overly complex or risky.
+
+Based on this analysis, I would estimate this task at **5 story points**.",gpt-4o-mini,5.836229085922241,0,3.0
+OPENAI-ZEROSHOT-015,Use the startDate in version report calculations,"# include the startDate for calculations in Version Report - both in the description on the top as well as on the timeline (i.e. timeline starts on the startDate)  # versions without startDate use the previous calculations  # if some stories were completed before the startDate, the ""completed"" line is adjusted at start, but are not included in the trendline calculations, nor do we display time before startDate.     Notes:  - we might not be happy with the result and it may end up with the code staying on a branch + extra stories being created to improve it",2,1.0,0.8,"Based on the provided backlog item and the analysis framework, here's the breakdown:
+
+1. **Core Functionality**: The task involves modifying the version report calculations to include a start date, which affects both the description and the timeline. This requires a clear understanding of how the current version report works and how to integrate the new logic.
+
+2. **Components/Systems**: The task likely involves changes to the version report logic, which may include updates to the database (if start dates are stored), the backend logic for calculations, and possibly the frontend for displaying the updated report. This indicates multiple components are involved.
+
+3. **Testing Complexity**: Testing will need to ensure that the new calculations are accurate and that the display logic works correctly. Additionally, there may be edge cases to consider, such as versions without a start date and how they interact with the new logic.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing data structures and how they are currently utilized in the version report. If the changes affect other parts of the system, this could introduce additional complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will need to be updated to reflect the new functionality, and deployment may require coordination if there are significant changes to the underlying logic.
+
+Considering all these factors, the task appears to be complex due to the integration of new logic into an existing system, the need for thorough testing, and potential dependencies. Therefore, I would estimate this task at **8 story points**.",gpt-4o-mini,3.992643117904663,0,1.0
+OPENAI-ZEROSHOT-016,Bring context menu to work mode,"- allow for multiple select (with current limitations)  actions:  - bulk change - open in issue nav - remove from sprint (& show the same warning as elsewhere)  (!) Development Notes (!)  (x) Check Interoperability with other actions on the board (while menu open, try ranking, transition, cog menu, etc)  (x) Check permissions to remove from spint, bulkchange (non-admin, user without delete permission, etc)  (x) Check right-click does not trigger where it shouldn't (issue in done then open detail view)  (x) Scrolling - should disappear when context changes  (x) Stale state - what if an issue was already removed from sprint? (need 2 users)  (x) Check with various board configurations (swimlanes, kanban with releasing)",3,1.0,0.8,"Based on the provided backlog item and the analysis framework, here's the breakdown:
+
+1. **Core Functionality**: The task involves implementing a context menu for multiple select actions, which includes bulk changes, opening issues in navigation, and removing items from the sprint. This indicates a moderate level of complexity due to the multiple actions involved.
+
+2. **Components/Systems**: The task requires modifications to the context menu, interactions with the board, and checks for interoperability with other actions. This suggests that multiple components are affected, including user permissions and the overall board behavior.
+
+3. **Testing Complexity**: The testing requirements are significant. There are multiple scenarios to validate, including permission checks, right-click behavior, state management, and compatibility with various board configurations. This adds to the complexity of testing.
+
+4. **Integration Challenges/Dependencies**: The need to check interoperability with other actions and various board configurations indicates potential integration challenges. Ensuring that the new functionality does not disrupt existing features is crucial.
+
+5. **Documentation and Deployment Effort**: While not explicitly mentioned, any new feature typically requires some level of documentation and deployment considerations, especially given the complexity of the changes.
+
+Considering all these factors, the task appears to be more than just a simple feature implementation but not quite at the level of a major architectural change. Therefore, I would estimate this task at **8 story points**. 
+
+**Story Points: 8**",gpt-4o-mini,3.788892984390259,0,2.0
+OPENAI-ZEROSHOT-017,"As Patrick, I want to be able to see more details about the version when looking at the Versions Panel","- this refers to the version panel - the behaviour should mimic the epic panel, including the twixies - information needed: description, start date, release date as well as count of total, completed and unestimated stories, total estimate units, small progress bar (startDate is not part of the progress calculation) - for empty data (release date, start date) reuse the same approach as we use on the detail view  ",5,1.0,0.8,"Based on the provided backlog item and the analysis framework, here’s the breakdown:
+
+1. **Core Functionality**: The task involves enhancing the Versions Panel to display additional details similar to the Epic Panel. This includes showing a description, start date, release date, counts of stories, total estimate units, and a progress bar.
+
+2. **Components/Systems Modified**: This task likely requires changes to the Versions Panel UI, backend logic to fetch and calculate the necessary data, and possibly updates to the data model. Given that it mimics the Epic Panel, there may be shared components or logic that can be reused, but it still involves multiple components.
+
+3. **Testing Complexity**: Testing will involve verifying the new UI elements, ensuring data is fetched and displayed correctly, and validating the progress bar functionality. There may also be edge cases to consider, especially with empty data scenarios.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing data structures and APIs that need to be considered, especially if the data is being pulled from different sources or if there are existing bugs that could affect the new functionality.
+
+5. **Documentation and Deployment Effort**: Documentation will need to be updated to reflect the new functionality in the Versions Panel. Deployment should be straightforward, but any changes to the backend may require additional considerations.
+
+Considering all these factors, the task involves moderate complexity due to the need for multiple components to be modified, testing for various scenarios, and potential integration challenges. Therefore, I would estimate this task at **5 story points**.",gpt-4o-mini,3.9576282501220703,0,4.0
+OPENAI-ZEROSHOT-018,"As a user, I would like for the Release Planning labs feature to be promoted on the Getting Started page","For administrators: this includes a button to enable the feature For non-admins: if not enabled, show a message saying it is available and they have to ask an administrator to enable it.  Once enabled: show users a Feedback button. Admins also see a link to disable the feature.  Jay to provide new icon.",1,1.0,0.8,"To estimate the story points for the backlog item regarding the Release Planning labs feature promotion on the Getting Started page, let's analyze the requirements based on the provided framework:
+
+1. **Core Functionality**: The feature involves enabling/disabling functionality for administrators, displaying messages for non-admin users, and showing a feedback button once enabled. This requires both UI changes and backend logic.
+
+2. **Components/Systems Modified**: 
+   - UI changes for the Getting Started page (button for admins, message for non-admins, feedback button).
+   - Backend logic to handle the enabling/disabling of the feature.
+   - Potential changes to user roles and permissions.
+
+3. **Testing Complexity**: 
+   - Testing will need to cover various user roles (admin vs. non-admin).
+   - Ensuring the correct display of messages and buttons based on the feature's state.
+   - Testing for edge cases, such as what happens when an admin disables the feature.
+
+4. **Integration Challenges/Dependencies**: 
+   - There may be dependencies on existing user role management and feature toggle systems.
+   - Coordination with the design team for the new icon provided by Jay.
+
+5. **Documentation and Deployment Effort**: 
+   - Documentation will be needed to explain the new feature to users and administrators.
+   - Deployment considerations for the new functionality and any potential impacts on existing features.
+
+Given the analysis, the task involves multiple components, moderate complexity, and requires thorough testing. It does not reach the level of major architectural changes or complex integrations, but it is more than a simple feature addition.
+
+Based on these factors, I would estimate this backlog item at **5 story points**.",gpt-4o-mini,3.928076982498169,0,0.0
+OPENAI-ZEROSHOT-019,"In order to be able to select report options easily, I want a better control to use","When opening a dropdown menu with a large amount of options, the menu doesn't force the page to scroll.  CoS:  # Four reports are affected: Version Report, Sprint Report, Sprint Burndown, Epic Report # Control uses auto-complete, single select style # No grouping of select options  (!) Dev Notes (!) Q: Is the frother case-insensitive? A: yes  Q: Does it search on spaces or any single char? A: Spaces no. Any character yes.   Q: What happens when an invalid string is typed in? Can we do other actions? A: No Matches message, if you try to submit an invalid value it should revert to the previous selection  Q: What happens when you search on closed/archived sprints/versions? A: same options show up as we had previously  Q: Can you search as an anonymous user? A: same options show up as we had previously  Q: Is the input XSS-safe? A: yes   Q: How long can the input be? A: no limit, if it doesn't match then we revert to the selection  Q: Are there tests to update? A: Epic and Version Report qunit tests are updated to reflect the changes",3,1.0,0.8,"Based on the provided backlog item and the analysis framework, here's the breakdown:
+
+1. **Core Functionality**: The main functionality involves implementing a new dropdown control with auto-complete features for four different reports. This requires a change in how users interact with the dropdown, ensuring it doesn't force the page to scroll and handles various input scenarios.
+
+2. **Components/Systems Modified**: The change affects four reports (Version Report, Sprint Report, Sprint Burndown, Epic Report). Each report may have its own implementation details, which adds to the complexity.
+
+3. **Testing Complexity**: The testing complexity is moderate. There are existing tests that need to be updated, and the new functionality introduces various scenarios (e.g., handling invalid input, ensuring XSS safety, and maintaining behavior for closed/archived sprints/versions). 
+
+4. **Integration Challenges/Dependencies**: There are no major external integrations mentioned, but the need to ensure consistent behavior across multiple reports does introduce some complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will likely need to be updated to reflect the new control's behavior, but this is not expected to be extensive.
+
+Considering all these factors, the task involves moderate complexity due to the number of components affected and the need for thorough testing. Therefore, I would estimate this task at **5 story points**. 
+
+**Story Points: 5**",gpt-4o-mini,4.1951189041137695,0,2.0
+OPENAI-ZEROSHOT-020,"As Patrick, I want to assign issues to a version","- permissions  - only one version can be associated with an issue (using this feature): fixVersion is replaced  - can assign multiple issues to a single version easily  - what happens when multiple issues from multiple projects are dragged?  -- don't allow drop on version panel  -- possibly explore additional message or change cursor  - what happens when an issue from PROJA is dropped onto PROJB?  -- don't allow drop on version panel  -- show message  - able to drag issues from active sprints or future sprints or backlog  -- refer to comments below re: dialog when destructively updating    Note:  * IE8 experience may not be as good due to bad drag and drop performance  * consider messaging for invalid drop targets    (!) Development Notes (!)    Q: What if the version list is stale and a version doesn't exist anymore/was archived?  A: (/) We show a ""Issue doesn't exist"" message and we reload the issues list    Q: What if an issue was converted to a subtask or epic?  A: (/) We attach it anyway    Q: What if the issue is already part of a sprint?  A: (/) We allow it    Q: Need to make sure the issue is not reranked if drop on version fails.  A: (/) We always cancel ranking after drop on versions even if it fails    Q: What if a group of issues is dropped but one or more fail to be added? What happens to the rest and how do we notify the user?  A: (/) We don't update anything and we show a message saying that the user doesn't have the permission to update the issue(s)    Q: Are the dropzones properly hidden when the version tab is hidden?  A: (/) yes    Q: Does drag and drop work well if quick and/or instant filters are on?  A: (/) yes, no direct influence",3,1.0,0.8,"Based on the provided backlog item and the analysis framework, here’s the breakdown:
+
+1. **Core Functionality**: The main functionality involves implementing a drag-and-drop feature for assigning issues to a version, with specific rules and messaging for invalid actions. This includes handling multiple issues, ensuring proper feedback for users, and managing edge cases.
+
+2. **Components/Systems Modified**: This feature will likely require changes to the issue management system, the version management system, and the user interface. It also involves handling various states of issues (e.g., subtasks, epics, issues in sprints).
+
+3. **Testing Complexity**: The testing will be complex due to the various scenarios outlined (e.g., invalid drops, stale versions, permissions). Each scenario will need to be tested thoroughly to ensure the drag-and-drop functionality behaves as expected.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing systems for issue and version management, and potential integration challenges with the drag-and-drop functionality across different browsers, especially considering the note about IE8.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed to explain the new functionality, including user guidance on the drag-and-drop feature and the associated rules. Deployment may also require careful planning to ensure that existing functionalities are not disrupted.
+
+Considering all these factors, the task involves multiple components, significant complexity, and various edge cases that need to be handled. Therefore, I would estimate this backlog item at **13 story points**. 
+
+Story Points: **13**",gpt-4o-mini,3.7893760204315186,0,2.0
+OPENAI-ZEROSHOT-021,"As Patrick, I want to be able to edit details of a version",https://extranet.atlassian.com/display/GHDEV/GHS-7163+Versions+Inline+Edit,5,1.0,0.8,"To estimate the story points for the backlog item ""As Patrick, I want to be able to edit details of a version,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves implementing an inline edit feature for version details. This typically requires UI changes, backend modifications to handle the edit requests, and possibly validation logic.
+
+2. **Components/Systems**: The task likely involves:
+   - Frontend changes to allow inline editing.
+   - Backend changes to process the edit requests and update the version details in the database.
+   - Potential changes to any API endpoints that interact with version details.
+
+3. **Testing Complexity**: Testing will need to cover:
+   - UI testing to ensure the inline edit works as expected.
+   - Backend testing to verify that the edits are processed correctly and that data integrity is maintained.
+   - Regression testing to ensure that existing functionality is not broken.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing components or systems that manage version details. If there are other features or systems that rely on version data, those may need to be considered for integration testing.
+
+5. **Documentation and Deployment Effort**: Documentation will need to be updated to reflect the new inline editing functionality, and deployment may require coordination with other teams if there are dependencies.
+
+Given these considerations, the task involves multiple components, moderate complexity, and a need for thorough testing. Therefore, it does not fall into the very simple or simple task categories.
+
+Based on this analysis, I would estimate the story points for this task as **5 points**.",gpt-4o-mini,4.454231023788452,0,4.0
+OPENAI-ZEROSHOT-022,As an Admin I want to create Reviewer accounts,,4,1.0,0.8,"To estimate the backlog item ""As an Admin I want to create Reviewer accounts,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves creating accounts for Reviewers, which typically includes user registration, role assignment, and possibly some initial setup.
+
+2. **Components/Systems**: This task likely involves:
+   - User interface changes for the Admin to create Reviewer accounts.
+   - Backend changes to handle account creation, including database modifications.
+   - Potential updates to user management systems or authentication processes.
+
+3. **Testing Complexity**: Testing will need to cover:
+   - Successful account creation.
+   - Validation of input fields.
+   - Role assignment and permissions.
+   - Edge cases (e.g., duplicate accounts, invalid data).
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing user management systems or APIs. If the Reviewer accounts need to interact with other systems (e.g., notifications, permissions), this could add complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed for the new functionality, including how to create Reviewer accounts and any changes to existing processes. Deployment should be straightforward but may require coordination with other teams if there are dependencies.
+
+Considering all these factors, the task involves multiple components, moderate complexity, and some integration challenges. Therefore, it does not seem to reach the complexity of 13 points but is more than a simple task.
+
+Based on this analysis, I would estimate the story points for this backlog item as:
+
+**Story Points: 5**",gpt-4o-mini,4.04343581199646,0,3.0
+OPENAI-ZEROSHOT-023,"As Patrick, I want to be able to create a new version","# Dialog is shown  # fields we need to populate: Project, Name, Description, Release Date  # Single Select (with autocomplete aka Frother) Control for project selection  # Description field - text field  # Apply sensible length limits to these input fields (check what limits JIRA has in place if any or just enforce a limit of 255 chars on the front end)  # create version affordance is only displayed if the user has project admin permissions to at least one project (it is the same as can manage sprint logic)  # Analytics to track usage of dialog  #* Also capture length of version names    (!) Development Notes (!)    Q: XSS safe?  A: (/) yes    Q: What if the version name already exists?  A: (/) We show an error message",3,1.0,0.8,"Based on the analysis of the backlog item, here’s the breakdown:
+
+1. **Core Functionality**: The task involves creating a dialog for version creation with multiple fields (Project, Name, Description, Release Date) and specific functionality (autocomplete for project selection, length limits, permission checks, and analytics tracking). This indicates a moderate level of complexity.
+
+2. **Components/Systems**: The implementation will require modifications to the UI (for the dialog and fields), backend logic (to handle permissions and validations), and analytics tracking. This involves multiple components working together.
+
+3. **Testing Complexity**: Testing will need to cover various scenarios, including permission checks, input validation, error handling (e.g., existing version names), and analytics tracking. This adds to the complexity.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing systems for project management and analytics. Ensuring that the dialog integrates smoothly with these systems could introduce additional complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed for the new functionality, especially regarding permissions and usage analytics. Deployment may also require coordination with other teams if there are dependencies.
+
+Considering all these factors, the task is more than a simple feature but does not reach the level of a major architectural change. Therefore, I would estimate this backlog item at **8 story points**.",gpt-4o-mini,3.728578805923462,0,2.0
+OPENAI-ZEROSHOT-024,Allow to set resolution in Simplified Workflow,"As Patrick, I want to be able to specify which statuses transitions to which trigger the resolution field to be set to done so that my issues have any resolution at all.    Solution    1. Allow for a tickbox per status, which makes the global transition to that status set the resolution to ""Done"".  2. Unmapped statuses will also display this information (not necessarily the option to change it)  3. During the conversion to simplified workflow, the user will be presented with the default choice of statuses from the ""Done"" column selected for the resolution but should be able to override it before finishing the conversion.    Note that this will help people who are migrating as well as ones who have already migrated to simplified workflow.    (!) Dev Notes (!)  Q: Is this changed in GreenHopper Configuration?  A: (/) Its board specific so its in board configuration.    Q: How do we display the valid options as a part of the simplify dialog?  A: (/) With a multi select combo box    Q: How many statuses can you tick?  A: (/) No Limit    Q: What happens if the user moves a status to another column?  A: (/) The column is moved, the tick is not changed    Q: What if the user deletes a column that has a ticked box?  A: (/) Just move all statuses to unmapped column    Q: What if a status is dragged to unmapped?  A: (/) Should be disabled but visible",8,1.0,0.8,"Based on the analysis of the backlog item, here’s the breakdown:
+
+1. **Core Functionality**: The main functionality involves allowing users to set resolutions based on status transitions in a simplified workflow. This includes creating a tickbox for each status, handling unmapped statuses, and providing a user interface for selection during the conversion process.
+
+2. **Components/Systems Modified**: 
+   - Board configuration needs to be modified to include the tickbox functionality.
+   - The user interface will require updates to display the multi-select combo box.
+   - The logic for handling status transitions and resolution settings will need to be implemented.
+
+3. **Testing Complexity**: 
+   - Testing will involve verifying the functionality of the tickboxes, ensuring that the resolution is set correctly based on user selections, and validating the behavior when statuses are moved or deleted.
+   - There will also be a need for regression testing to ensure that existing functionalities are not affected.
+
+4. **Integration Challenges/Dependencies**: 
+   - The feature is board-specific, which may require careful integration with existing board configurations.
+   - There may be dependencies on how statuses are currently managed and displayed in the system.
+
+5. **Documentation and Deployment Effort**: 
+   - Documentation will need to be updated to reflect the new functionality and any changes to the user interface.
+   - Deployment should be straightforward, but it will require communication with users about the new feature and any potential impacts on their workflows.
+
+Considering the complexity of the task, the number of components involved, and the testing requirements, I would estimate this backlog item at **8 story points**. This reflects a complex task that involves multiple components and requires careful consideration of user interactions and system behavior. 
+
+**Story Points: 8**",gpt-4o-mini,3.9297399520874023,0,7.0
+OPENAI-ZEROSHOT-025,Update the open/close epic/versions panel(s),"COS:  Went through some variations on design before Martin suggested a 2-story-point fix for the story that is a slight deviation from the current design, but that  a) pulls in hover-X to close version or epic panel b) when a panel is open, there is no left-side sideways text ",5,1.0,0.8,"To estimate the story points for the backlog item ""Update the open/close epic/versions panel(s),"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The task involves updating the open/close functionality of panels, which includes modifying the behavior of the panels and adjusting the UI to accommodate the new design. This is a straightforward change but involves some UI adjustments.
+
+2. **Components/Systems Modified**: The task likely involves changes to the UI components for the epic/versions panels. Depending on the existing architecture, this could involve multiple components, but it seems to be focused on a specific area rather than a broad system change.
+
+3. **Testing Complexity**: Testing will involve ensuring that the new functionality works as intended and does not introduce any regressions. Given that this is a UI change, it may require some manual testing, but it doesn't seem overly complex.
+
+4. **Integration Challenges/Dependencies**: There are no indications of significant integration challenges or dependencies mentioned in the task description. It appears to be a self-contained change.
+
+5. **Documentation and Deployment Effort**: The documentation effort may be minimal, as this is a UI update. Deployment should also be straightforward, assuming no major changes to the underlying architecture.
+
+Considering all these factors, the task seems to be a simple update with some UI adjustments but not overly complex. Given that it involves a slight deviation from the current design and some interaction changes, I would estimate this task at **3 story points**. 
+
+**Story Points: 3**",gpt-4o-mini,4.422544240951538,0,4.0
+OPENAI-ZEROSHOT-026,Store startDate for fixVersion,"As Patrick, I want to be able to specify a startDate for my fixVersion when creating it so that my charts can be displayed in a reasonable way.  # allow to specify startDate when creating a version within GH # store as date with UTC timezone",2,1.0,0.8,"To estimate the story points for the backlog item ""Store startDate for fixVersion,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves allowing users to specify a `startDate` when creating a `fixVersion`. This requires modifications to the version creation process and the storage of the date in UTC format.
+
+2. **Components/Systems Modified**: 
+   - The user interface (UI) will need to be updated to include a date input for `startDate`.
+   - The backend will need to handle the new date field, including validation and storage.
+   - There may be implications for any existing charts or reports that utilize `fixVersion`, which may need to be updated to accommodate the new date.
+
+3. **Testing Complexity**: 
+   - Testing will involve ensuring that the date input is correctly captured, validated, and stored.
+   - There will also need to be tests for any existing functionality that interacts with `fixVersion` to ensure nothing is broken by this change.
+   - Additionally, testing will need to cover edge cases, such as invalid date formats.
+
+4. **Integration Challenges/Dependencies**: 
+   - If there are existing integrations with other systems or components that rely on `fixVersion`, those may need to be reviewed and potentially updated.
+   - If the date impacts any reporting or charting features, those integrations will also need to be considered.
+
+5. **Documentation and Deployment Effort**: 
+   - Documentation will need to be updated to reflect the new functionality, including how to use the `startDate` field.
+   - Deployment effort should be minimal unless there are significant changes to the database schema or other components.
+
+Considering all these factors, the task involves moderate complexity due to the need for UI changes, backend modifications, and testing across multiple components. Given that it is a new feature with multiple components involved, I would estimate this task at **5 story points**. 
+
+Story Points: **5**",gpt-4o-mini,4.3164989948272705,0,1.0
+OPENAI-ZEROSHOT-027,Change visual treatment on issue count in swimlane header to not use AUI badge,"See attached screenshot. Should be 12px ""Small text"" from ADG:  https://developer.atlassian.com/design/typography.html  edit: currently there is no filtering treatment",1,1.0,0.8,"Based on the provided backlog item and the analysis framework, here’s the breakdown:
+
+1. **Core Functionality**: The task involves changing the visual treatment of the issue count in the swimlane header. This is primarily a UI change, which typically falls under simple to medium complexity.
+
+2. **Components/Systems Modified**: The change seems to be localized to the UI component displaying the issue count. There may be minimal impact on other components, assuming no significant dependencies.
+
+3. **Testing Complexity**: Testing will involve verifying the visual change and ensuring that it does not affect other functionalities. This is relatively straightforward, but it will require some testing to ensure consistency across different scenarios.
+
+4. **Integration Challenges/Dependencies**: There do not appear to be significant integration challenges or dependencies mentioned in the task. The change seems to be self-contained.
+
+5. **Documentation and Deployment Effort**: Documentation may be minimal, as this is a visual change. Deployment should also be straightforward, given the nature of the task.
+
+Considering all these factors, the task is primarily a UI change with low complexity and minimal dependencies. Therefore, it fits well within the 2-3 point range.
+
+**Story Points: 3**",gpt-4o-mini,3.0562822818756104,0,0.0
+OPENAI-ZEROSHOT-028,As a writer I want to create multiple articles so that they can be published,,3,1.0,0.8,"To estimate the backlog item ""As a writer I want to create multiple articles so that they can be published,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves creating a system for writers to create and publish multiple articles. This likely includes a user interface for article creation, a backend for storing articles, and possibly a publishing workflow.
+
+2. **Components/Systems**: This task will likely involve:
+   - A user interface component for article creation (forms, text editors).
+   - Backend services for handling article data (CRUD operations).
+   - Potentially a database schema modification to accommodate multiple articles.
+   - A publishing mechanism (status updates, notifications).
+
+3. **Testing Complexity**: Testing will involve:
+   - Verifying the UI for article creation.
+   - Ensuring that articles are correctly saved and retrieved from the database.
+   - Testing the publishing workflow and any associated notifications.
+   - Edge cases like validation errors, handling of drafts, etc.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing systems (e.g., user authentication, existing article management systems) and integration with any publishing tools or workflows.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed for both the new functionality and any changes to existing systems. Deployment may involve database migrations and updates to the UI.
+
+Considering all these factors, the task involves multiple components, moderate complexity, and a fair amount of testing and documentation. Therefore, it does not reach the complexity of a major architectural change or a complete module rewrite.
+
+Based on this analysis, I would estimate this backlog item at **5 story points**.",gpt-4o-mini,4.401632070541382,0,2.0
+OPENAI-ZEROSHOT-029,"Quick filters should collapse into a ""... Show more"" reveal pattern when they will wrap to more than one line","We should use a pattern similar to the Reveal text pattern from the ADG.    * When there are more Quick Filters than there is horizontal screen space (eg. the screen is not wide enough, and they will wrap), we hide the remaining ones and display a ""... Show more"" link as the last Quick Filter.  * Clicking ""... Show more"" will reveal the rest of the Quick Filters  * ""... Show more"" will now change to say ""Show less"" instead  * The default state for all users is the collapsed state  * Whether the Filters are collapsed or all shown is persistent on a user level  * Reordering the Quick Filters stays the same as it is today  * When the header is collapsed (z on the keyboard), the behaviour stays the same.    ",3,1.0,0.8,"To estimate the story points for the backlog item regarding the ""Quick filters"" functionality, let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The main functionality involves implementing a reveal pattern for quick filters that collapse when there are too many to fit in the available horizontal space. This includes toggling between ""Show more"" and ""Show less"" states and ensuring persistence of the user's choice.
+
+2. **Components/Systems Modified**: 
+   - The UI component displaying the quick filters will need to be modified to handle the collapsing and revealing behavior.
+   - User settings will need to be updated to persist the collapsed/expanded state.
+   - Potentially, there may be interactions with existing state management or user preference systems.
+
+3. **Testing Complexity**: 
+   - Testing will involve ensuring that the UI behaves correctly across different screen sizes and that the state persists correctly for users.
+   - Edge cases need to be considered, such as what happens when the screen size changes dynamically (e.g., resizing the browser window).
+   - Regression testing will be necessary to ensure existing functionality remains unaffected.
+
+4. **Integration Challenges/Dependencies**: 
+   - There may be dependencies on existing UI frameworks or libraries used for the quick filters.
+   - If the persistence of the state involves backend changes, that could add complexity.
+
+5. **Documentation and Deployment Effort**: 
+   - Documentation will need to be updated to reflect the new behavior of the quick filters.
+   - Deployment should be straightforward, assuming no major architectural changes are required.
+
+Considering all these factors, the task involves moderate complexity due to the UI changes, state management, and testing requirements. It does not seem to reach the level of very complex tasks (13 points) but is more than a simple feature addition.
+
+**Final Estimate**: 5 points.",gpt-4o-mini,7.782685041427612,0,2.0
+OPENAI-ZEROSHOT-030,GH further ADG updates,* *DONE* https://confluence.atlassian.com/display/GH/Configuring+a+Board *PLUS CHILDREN* * *DONE* https://confluence.atlassian.com/display/GH/Creating+a+Board * *POSTPONE UNTIL JIRA 6.0* https://confluence.atlassian.com/display/GH/GreenHopper+Administrator%27s+Guide *(CHILDREN)* * *POSTPONE UNTIL JIRA 6.0*  https://confluence.atlassian.com/display/GH/GreenHopper+Installation+and+Upgrade+Guide,2,1.0,0.8,"Based on the provided backlog item and the analysis framework, here’s the breakdown:
+
+1. **Core Functionality**: The task involves updating documentation related to configuring and creating boards in GreenHopper (GH). This includes both completed and postponed items, indicating a need to manage multiple aspects of the documentation.
+
+2. **Components/Systems**: The updates reference multiple documentation pages, which suggests that several components of the documentation need to be reviewed and potentially modified. However, these are primarily documentation updates rather than code changes.
+
+3. **Testing Complexity**: Since this is primarily a documentation task, the testing complexity is low. The updates will likely require review rather than extensive testing.
+
+4. **Integration Challenges/Dependencies**: There are no significant integration challenges mentioned, but the postponement until JIRA 6.0 indicates a dependency on a future release, which could introduce some uncertainty.
+
+5. **Documentation and Deployment Effort**: The effort required for documentation updates is moderate, as it involves ensuring that the information is accurate and aligns with the new features or changes in JIRA 6.0.
+
+Considering these factors, the task does not involve significant technical complexity or multiple components in the traditional sense of software development. However, it does require careful attention to detail and coordination due to the dependencies on future releases.
+
+Given this analysis, I would estimate the story points for this backlog item as **5 points**. This reflects the moderate complexity of updating multiple documentation pages while considering the dependencies and the need for accuracy.",gpt-4o-mini,3.5849058628082275,0,1.0
+OPENAI-ZEROSHOT-031,Edit startDate of a fixVersion in JIRA,"As Patrick, I want to be able to edit startDate for a fixVersion in JIRA so that the experience between GH and JIRA is consistent and not confusing.    h4. Approach for JIRA 6.0    JIRA code base:  * Modify JIRA's {{version}} table to include a start date column  * Make the above schema change on JIRA 5.2.x branch so that downgrades continue to work.  * Augment the RESTful table in JIRA's Project Admin page for Versions to show this start date and allow editing of it  * Augment the REST representation of versions to include start date  * Add the start date field to the JIRA API for a Version object    GH code base:  * Make GH aware of the capability of storing start date in either JIRA or GH, depending on the JIRA version.  * Migrate data stored in GH for start date to JIRA storage if available.    (!) Development Notes (!)    Q: How will adding a startDate to a previously released version affect the issues that apply to it?  A: (/) If a previously released version has a release date, the new start date will be validated against the release date.    Q: How will adding a startDate affect issues that have been Archived?  A: (/) Changes to version data do not affect issues.    Q: Which timezone setting will the startDate follow, user's or system's?  A: (/) Start date and release date are both stored in the JVM system time zone.    Q: Can you remove the startDate after adding it?  A: (/) Yes.    Q: What is one way to get the startDate to come after the releaseDate?  A: (/) Not possible.    Q: What happens when you add a startDate to a version that has been released but has no releaseDate?  A: (/) Start date can be added without release date.    Q: Is there a special place in the database this column/row will go? Depending on the database used, is there a way for this location to be already taken, and/or do we recycle a location/field ID? We need to protect against overwrites.  A: (/) The field {{startdate}} did not exist in the table {{projectversion}} before now.    Q: How is the data synchronised between GH AO tables and JIRA?  A: (/) When the Version meta data is asked for in GH, it will check to see if it exists in JIRA as well. If so, it will be migrated over.",8,1.0,0.8,"Based on the analysis of the backlog item, here’s the breakdown:
+
+1. **Core Functionality**: The primary functionality involves adding a `startDate` field to the `fixVersion` in JIRA, which includes schema changes, UI modifications, and API updates. This is a significant change that affects both JIRA and GH.
+
+2. **Components/Systems Modified**: 
+   - JIRA's database schema (version table)
+   - JIRA's Project Admin page (UI)
+   - JIRA's REST API
+   - GH's awareness and data migration logic
+
+3. **Testing Complexity**: Testing will involve validating the new field's behavior, ensuring it integrates correctly with existing features, and verifying that data migration from GH to JIRA works as intended. There are also considerations for edge cases (e.g., handling previously released versions).
+
+4. **Integration Challenges/Dependencies**: There are dependencies between JIRA and GH, particularly regarding how data is synchronized and how the new field interacts with existing data. The need to maintain compatibility with older JIRA versions adds complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will need to cover the new field, its implications, and any changes to the API. Deployment will require careful planning to ensure that the schema changes do not disrupt existing functionality.
+
+Considering all these factors, the task involves multiple components, significant complexity, and integration challenges. Therefore, I would estimate this task at **13 story points**. 
+
+**Story Points: 13**",gpt-4o-mini,4.093360900878906,0,7.0
+OPENAI-ZEROSHOT-032,Write soke tests to measure UI performance on the plan mode,Scenarios to cover:  - rerank within the backlog - add to an active sprint - add to an epic - add to a version - render the context menu (both for an issue that's already selected as well as one that's deselected),2,1.0,0.8,"Based on the analysis framework and the details provided for the backlog item, here’s the breakdown:
+
+1. **Core Functionality**: The task involves writing smoke tests for UI performance, which is essential for ensuring that the application behaves as expected under various scenarios. This includes multiple actions like reranking, adding to an active sprint, adding to an epic, adding to a version, and rendering the context menu.
+
+2. **Components/Systems**: The task requires interaction with several components of the application (backlog, active sprint, epic, version, context menu). Each of these components may have its own complexities and behaviors that need to be tested.
+
+3. **Testing Complexity**: Writing smoke tests for multiple scenarios increases the complexity. Each scenario may require different setups and validations, which adds to the overall effort.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on the current state of the backlog and the active sprint, as well as how the UI interacts with these components. However, since this is focused on performance testing rather than functional testing, the integration challenges may be less severe than in other tasks.
+
+5. **Documentation and Deployment Effort**: While documentation for the tests themselves may be minimal, ensuring that the tests are integrated into the CI/CD pipeline and that they run effectively could require some additional effort.
+
+Considering all these factors, the task is moderately complex due to the multiple scenarios and components involved, but it does not reach the level of major architectural changes or complex integrations. Therefore, I would estimate this task at **5 story points**. 
+
+Story Points: **5**",gpt-4o-mini,4.101018190383911,0,1.0
+OPENAI-ZEROSHOT-033,As an Admin I want to create Writer accounts,,4,1.0,0.8,"To estimate the backlog item ""As an Admin I want to create Writer accounts,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves creating accounts for Writers, which typically includes user registration, role assignment, and possibly some initial setup for the account.
+
+2. **Components/Systems**: This task likely involves:
+   - User interface for the Admin to input Writer details.
+   - Backend logic to handle account creation, including validation and role assignment.
+   - Database changes to store Writer account information.
+   - Potential integration with authentication systems.
+
+3. **Testing Complexity**: Testing will involve:
+   - Verifying that the account creation process works as intended.
+   - Ensuring that the correct roles and permissions are assigned.
+   - Testing for edge cases (e.g., duplicate accounts, invalid input).
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing user management systems or authentication services, which could add complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed for the new functionality, including user guides for Admins. Deployment may require coordination with other teams if there are dependencies.
+
+Given this analysis, the task involves multiple components, moderate complexity, and some integration challenges. Therefore, it fits into the medium task category.
+
+**Story Points: 5**",gpt-4o-mini,3.8831002712249756,0,3.0
+OPENAI-ZEROSHOT-034,Add Atlassian Analytics events to GH,"All of the values below will need to be grouped by instance:    - how many instances are actually activated (measurement: for every instance with GH enabled, make sure we store first visit to an instance - most likely to be /secure/Dashboard.jspa, which is in JIRA)     - of these instances, how many find Rapid Boards (measurement: first visit to /secure/RapidStart.jspa in an instance) + how many of the ones without GH at first had them (this necessary to have the numbers right for the following points)   -- Event is ""gh.welcome.show""    - how many attempt to create a project? (measurement: opening of the dialogue to create a project)   -- Event: ""gh.welcome.create.project.start"" with type in ""label"" field    - how many create a project + how many create a project of each type (scrum, kanban, diy) + how many create sample/non-sample projects? (measurement: store project_created as an event, with type associated to it, as well as if it was a sample project).   -- Event: ""gh.welcome.create.project.sampleData"" with type in ""label"" field preceding the next event in case of simple data is used   -- Event: ""gh.welcome.create.project.complete"" with type in ""label"" field    - how many non-sample projects create a single issue (measurement: store issue_created event)   -- Event: ""gh.issue.created"" with keys array stringified in ""keys"" field    - of scrum non-sample users, how many create a sprint (measurement: sprint_created event)   -- Event: ""gh.rapidboard.sprint.backlog.addmarker""    - of scrum non-sample users, how many start a sprint (measurement: sprint_started event)   -- Event: ""gh.start.sprint.dialog.change.start"" when attempt to start the sprint   -- Event: ""gh.start.sprint.dialog.change.complete"" when they actually start it    +    - how many users use rapid boards exclusively, how many use a mix, how many use classic exclusively - the first and last is what we cannot determine at the moment (measurement: store requests to RapidBoard.jspa vs the other two classic boards, then count these per week grouping by instance). Note that this is actual usage grouped instance, as opposed to usage overall (so larger instances having more influence) or binary on/off ""has ever used a classic/rapid board""   -- Event: ""gh.rapidboard.show"" on view of rapid board   -- Event: ""gh.classic.show"" on view of classic board      From Jay:    - How many epics appear on a board   -- Event ""gh.rapidboard.epics"" with ""value"" field as count    - How many versions appear on a board   -- TBD    (!) Development Notes (!)    Q: What if 1 action triggers more than 1 event?  A: (/) It could and probably will - its up to the post-processing to effectively filter, order & group the events.",5,1.0,0.8,"Based on the provided backlog item and the analysis framework, here’s the breakdown:
+
+1. **Core Functionality**: The task involves adding multiple analytics events to track user interactions within the GH (presumably GitHub) and JIRA systems. This includes tracking various user actions, which requires careful planning and implementation.
+
+2. **Components/Systems Modified**: The implementation will likely affect both the front-end (where user interactions occur) and the back-end (where events are processed and stored). There are multiple events to be tracked, which means several components will need to be modified or created.
+
+3. **Testing Complexity**: Testing will be complex due to the need to ensure that all events are triggered correctly under various user scenarios. Additionally, the requirement to group data by instance adds another layer of complexity to the testing process.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing analytics infrastructure and potential integration challenges with JIRA and GH. Ensuring that events are logged correctly and that the data is accurately grouped by instance will require careful consideration.
+
+5. **Documentation and Deployment Effort**: Documentation will be necessary to outline the new events, their purposes, and how they should be used. Deployment may also require coordination with other teams to ensure that the analytics are integrated smoothly.
+
+Considering all these factors, the task is complex due to the number of events, the need for accurate tracking and grouping, and the integration with existing systems. Therefore, I would estimate this task at **13 story points**.",gpt-4o-mini,4.100011110305786,0,4.0
+OPENAI-ZEROSHOT-035,Display a invalid drop target icon on the version list when trying to assign story for a different project to a version,"Use the browser default cursor ""not allowed""",2,1.0,0.8,"To estimate the backlog item ""Display an invalid drop target icon on the version list when trying to assign a story for a different project to a version: Use the browser default cursor 'not allowed'"", let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves changing the UI to indicate that a drop action is not allowed. This includes displaying an icon and changing the cursor style.
+
+2. **Components/Systems Modified**: This task likely involves modifications to the front-end components responsible for the version list and the drag-and-drop functionality. Depending on the existing architecture, this could involve a single component or multiple components if the drag-and-drop logic is spread across different parts of the application.
+
+3. **Testing Complexity**: Testing will involve ensuring that the invalid drop target icon displays correctly under the right conditions and that the cursor changes as expected. This is relatively straightforward but will require testing across different browsers to ensure consistent behavior.
+
+4. **Integration Challenges/Dependencies**: There are no significant integration challenges or dependencies mentioned. The task seems to be self-contained within the UI layer.
+
+5. **Documentation and Deployment Effort**: The documentation effort will likely be minimal, as this is a UI change. Deployment should also be straightforward, assuming no major changes to the underlying architecture.
+
+Considering all these factors, the task involves a moderate level of complexity primarily focused on UI changes, with some testing required but no significant integration challenges. 
+
+Based on the analysis, I would estimate this task at **5 story points**.",gpt-4o-mini,3.7854201793670654,0,1.0
+OPENAI-ZEROSHOT-036,Swimlane by epic,"As Patrick, I want to use epics for swimlanes so I can see progress of each epic within a sprint more easily.  # Both stories and subtasks for the epics should display. # Only an option for Scrum boards # The swimlane presentation is similar to ""story task"" swimlane: Epic Name, possibly issue key # No detail view shown for epic; clicking on swimlane selects first issue in swimlane (same as Assignee) # Issues without epics shows at the bottom",3,1.0,0.8,"Based on the analysis of the backlog item ""Swimlane by epic,"" here’s the breakdown:
+
+1. **Core Functionality**: The primary functionality involves modifying the Scrum board to display swimlanes by epic, which requires changes to the UI and possibly backend logic to fetch and display the relevant data.
+
+2. **Components/Systems Modified**: This task likely involves:
+   - UI changes to implement the swimlane presentation.
+   - Backend modifications to support fetching and displaying epics and their associated stories/subtasks.
+   - Adjustments to how issues without epics are displayed.
+
+3. **Testing Complexity**: Testing will need to cover:
+   - The correct display of swimlanes for epics.
+   - Ensuring that stories and subtasks are displayed correctly under their respective epics.
+   - Verifying that the functionality works as intended without affecting existing features.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on how epics and stories are currently managed in the system. If there are existing features that interact with swimlanes or epics, those will need to be considered to avoid regressions.
+
+5. **Documentation and Deployment Effort**: Documentation will need to be updated to reflect the new functionality, and deployment may require coordination with other teams if there are dependencies.
+
+Considering the complexity of the task, the number of components involved, and the potential testing and integration challenges, I would estimate this task at **8 story points**. 
+
+**Story Points: 8**",gpt-4o-mini,3.9943039417266846,0,2.0
+OPENAI-ZEROSHOT-037,"As Patrick, I want the list of epics to reflect the current version filter","* When a version filter is active, the epics which are not part of that version (by way of issues) are shown as ""faded out""  ** These faded out epics will still be interactive (drag and drop, filter toggling)  * Epic numbers metadata may be updated when filtering is active  * If an epic filter is active, and then a version filter is activated which excludes that epic, the epic filter will revert back to ""All issues"" option  * If a version filter is active, and a epic filtered for a an epic which has no issues in the currently selected version is selected, both filters are active and no results are shown    (!) Development Notes (!)  Q: Are there still drop zones for faded epics?  A: (/) Yes    Q: Will the epic unfade immediately if an issue is added?  A: (/) Yes    Q: Will the epic fade immediately when an issue is removed from it?  A: (/) Yes    Q: What happens if a quickfilter filters out all issues that are part of an epic?  A: (/) There will be no impact on the fading of the epics    Q: What if the instant filter is used?  A: (/) There will be no impact on the fading of the epics    Q: What happens when you ""Create an issue in epic"" for a faded epic?  A: (/) If the created issue has the fix version of the version being filtered, the epic will be unfaded because now it contains an issue with the correct version    Q: What happens if you create a new epic with a version selected? Is it born faded?  A: (/) It will be fade-born yes    Q: Do all faded epics unfade if you click the funnel?  A: (/) Yes    Q: Can you still modify faded epics through their dropdowns?  A: (/) Yes    Q: For all the files being touched, which other dependencies might be affected by changes?  A: (/) No impact on other files/components",5,1.0,0.8,"Based on the provided backlog item and the analysis framework, here’s the breakdown:
+
+1. **Core Functionality**: The main functionality involves implementing a version filter that visually indicates which epics are relevant based on the current version. This includes fading out epics that do not contain issues for the selected version while maintaining interactivity.
+
+2. **Components/Systems Modified**: The task involves modifying the UI to reflect the faded state of epics, updating metadata, and ensuring that the filtering logic works correctly. This suggests multiple components are involved, including the UI, filtering logic, and possibly the backend to handle the state of epics.
+
+3. **Testing Complexity**: The testing complexity is moderate. It requires testing various scenarios, such as the interaction between version filters and epic filters, ensuring that the fading logic works correctly, and validating that the UI behaves as expected when issues are added or removed.
+
+4. **Integration Challenges/Dependencies**: There are no significant integration challenges or dependencies mentioned, which simplifies the estimation. The task appears to be self-contained without impacting other components.
+
+5. **Documentation and Deployment Effort**: The documentation effort should be minimal, focusing on the new functionality and any changes to existing documentation regarding filtering behavior.
+
+Considering these factors, the task involves moderate complexity with multiple components and requires careful testing but does not have significant integration challenges. Therefore, I would estimate this task at **5 story points**. 
+
+**Story Points: 5**",gpt-4o-mini,5.013988733291626,0,4.0
+OPENAI-ZEROSHOT-038,Add an issue to an Epic from JIRA when no other issues have been added to it yet,"As Patrick, I want to be able to add an issue to an empty epic when in JIRA so that I can fill it in easily.  Notes:  This can be achieved either via issue operation or always showing the existing ""issues in epic"" panel",1,1.0,0.8,"To estimate the story points for the backlog item ""Add an issue to an Epic from JIRA when no other issues have been added to it yet,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves allowing users to add an issue to an empty Epic in JIRA. This requires modifying the existing issue creation process and potentially the Epic management interface.
+
+2. **Components/Systems**: This task likely involves changes to the JIRA issue creation UI, the Epic management logic, and possibly the backend services that handle issue relationships. Given that it may involve both frontend and backend modifications, this adds complexity.
+
+3. **Testing Complexity**: Testing will need to cover various scenarios, including:
+   - Adding an issue to an empty Epic.
+   - Ensuring that the UI behaves correctly when no issues are present.
+   - Validating that the issue is correctly linked to the Epic in the database.
+   - Regression testing to ensure existing functionality is not broken.
+   This suggests a moderate level of testing complexity.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing JIRA APIs and how they handle issue linking. If there are any existing bugs or limitations in the current implementation, this could introduce additional complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed to explain the new functionality, and deployment should be straightforward if the changes are well-contained.
+
+Considering all these factors, the task involves moderate complexity with multiple components and a reasonable amount of testing and documentation effort. Therefore, I would estimate this task at **5 points**. 
+
+Story Points: **5**",gpt-4o-mini,3.895109176635742,0,0.0
+OPENAI-ZEROSHOT-039,"As Patrick, I want to be able to filter my backlog to a select few versions so I can see which stories will be included in them",,3,1.0,0.8,"To estimate the backlog item ""As Patrick, I want to be able to filter my backlog to a select few versions so I can see which stories will be included in them,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves implementing a filtering mechanism for the backlog based on selected versions. This requires UI changes to allow users to select versions and backend logic to filter the stories accordingly.
+
+2. **Components/Systems Modified**: 
+   - **Frontend**: UI changes to add filtering options.
+   - **Backend**: Logic to handle the filtering based on the selected versions.
+   - **Database**: Potentially, if the filtering requires changes to how data is queried or stored.
+
+3. **Testing Complexity**: Testing will involve ensuring that the filtering works correctly across different scenarios, including edge cases where no stories match the selected versions. This adds some complexity but is manageable.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing backlog management features and how versions are currently structured. However, it does not seem to involve complex integrations with external systems.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed to explain the new filtering feature, but this is not expected to be extensive. Deployment should be straightforward if the changes are well-contained.
+
+Considering these factors, the task involves moderate complexity due to the need for both frontend and backend changes, along with testing for various scenarios. Therefore, I would estimate this task as:
+
+**Story Points: 5**",gpt-4o-mini,4.7075278759002686,0,2.0
+OPENAI-ZEROSHOT-040,Display a trendline for version chart,"As Patrick, I want to see a trendline on the version chart so I can understand how the projection works.  A/C:  # display the trendline connecting projection to start of the version # if some stories have been removed from the version *after* they have been completed, then the line won't match the projection and that's fine. Otherwise the trendline is a straight line.",2,1.0,0.8,"To estimate the story points for the backlog item ""Display a trendline for version chart,"" let's analyze the requirements based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves displaying a trendline on a version chart based on the projection and completed stories. This requires calculations to determine the trendline based on the data available.
+
+2. **Components/Systems Modified**: This task likely involves modifications to the charting component, data retrieval logic, and possibly the backend to ensure that the necessary data is available for the trendline calculation. Depending on the existing architecture, this could involve multiple components.
+
+3. **Testing Complexity**: Testing will need to cover various scenarios, including cases where stories have been removed after completion and ensuring that the trendline behaves correctly in those cases. This adds complexity to the testing effort.
+
+4. **Integration Challenges/Dependencies**: If the trendline relies on data from other systems or components, there may be integration challenges. However, if the data is already available in the current system, this may be less of a concern.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed to explain the new feature and how it works, especially if it changes how users interact with the version chart. Deployment effort should be minimal unless there are significant changes to the underlying architecture.
+
+Considering all these factors, the task involves moderate complexity due to the need for calculations, potential modifications to multiple components, and thorough testing. Therefore, I would estimate this task at **5 story points**.",gpt-4o-mini,4.302145004272461,0,1.0
+OPENAI-ZEROSHOT-041,As a reviewer to be able to review articles and add comments,,3,1.0,0.8,"To estimate the backlog item ""As a reviewer to be able to review articles and add comments,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves allowing reviewers to review articles and add comments. This typically requires a user interface for displaying articles, a comment section, and possibly a backend service to handle comment storage and retrieval.
+
+2. **Components/Systems**: This task likely involves multiple components:
+   - Frontend changes to display articles and comments.
+   - Backend changes to manage comments (CRUD operations).
+   - Potential database changes to store comments.
+   - User authentication/authorization to ensure only reviewers can comment.
+
+3. **Testing Complexity**: Testing will involve:
+   - Verifying that comments can be added, edited, and deleted.
+   - Ensuring that the UI displays comments correctly.
+   - Testing user permissions to ensure only authorized users can comment.
+   - Potential integration testing between frontend and backend.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing article management systems and user authentication systems. If these systems are well-defined and stable, the integration complexity may be lower. However, if there are unknowns or potential changes in these systems, it could increase complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed for both the new functionality and any changes to existing systems. Deployment may involve coordinating with other teams if there are dependencies.
+
+Considering all these factors, the task involves multiple components, moderate complexity, and some integration challenges. Therefore, it fits into the medium task category.
+
+**Story Points: 5**",gpt-4o-mini,5.282462120056152,0,2.0
+OPENAI-ZEROSHOT-042,Autocomplete for Epic Link in JQL,"As Patrick, I want to be able to see autocomplete when querying Epic Link in JQL so that it's easy to write queries without making spelling mistakes.",3,1.0,0.8,"To estimate the story points for the backlog item ""Autocomplete for Epic Link in JQL,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The core functionality involves implementing an autocomplete feature for the Epic Link in JQL. This requires modifying the query interface to support autocomplete suggestions based on existing Epics.
+
+2. **Components/Systems Modified**: This task likely involves changes to the JQL query parser, the UI component that displays the autocomplete suggestions, and possibly the backend service that retrieves the Epic data. This indicates multiple components are involved.
+
+3. **Testing Complexity**: Testing will need to cover various scenarios, including:
+   - Correct suggestions based on existing Epics.
+   - Handling of edge cases (e.g., no matches, special characters).
+   - Performance testing to ensure the autocomplete feature does not slow down the query execution.
+   This adds to the complexity of the task.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on the existing data structure for Epics and how they are queried. If there are existing systems that rely on the current JQL implementation, this could introduce additional integration challenges.
+
+5. **Documentation and Deployment Effort**: Documentation will need to be updated to reflect the new functionality, and deployment may require coordination with other teams if there are dependencies.
+
+Considering all these factors, the task involves moderate complexity due to the multiple components affected, the need for thorough testing, and potential integration challenges. Therefore, I would estimate this task at **5 points**. 
+
+Story Points: **5**",gpt-4o-mini,3.86696720123291,0,2.0
+OPENAI-ZEROSHOT-043,Promote Release Planning out of labs,COS:  # Remove the advertisement from Getting Started page # Remove labs flags in code ,1,1.0,0.8,"To estimate the backlog item ""Promote Release Planning out of labs: COS: # Remove the advertisement from Getting Started page # Remove labs flags in code,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The task involves removing an advertisement and flags related to the ""labs"" feature. This suggests a change in the user interface and possibly some backend logic.
+
+2. **Components/Systems Modified**: 
+   - The ""Getting Started"" page (UI component).
+   - The codebase where the labs flags are implemented (potentially multiple files or modules).
+
+3. **Testing Complexity**: 
+   - Testing will involve ensuring that the advertisement is removed correctly and that the removal of flags does not break any existing functionality. This could require regression testing, especially if the flags are tied to other features.
+
+4. **Integration Challenges/Dependencies**: 
+   - There may be dependencies on other features that rely on the labs flags. Understanding these dependencies will be crucial to ensure nothing is inadvertently affected.
+
+5. **Documentation and Deployment Effort**: 
+   - Documentation updates may be needed to reflect the changes in the user interface and any related functionality. Deployment should be straightforward, but it will require coordination to ensure everything is aligned.
+
+Given this analysis, the task involves moderate complexity due to the need to modify both UI and backend code, along with the associated testing and documentation efforts. 
+
+Considering all factors, I would estimate this task at **5 story points**.",gpt-4o-mini,4.2620508670806885,0,0.0
+OPENAI-ZEROSHOT-044,ADG GH: Resizable Detail View,"- For this story, Plan Mode only - Idea is that we have a draggable left side for when people need more space, similar to other products (e.g. Confluence). - This drag would be remembered per client (local storage) in terms of percentage of window size - Consider what happens when DV is dragged too far - do other columns collapse or resize - Consider whether we do two-line issue representation for backlog column  Testing notes below",5,1.0,0.8,"Based on the analysis of the backlog item ""ADG GH: Resizable Detail View,"" here’s the breakdown:
+
+1. **Core Functionality**: The main functionality involves implementing a resizable detail view with a draggable left side. This requires handling user interactions and storing preferences in local storage.
+
+2. **Components/Systems Modified**: This feature will likely involve modifications to the UI components for the detail view, as well as potentially affecting the layout of other columns. The interaction logic for dragging and resizing will also need to be implemented.
+
+3. **Testing Complexity**: Testing will involve ensuring that the drag-and-drop functionality works correctly across different scenarios, including edge cases (e.g., dragging too far). Additionally, testing will need to confirm that the state is correctly saved in local storage and that the UI behaves as expected when resized.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing UI frameworks or libraries for drag-and-drop functionality. If the detail view interacts with other components, those integrations will need to be considered.
+
+5. **Documentation and Deployment Effort**: Documentation will be required to explain the new feature and any changes to existing functionality. Deployment should be straightforward but will require coordination to ensure that the new feature does not disrupt existing workflows.
+
+Considering the above factors, the task involves moderate complexity due to the need for multiple components to be modified, the drag-and-drop functionality, and the associated testing requirements. Therefore, I would estimate this backlog item at **5 story points**.",gpt-4o-mini,3.482311964035034,0,4.0
+OPENAI-ZEROSHOT-045,Gather information about potential sprint conflicts,What we want to get out of it:    - 1 for having gh  - amount of rapid boards  - amount of kanban boards  - amount of scrum boards    - amount of sprints  - amount of issues in scrum boards    - amount of issues which belong to multiple sprints  - amount of sprints which contain said issues  - 1 if this instance had problem,3,1.0,0.8,"Based on the provided backlog item and the analysis framework, here's the breakdown:
+
+1. **Core Functionality**: The task involves gathering information about sprint conflicts, which requires querying multiple data points (e.g., rapid boards, kanban boards, scrum boards, sprints, issues). This indicates a need for data aggregation and analysis.
+
+2. **Components/Systems**: The task likely involves interacting with multiple components of the project management system (e.g., boards, sprints, issues). This suggests a moderate level of complexity due to the number of different data sources.
+
+3. **Testing Complexity**: Testing will involve verifying that the data gathered is accurate and that the logic for determining conflicts is correct. This adds some complexity, but it is manageable.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on the existing data structures and APIs of the project management tool being used. If there are no major changes to the underlying systems, this should be straightforward.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed to explain how the information is gathered and how to interpret it, but this is not expected to be extensive.
+
+Considering these factors, the task appears to be moderately complex due to the need to gather and analyze multiple data points, but it does not involve major architectural changes or complex integrations.
+
+**Final Estimate**: 5 points.",gpt-4o-mini,3.8552889823913574,0,2.0
+OPENAI-ZEROSHOT-046,Expose GH defaults as an API,"Currently other plugins can't access GH defaults such as Epic Issue Type or default custom field ids, and as a result can't do stuff where this is information is needed.    Add a new API that exposes this information to be consumable in java",2,1.0,0.8,"To estimate the backlog item ""Expose GH defaults as an API,"" let's analyze it based on the provided framework:
+
+1. **Core Functionality**: The task involves creating a new API that exposes certain defaults (like Epic Issue Type and custom field IDs) from the GH (presumably GitHub or a similar system). This is a new feature that will allow other plugins to access this information.
+
+2. **Components/Systems Modified**: This task likely requires modifications to the existing API layer to add the new endpoints. It may also involve changes to the data retrieval logic to ensure the defaults are correctly fetched and returned.
+
+3. **Testing Complexity**: Testing will involve ensuring that the new API behaves as expected, including validating the data returned and ensuring it integrates well with existing systems. There may also be a need for unit tests and integration tests, which adds to the complexity.
+
+4. **Integration Challenges/Dependencies**: There could be dependencies on existing data structures and how they are accessed. If other plugins are already using the current API, there may be considerations for backward compatibility or ensuring that the new API does not disrupt existing functionality.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed to explain how to use the new API, including examples and potential edge cases. Deployment may involve coordinating with other teams or systems that rely on the API.
+
+Considering all these factors, the task involves moderate complexity due to the need for new API development, testing, and potential integration challenges. It does not seem to reach the level of very complex tasks (13 points) since it does not involve major architectural changes or significant system integrations.
+
+Based on this analysis, I would estimate this task at **5 story points**.",gpt-4o-mini,4.152008056640625,0,1.0
+OPENAI-ZEROSHOT-047,GH code fixes required for latest 6.0-breakit version,"In 6.0-breakit-SNAPSHOT since Jan 3rd, last unaffected version is 6.0-m04, ActionUtil, ActionNames, possibly ActionDispatcher and other related code has been removed.    GreenHopper uses this code in classic board fields to update field values, e.g. set the assignee, component, version etc.    To fix it, we'll have to replace all update code to use proper JIRA api. See the deprecated messages in ActionNames on what to replace the code with.",5,1.0,0.8,"Based on the provided backlog item and the analysis framework, here's the breakdown:
+
+1. **Core Functionality**: The task involves replacing deprecated code with the proper JIRA API calls. This requires understanding the existing codebase and how the deprecated methods were used in the context of the GreenHopper classic board fields.
+
+2. **Components/Systems to Modify**: The task mentions multiple components, including ActionUtil, ActionNames, and possibly ActionDispatcher. Each of these components will need to be reviewed and modified to ensure they correctly utilize the new API.
+
+3. **Testing Complexity**: Testing will be complex as it involves ensuring that the new API calls work correctly in all scenarios where the old code was used. This includes verifying that all field updates (assignee, component, version, etc.) function as expected in the classic board.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on other parts of the system that interact with these components. Additionally, if there are other features relying on the old code, those will need to be identified and tested as well.
+
+5. **Documentation and Deployment Effort**: Documentation will need to be updated to reflect the changes made to the codebase, and deployment will require careful planning to ensure that the new API calls do not disrupt existing functionality.
+
+Considering all these factors, the task involves significant complexity due to the need to modify multiple components, ensure thorough testing, and manage potential integration challenges. Therefore, I would estimate this task at **13 story points**.",gpt-4o-mini,4.792500019073486,0,4.0
+OPENAI-ZEROSHOT-048,"As a user, I want to be able to create a GH board straight from the JIRA create project dialog so it's easier for me","This is about plugging into the plugin point exposed by JIRA and  - specify the title - hijack the project post creation and redirect to GH - separate buttons for Scrum + Kanban - Simplified workflow by default without option to select  (!) Development Notes (!)  Q: Is there differing implementation between btf and OD that we need to consider? Application permissions? A: (/) I don't believe there should be any, these would relate to installation of GH when it's not present and will be dealt with in subsequent stories  Q: What board configuration do we allow from this dialog? A: (/) This story only covers the minimum - the user will be able to specify project name, key and project lead (all of that provided by JIRA already), and we need to create a board for that project, assuming simplified workflow  Q: What happens to our old create project+board dialog? A: (/) Nothing ",5,1.0,0.8,"Based on the analysis of the backlog item, here’s the breakdown:
+
+1. **Core Functionality**: The primary functionality involves creating a GitHub (GH) board directly from the JIRA project creation dialog. This requires integration with JIRA's plugin point and redirecting users post-creation.
+
+2. **Components/Systems**: The task involves modifying the JIRA project creation dialog and integrating it with GitHub. There are separate buttons for Scrum and Kanban, which adds some complexity.
+
+3. **Testing Complexity**: Testing will need to cover the integration with GitHub, ensuring that the board is created correctly, and that the simplified workflow is applied. This could involve multiple test cases, especially if there are edge cases related to project creation.
+
+4. **Integration Challenges/Dependencies**: There are potential integration challenges with GitHub, especially if there are any differences in how the boards are created or configured. However, the notes suggest that permissions and installation issues will be handled in subsequent stories, which simplifies the current scope.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed to explain the new functionality, but since it’s a straightforward integration, the effort should be moderate.
+
+Considering all these factors, the task has a moderate level of complexity due to the integration with GitHub and the need for testing across different scenarios. Therefore, I would estimate this backlog item at **8 story points**.",gpt-4o-mini,4.096071004867554,0,4.0
+OPENAI-ZEROSHOT-049,"As Patrick, I want to see list of versions when I'm looking at the backlog","Considered versions: - versions which are BOTH: -- part of projects included in the board, AND -- unreleased -- not archived  Ordering: - version sequence for versions within the same project (oldest first) - overall projects are ordered by project name  Display: - version name along with project key (name on mouse hover) -- version name wraps around project key, if one or both are long - if the board only has one project, omit project name  If there are no release versions you get an empty column. In the filters story we'll add an ""all releases"" button so it doesn't look so empty.  (!) Development Notes (!)  Q: What if there are duplicate version names? A: They look the same.   Q: What if the version names are long? A: They wrap.   Q: What if a version has been renamed / deleted in the system? A: It doesn't show up (archived versions dont' show up).  Q: When reordering versions, are they bound to their container? A: The order can't be changed on this page.   Q: What can I edit about the versions? A: Nothing. Nada. Rien. Nope.  Q: What does the detail view display if a version is selected but no issues are selected? A: There is no selection of a version yet, that's part of the filter story.   Q: What if the fixVersions field doesn't exist? A: (x) Not Answered  Q: Is there a way to select another version field to be displayed here? A: (x) Not Answered  Q: What if the version is ""Archived"" in JIRA? A: It isn't included in the list. ",5,1.0,0.8,"Based on the analysis of the backlog item, here’s the breakdown:
+
+1. **Core Functionality**: The main functionality is to display a list of unreleased and non-archived versions associated with projects on the backlog. This involves filtering, ordering, and displaying data in a user-friendly manner.
+
+2. **Components/Systems**: The task likely involves modifications to the UI component that displays the backlog, as well as backend changes to fetch and filter the relevant version data. This could involve interaction with the database or API to retrieve the version information.
+
+3. **Testing Complexity**: Testing will need to cover various scenarios, including:
+   - Correct filtering of versions based on the specified criteria (unreleased, not archived).
+   - Proper ordering of versions and projects.
+   - Handling of edge cases like long version names and duplicate names.
+   - Ensuring that the UI behaves correctly when there are no versions to display.
+   - Validating that the detail view behaves as expected.
+
+4. **Integration Challenges/Dependencies**: There may be dependencies on existing project data and how versions are managed within the system. If there are changes to the data model or API, this could introduce additional complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will be needed to explain the new functionality and any changes to existing features. Deployment effort should be minimal if the changes are contained within the existing backlog UI.
+
+Considering all these factors, the task involves moderate complexity due to the need for filtering, ordering, and displaying data correctly, along with the associated testing requirements. Therefore, I would estimate this task at **5 story points**. 
+
+Story Points: **5**",gpt-4o-mini,5.557343006134033,0,4.0
+OPENAI-ZEROSHOT-050,Wizard-like Create Board dialog,"As Patrick, I want to be guided when creating a board so I don't get lost in the process.    CoS:    - The dialog consists of three parts:  -- Board type (Scrum, Kanban)  -- Project/Filter (create new project, choose existing, specify saved filter)  -- leftovers: sample data on/off, workflow (JIRA vs GH Simplified)  - this dialog replaces the existing ones present in:  -- create new scrum board  -- create new kanban board  -- create new DIY board  -- the dialog available from the cog menu (incl Manage Boards)  - the ""DIY"" option is removed from the ""Getting Started"" screen as it is effectively obsolete  - if Scrum or Kanban mode is chosen from the ""Getting Started"" screen, then the wizard should start at step 2 (i.e. we already know if it's scrum or kanban)  - the text inviting you to create new project or choose existing on ""Getting Started"" needs rewording so it simply opens the dialog -- remove the two ""1"" and ""2"" things and replace with just ""1"".  - the link to create a sample project should be rewired to use the new wizard and take you directly to creating the project with sample data and workflow options already selected.    (!) Dev Notes (!)    Q: What if there are no existing projects to select?  A: Skip the step to choose and go straight to create new project    Q: What if there are no filters to select from?  A: No option to choose to create from a filter    Q: What if the user has no permissions to create a project?  A: menu link or button disabled; getting started text changes and does not show option to create    Q: For OnDemand, what if the user doesn't have all application permissions to create a project?  A: menu link or button disabled; getting started text changes and does not show option to create    Q: What if there is a large number of existing projects?  A: Drop down is really long    Q: What if there are a large number of filters?  A: Drop down is really long    Q: What if the user does not have permission to see some/all filters?  A: They won't appear in the list    Q: Are selections persisted between board creations?  A: No    Q: Does scrolling through all the panes persist selections?  A: Back / Next through pages should persist selections    Q: Is there proper XSS escaping for filters and projects?  A: Yes    Q: What if the window is resized?  A: Dialog stays the same size    Q: Does the create button disable/spinner after pressed?  A: There is a spinner.    Q: What happens if the operation is cancelled after the create button is pressed?  A: Within the process the dialog just goes away and no board is created. After the final button is pressed the page will reload and go to board, no cancel button.     Q: Has this been checked from plan, work, and report? Manage Boards, Board Configuration, and Getting Started all the same?  A: Link will be in menu for Manage Boards, Plan, Work and Report.     Q: Will the dialog not render properly in some browsers?  A: No, it will always be beautiful.   A2: In JIRA 5.1, 5.2 the dialog has some differences as expected.",8,1.0,0.8,"Based on the provided backlog item and the analysis framework, here’s the breakdown:
+
+1. **Core Functionality**: The main functionality is the creation of a wizard-like dialog for board creation, which involves multiple steps and options. This includes handling different board types (Scrum, Kanban), project selection, and workflow options.
+
+2. **Components/Systems Modified**: The dialog replaces existing functionalities for creating Scrum, Kanban, and DIY boards. It also involves changes to the ""Getting Started"" screen and links to sample projects. This indicates multiple components are affected.
+
+3. **Testing Complexity**: The testing complexity is high due to various scenarios outlined (e.g., no existing projects, permissions issues, handling large dropdowns, XSS escaping). Each scenario requires thorough testing to ensure the dialog behaves correctly under different conditions.
+
+4. **Integration Challenges/Dependencies**: There are dependencies on existing project and filter data, as well as integration with the menu and other screens. The need to ensure consistent behavior across different areas (Manage Boards, Plan, Work, Report) adds to the complexity.
+
+5. **Documentation and Deployment Effort**: Documentation will need to be updated to reflect the new dialog and its functionality. Deployment may also require careful coordination to ensure that all components are updated simultaneously.
+
+Considering all these factors, the task involves significant complexity and multiple components, but it does not reach the level of an epic or major architectural change. Therefore, I would estimate this task at **13 story points**.",gpt-4o-mini,4.679245710372925,0,7.0

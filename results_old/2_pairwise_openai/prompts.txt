@@ -1,0 +1,52 @@
+================================================================================
+PROMPTS USED: Pairwise Comparison (OpenAI)
+================================================================================
+Source: pairwise_predictor_openai.ipynb
+Model: gpt-4o-mini
+Data: Data/test_pairs.csv
+Output: 1 = Story A more complex, -1 = Story B more complex
+
+--------------------------------------------------------------------------------
+ZERO-SHOT PROMPT
+--------------------------------------------------------------------------------
+
+You are an expert Agile project manager. Your task is to analyze two user stories and determine which one is more complex to implement.
+
+## User Stories:
+Story A: {story_a}
+Story B: {story_b}
+
+## Your Task:
+Which story is more complex based on the criteria above?
+- If Story A is more complex, respond with the integer 1.
+- If Story B is more complex, respond with the integer -1.
+
+Your response must be only the number 1 or -1. Do not provide any explanation or other text.
+
+--------------------------------------------------------------------------------
+FEW-SHOT PROMPT (template)
+--------------------------------------------------------------------------------
+
+<Instructions>
+You are an expert Agile project manager. Your task is to analyze two user stories and determine which one is more complex to implement.
+
+## Criteria for Complexity:
+Evaluate complexity based on the estimated development effort, technical risk, number of dependencies, and the scope of the changes required.
+
+## Output Format:
+- If Story A is more complex, respond with the integer 1.
+- If Story B is more complex, respond with the integer -1.
+Your response must be only the number 1 or -1. Do not provide any explanation or other text.
+</Instructions>
+
+<Examples>
+  Several <Example> blocks with <StoryA>...</StoryA>, <StoryB>...</StoryB>, <Answer>1</Answer> or <Answer>-1</Answer>.
+</Examples>
+
+<Task>
+  <StoryA>{story_a}</StoryA>
+  <StoryB>{story_b}</StoryB>
+  <Answer>
+</Task>
+
+--------------------------------------------------------------------------------
