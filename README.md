@@ -2,7 +2,7 @@
 
 This repository contains the data and code for the paper "Story Point Estimation with LLMs".
 
-## Repository Structure (New)
+## Repository Structure
 
 The repository has been restructured to align with the research questions (RQ1-RQ4) from the paper.
 
@@ -22,7 +22,7 @@ The `results/` directory is now organized by Research Question and technique:
 
 ### Models
 
-*   Gemini
+*   Gemini Flash Lite
 *   OpenAI (GPT-4o/3.5)
 *   Kimi (Moonshot)
 *   DeepSeek
