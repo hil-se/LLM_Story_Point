@@ -1,6 +1,0 @@
-issuekey,title,description,storypoint,split_mark
-USERGRID-601,Test Usergrid Central SSO,,3,train
-USERGRID-678,ElasticSearch Type Mapping has _all in wrong place,_all should be moved to a child of 'entity',1,train
-USERGRID-1035,Fix NoAwsCreds rule to work outside of core. ,The no aws creds rule call doesn't work outside of core. It fails in service and rest when using the one based in core. ,2,test
-USERGRID-400,Implement read interfaces,,5,train
-USERGRID-881,Remove Fields and Map to Entity Conversions from Core,we convert from a map to entity and back 2 - 3 times for every read and write.  We should remove these type conversions,8,val

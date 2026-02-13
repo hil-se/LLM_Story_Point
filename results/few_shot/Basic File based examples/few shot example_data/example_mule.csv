@@ -1,6 +1,0 @@
-issuekey,title,description,storypoint,split_mark
-MULE-6367,FTP Inbound endpoint fails when reading empty file,Put an empty file into FTP inbound path,5,train
-MULE-7896,maven bundle local repository generation,Add description,8,train
-MULE-7811,Clean up opensource AMQP connector,"Old AMQP transport should be clean up, current issues fixed, current pull requests merged/refused.",13,train
-MULE-7845,Basic functionality for new HTTP Connector - Outbound part,We need to implement the basic functionaility for doing http request calls.  This includes:   - http request global config   - http request operation   - http request builder   - http request basic authentication and digest authenticaton   - message mapping form Mule Message to HTTP request   - message mapping from HTTP response to Mule Message,21,train
-MULE-7031,Add getObjectStoreManager() in MuleContext,Add a method in the MuleContext for easy access to the ObjectStoreManager,1,train

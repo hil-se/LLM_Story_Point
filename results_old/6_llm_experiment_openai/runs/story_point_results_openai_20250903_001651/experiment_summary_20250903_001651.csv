@@ -1,2 +1,0 @@
-project_name,experiment_timestamp,model_used,test_samples_count,zero_shot_pearson,zero_shot_spearman,few_shot_pearson,few_shot_spearman
-jirasoftware_filtered,2025-09-03T00:16:51.727660,gpt-4o-mini,50,0.3419277207701472,0.4428583969101795,0.39164826254842156,0.4322720494901713

@@ -1,6 +1,0 @@
-issuekey,title,description,storypoint,split_mark
-BAM-4923,The contact administrators link should not be available is the setup footer,,1,train
-BAM-3695,Bamboo Specfic Functional Tests for SAL Intefaces,All the CTK testing plugin does is generic testing that the interfaces return something.   We need to write some Bamboo specific tests which ensure Bamboo is actually doing the right thing underneath those SAL calls.    ,3,train
-BAM-7437,Git repo should use shallow clones instead of full clones.,"Currently we use full clones during:  * collecting changes, on bamboo server  * code retrieval, on agents, during performing build    In both cases we don't need the whole history, so if it is possible we should do shallow clones.     Shallow clones are not implemented in JGit yet.    Also - both server and agents should be able to fetch afterwards properly. Corner test case:  * detecting new rev A -> add to queue  * detecting new rev B (grandchild of A) -> add to queue (concurrent builds are on)  * agent -> takes rev B, does shallow clone on it (so it won't have rev A)  * agent -> takes rev A, does fetch - in such case agent should somehow obtain rev A",5,train
-BAM-3681,Reproduce BAM-3643 - Extreme CPU spike on BEAC,We have little idea what this could be and have not had much success repro'ing it.,12,train
-BAM-4534,Spike: Concurrent chains running,,20,train

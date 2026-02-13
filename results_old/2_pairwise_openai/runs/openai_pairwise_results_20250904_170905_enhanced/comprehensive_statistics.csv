@@ -1,3 +1,0 @@
-model,method,sample_size,accuracy,macro_precision,macro_recall,macro_f1,weighted_precision,weighted_recall,weighted_f1,precision_story_a_more,precision_equal,precision_story_b_more,recall_story_a_more,recall_equal,recall_story_b_more,f1_story_a_more,f1_equal,f1_story_b_more
-openai,zero_shot,20,0.45,0.3125,0.5925925925925926,0.40888888888888886,0.246875,0.45,0.3186666666666667,0.4375,0.5,0.0,0.7777777777777778,1.0,0.0,0.56,0.6666666666666666,0.0
-openai,few_shot,20,0.7,0.47222222222222215,0.5185185185185185,0.48926237161531283,0.6375,0.7,0.6605042016806723,0.6666666666666666,0.0,0.75,0.8888888888888888,0.0,0.6666666666666666,0.7619047619047619,0.0,0.7058823529411765
