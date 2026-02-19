@@ -1,0 +1,71 @@
+Few-Shot Story Point Prediction Statistics:
+==================================================
+Total rows: 2251
+(Examples excluded from statistics)
+
+Item A Statistics:
+  Valid predictions: 2251
+  Accuracy (exact match): 0.2723
+  MAE: 3.1919
+  RMSE: 5.1987
+  Pearson: 0.2979
+  Spearman: 0.2633
+
+Item B Statistics:
+  Valid predictions: 2251
+  Accuracy (exact match): 0.2692
+  MAE: 3.2017
+  RMSE: 5.2148
+  Pearson: 0.2823
+  Spearman: 0.2637
+
+Aggregate Statistics (A + B):
+  Valid predictions: 4502
+  Accuracy (exact match): 0.2708
+  MAE: 3.1968
+  RMSE: 5.2068
+  Pearson: 0.2900
+  Spearman: 0.2635
+  Predicted mean: 4.4971 (std: 1.3128)
+  Ground truth mean: 6.3159 (std: 5.0956)
+
+Confusion Matrix (rows=actual, cols=predicted):
+  Labels: [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 10.0, 12.0, 13.0, 15.0, 17.0, 19.0, 20.0, 21.0, 30.0, 33.0, 34.0]
+  [[  4  13 155   0 140   0   0   8   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  2  15 141   0 180   0   0  12   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  5  12 339   0 535   0   0  27   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   4   0   8   0   0   2   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   4 527   0 814   0   0  63   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   2   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   4   0   6   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  1   4 206   0 542   0   0  47   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   3   0   7   0   0   2   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   1   0   3   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0  47   0 278   0   0  53   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   2   0  33   0   0   5   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   0   0  26   0   0   2   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   1   2   0   9   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   2   0  18   0   0   4   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0  11   0  95   0   0  40   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   0   0   2   0   0   2   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   0   0   2   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0]
+ [  0   0   1   0  19   0   0   8   0   0   0   0   0   0   0   0   0   0
+    0]]

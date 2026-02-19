@@ -1,0 +1,41 @@
+Few-Shot Story Point Prediction Statistics:
+==================================================
+Total rows: 889
+(Examples excluded from statistics)
+
+Item A Statistics:
+  Valid predictions: 889
+  Accuracy (exact match): 0.2475
+  MAE: 2.4882
+  RMSE: 3.5529
+  Pearson: 0.3175
+  Spearman: 0.3471
+
+Item B Statistics:
+  Valid predictions: 889
+  Accuracy (exact match): 0.2418
+  MAE: 2.5017
+  RMSE: 3.5674
+  Pearson: 0.3236
+  Spearman: 0.3560
+
+Aggregate Statistics (A + B):
+  Valid predictions: 1778
+  Accuracy (exact match): 0.2447
+  MAE: 2.4949
+  RMSE: 3.5602
+  Pearson: 0.3204
+  Spearman: 0.3514
+  Predicted mean: 3.8155 (std: 1.4456)
+  Ground truth mean: 5.0810 (std: 3.4971)
+
+Confusion Matrix (rows=actual, cols=predicted):
+  Labels: [1.0, 2.0, 3.0, 4.0, 5.0, 8.0, 13.0, 21.0]
+  [[ 10  60 186   0  59   3   0   0]
+ [  0  13  67   0  27   1   0   0]
+ [  0  27 224   0  58  11   0   0]
+ [  0   0   3   0   1   0   0   0]
+ [  3  22 262   0 153  26   0   0]
+ [  2   7 177   0 229  33   0   0]
+ [  0   0  44   0  45   7   2   0]
+ [  0   3   2   0   4   7   0   0]]

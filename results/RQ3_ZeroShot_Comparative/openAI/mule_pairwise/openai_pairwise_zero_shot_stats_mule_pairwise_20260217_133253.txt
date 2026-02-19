@@ -1,0 +1,17 @@
+Zero-Shot Pairwise Evaluation Statistics:
+==================================================
+Count: 838
+Accuracy (Acc(C_ij, Y_ij) = |C_ij = Y_ij| / n): 0.6074 (509/838)
+Precision: 0.5936
+Recall: 0.6691
+F1 Score: 0.6291
+MAE: 0.7852
+RMSE: 1.2532
+Pearson: 0.2170
+Spearman: 0.2170
+Predicted mean: 0.1217
+Actual mean: -0.0048
+
+Confusion Matrix:
+[[230 191]
+ [138 279]]
