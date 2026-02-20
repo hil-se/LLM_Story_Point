@@ -1,0 +1,16 @@
+Few-Shot Evaluation Statistics:
+==================================================
+Count: 1675
+MAE: 1.5558
+RMSE: 2.3306
+Pearson: 0.4128
+Spearman: 0.4422
+Predicted mean: 3.5504
+Actual mean: 3.0836
+
+==================================================
+Source dataset: mesos
+Model: gpt-5-nano-2025-08-07
+Model: gpt-5-nano-2025-08-07
+Total rows in dataset: 1675
+Few-shot examples used: 5

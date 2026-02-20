@@ -1,0 +1,16 @@
+Few-Shot Evaluation Statistics:
+==================================================
+Count: 883
+MAE: 4.1110
+RMSE: 5.4909
+Pearson: 0.3738
+Spearman: 0.3999
+Predicted mean: 8.4768
+Actual mean: 5.0521
+
+==================================================
+Source dataset: mule
+Model: gemini-2.5-flash-lite
+Approach: Few-shot (examples from Data/example_data/example_mule.csv)
+Total rows in dataset: 883
+Few-shot examples used: 5

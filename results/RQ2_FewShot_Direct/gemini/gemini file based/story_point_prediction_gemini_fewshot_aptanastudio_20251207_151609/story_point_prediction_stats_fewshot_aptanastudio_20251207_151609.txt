@@ -1,0 +1,16 @@
+Few-Shot Evaluation Statistics:
+==================================================
+Count: 821
+MAE: 3.6590
+RMSE: 5.6476
+Pearson: 0.3437
+Spearman: 0.3805
+Predicted mean: 7.3350
+Actual mean: 7.9756
+
+==================================================
+Source dataset: aptanastudio
+Model: gemini-2.5-flash-lite
+Approach: Few-shot (examples from Data/example_data/example_aptanastudio.csv)
+Total rows in dataset: 821
+Few-shot examples used: 5
