@@ -1,0 +1,16 @@
+Few-Shot Evaluation Statistics:
+==================================================
+Count: 2251
+MAE: 3.9449
+RMSE: 12.1386
+Pearson: 0.1636
+Spearman: 0.3373
+Predicted mean: 7.5313
+Actual mean: 6.3159
+
+==================================================
+Source dataset: titanium
+Model: gpt-5-nano-2025-08-07
+Approach: Few-shot (examples from Data/FewShotExamples.csv)
+Total rows in dataset: 2251
+Few-shot examples used: 5

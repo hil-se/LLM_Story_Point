@@ -1,0 +1,16 @@
+Few-Shot Evaluation Statistics:
+==================================================
+Count: 383
+MAE: 7.8642
+RMSE: 10.7383
+Pearson: 0.3660
+Spearman: 0.4262
+Predicted mean: 11.2480
+Actual mean: 4.5535
+
+==================================================
+Source dataset: clover
+Model: gemini-2.5-flash-lite
+Approach: Few-shot (examples from Data/FewShotExamples.csv)
+Total rows in dataset: 383
+Few-shot examples used: 5

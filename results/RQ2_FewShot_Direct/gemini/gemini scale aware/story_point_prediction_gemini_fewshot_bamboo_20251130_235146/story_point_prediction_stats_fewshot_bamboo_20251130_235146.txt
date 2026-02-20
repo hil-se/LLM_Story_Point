@@ -1,0 +1,16 @@
+Few-Shot Evaluation Statistics:
+==================================================
+Count: 520
+MAE: 5.7942
+RMSE: 7.2773
+Pearson: 0.1139
+Spearman: 0.1943
+Predicted mean: 7.9808
+Actual mean: 2.4212
+
+==================================================
+Source dataset: bamboo
+Model: gemini-2.5-flash-lite
+Approach: Few-shot (examples from Data/FewShotExamples.csv)
+Total rows in dataset: 520
+Few-shot examples used: 5
