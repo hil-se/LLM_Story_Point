@@ -1,0 +1,25 @@
+Few-Shot Pairwise Evaluation Statistics:
+==================================================
+Count: 868
+Accuracy: 0.5357
+Precision: 0.8081
+Recall: 0.1724
+F1: 0.2842
+Macro F1: 0.4703
+Cohen Kappa: 0.1185
+Mcc: 0.1967
+Pearson: 0.1967
+Spearman: 0.1967
+
+Confusion Matrix:
+  [[80 19]
+   [384 385]]
+
+==================================================
+Source dataset: talendesb_pairwise
+Model: gemini-flash-lite-latest
+Approach: Few-shot (5 examples)
+Total rows in original dataset: 868
+Excluded pairs (from examples): 0
+Rows after exclusion: 868
+Valid predictions: 868

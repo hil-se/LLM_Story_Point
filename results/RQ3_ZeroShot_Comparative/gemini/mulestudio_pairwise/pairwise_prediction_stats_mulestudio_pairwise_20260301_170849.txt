@@ -1,0 +1,25 @@
+Few-Shot Pairwise Evaluation Statistics:
+==================================================
+Count: 732
+Accuracy: 0.5615
+Precision: 0.5930
+Recall: 0.3296
+F1: 0.4237
+Macro F1: 0.5349
+Cohen Kappa: 0.1141
+Mcc: 0.1270
+Pearson: 0.1270
+Spearman: 0.1270
+
+Confusion Matrix:
+  [[118 81]
+   [240 293]]
+
+==================================================
+Source dataset: mulestudio_pairwise
+Model: gemini-flash-lite-latest
+Approach: Few-shot (5 examples)
+Total rows in original dataset: 732
+Excluded pairs (from examples): 0
+Rows after exclusion: 732
+Valid predictions: 732
