@@ -1,53 +1,60 @@
-# LLM Story Point Estimation
+# Story Point Estimation with LLMs
 
-This repository contains the data and code for the paper "Story Point Estimation with LLMs".
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This repository contains the replication package, datasets, and analysis scripts for the research paper: **"Story Point Estimation with LLMs"**.
+
+In this study, we empirically evaluate the capabilities of four leading Large Language Models (LLMs) in automating story point estimation across 16 real-world agile software projects. We investigate their performance across four different prompting setups: zero-shot direct estimation, few-shot direct estimation, zero-shot comparative estimation, and few-shot comparative estimation.
+
+## Models Evaluated
+
+Our evaluation includes four state-of-the-art models accessed via their respective APIs:
+- **DeepSeek-R1**: An advanced reasoning model utilizing reinforcement learning and a Mixture-of-Experts architecture.
+- **Kimi / Moonshot K2** (`moonshotai/kimi-k2-instruct-0905`): A model renowned for rigorous instruction-following and long-context capabilities.
+- **OpenAI** (`gpt-5-nano`): A highly efficient model designed for rapid interaction and extensive context processing.
+- **Gemini Flash Lite** (`gemini-2.5-flash-lite`): A lightweight model built for high-speed inference with a massive context window.
 
 ## Repository Structure
 
-The repository has been restructured to align with the research questions (RQ1-RQ4) from the paper.
+The repository is organized to map directly to the four Research Questions (RQs) posed in the paper. 
 
-### Data Organization
+```text
+LLM_Story_Point/
+├── README.md                           # This file
+├── Story_point_estimation_with_LLMs/   # LaTeX source code for the research paper
+├── data/                               # Original raw project datasets
+└── results/                            # Main experimental results
+    ├── RQ1_ZeroShot_Direct/
+    ├── RQ2_FewShot_Direct/
+    ├── RQ3_ZeroShot_Comparative/
+    └── RQ4_FewShot_Comparative/
+```
 
-The `results/` directory is now organized by Research Question and technique:
+## Experimental Results & Data Formats
 
-*   **RQ1: Zero-Shot Direct Prediction**
-    *   `results/RQ1_ZeroShot_Direct/{model}/`
-*   **RQ2: Few-Shot Direct Prediction**
-    *   `results/RQ2_FewShot_Direct/{model}/`
-    *   *Note:* DeepSeek has `standard` and `scale_aware` subdirectories. OpenAI has `file_based` and `common_examples`.
-*   **RQ3: Zero-Shot Comparative**
-    *   `results/RQ3_ZeroShot_Comparative/{model}/`
-*   **RQ4: Few-Shot Comparative**
-    *   `results/RQ4_FewShot_Comparative/{model}/`
+The experimental outputs are cleanly partitioned into four directories corresponding to the evaluation strategies. Inside each directory, results are grouped by the model. 
 
-### Models
+### RQ1: Zero-Shot Direct Prediction
+Evaluating the LLMs' inherent zero-shot capability to predict functional story points.
+- **Path:** `results/RQ1_ZeroShot_Direct/<model>/`
+- **Format:** `*_<model>_ZeroShot.csv`
 
-*   Gemini Flash Lite
-*   OpenAI (GPT-4o/3.5)
-*   Kimi (Moonshot)
-*   DeepSeek
+### RQ2: Few-Shot Direct Prediction
+Evaluating the impact of providing historical, labeled story point examples in the prompt to calibrate the model's absolute scale. Experiments evaluated "Count" (most frequent) and "Scale" (scale-aware) few-shot selection.
+- **Path:** `results/RQ2_FewShot_Direct/<model>/Count/` and `results/RQ2_FewShot_Direct/<model>/Scale/`
+- **Format:** `*_<model>_Count.csv` and `*_<model>_Scale.csv`
 
-## Data Migration Mapping
+### RQ3: Zero-Shot Comparative
+Asking the model to explicitly compare the relative effort between two backlog items (predicting if one is strictly greater, less than, or equal to the other).
+- **Path:** `results/RQ3_ZeroShot_Comparative/<model>/`
+- **Format:** `*_<model>_ZeroShotComparative.csv`
 
-| Old Path | New Path | Description |
-| :--- | :--- | :--- |
-| `results/zero_shot/basic_prompt_gemini*` | `results/RQ1_ZeroShot_Direct/gemini/` | Gemini Zero-Shot Direct |
-| `results/zero_shot/basic_prompt_openai*` | `results/RQ1_ZeroShot_Direct/openai/` | OpenAI Zero-Shot Direct |
-| `results/zero_shot/kimi_k2_raw/` | `results/RQ1_ZeroShot_Direct/kimi/` | Kimi Zero-Shot Direct |
-| `results/12.09_mx/result/*zeroshot*` | `results/RQ1_ZeroShot_Direct/deepseek/` | DeepSeek Zero-Shot Direct |
-| `results/few_shot/Basic common examples/gemini*` | `results/RQ2_FewShot_Direct/gemini/` | Gemini Few-Shot Direct |
-| `results/few_shot/Basic File based examples/openai*` | `results/RQ2_FewShot_Direct/openai/file_based/` | OpenAI Few-Shot Direct (File) |
-| `results/few_shot/Basic common examples/openai*` | `results/RQ2_FewShot_Direct/openai/common_examples/` | OpenAI Few-Shot Direct (Common) |
-| `results/few_shot/kimik2/new_sb-few_shot-scaleAware` | `results/RQ2_FewShot_Direct/kimi/scale_aware/` | Kimi Few-Shot Scale Aware |
-| `results/12.09_mx/result/*fewshot*` | `results/RQ2_FewShot_Direct/deepseek/standard/` | DeepSeek Few-Shot Direct |
-| `results/12.09_mx/result/*scaleAware*` | `results/RQ2_FewShot_Direct/deepseek/scale_aware/` | DeepSeek Scale Aware |
-| `results/gemini pairwise with accuracy/` | `results/RQ3_ZeroShot_Comparative/gemini/` | Gemini Zero-Shot Comparative |
-| `results/Pairwise_zero_shot/pairwise__12.16_mx/pairwise_zeroshot` | `results/RQ3_ZeroShot_Comparative/deepseek/` | DeepSeek Zero-Shot Comparative |
-| `results/Pairwise_zero_shot/pairwise_Pranam` | `results/RQ3_ZeroShot_Comparative/kimi/` | Kimi Zero-Shot Comparative |
-| `results/Prompt 4/gemini/` | `results/RQ4_FewShot_Comparative/gemini/` | Gemini Few-Shot Comparative |
-| `results/prompt4_02.03_mx/` | `results/RQ4_FewShot_Comparative/deepseek/` | DeepSeek Few-Shot Comparative |
-| `results/fewshot_pairwise_direct_ps/` | `results/RQ4_FewShot_Comparative/kimi/` | Kimi Few-Shot Comparative |
+### RQ4: Few-Shot Comparative
+Providing relative comparison examples in the prompt before asking the LLM to output absolute story point predictions for new items.
+- **Path:** `results/RQ4_FewShot_Comparative/<model>/`
+- **Format:** `*_<model>_FewShotComparative.csv`
 
-## Original Data
+> **Note:** For every model inside these directories, an `evaluate_*.csv` summary file exists (e.g., `evaluate_ZeroShot.csv`, `evaluate_Count.csv`), containing aggregated performance metrics like Pearson (ρ) and Spearman (r_s) correlations.
 
-The original datasets remain in the `data/` directory.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
