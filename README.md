@@ -23,6 +23,8 @@ LLM_Story_Point/
 ├── README.md                           # This file
 ├── Story_point_estimation_with_LLMs/   # LaTeX source code for the research paper
 ├── data/                               # Original raw project datasets
+│   ├── few_shot_samples/               # Pre-selected few-shot examples
+│   ├── test/                           # True test datasets
 └── results/                            # Main experimental results
     ├── RQ1_ZeroShot_Direct/
     ├── RQ2_FewShot_Direct/
