@@ -1,0 +1,15 @@
+dataset,accuracy
+appceleratorstudio,0.6336
+aptanastudio,0.5978
+bamboo,0.5582
+clover,0.6402
+datamanagement,0.57
+jirasoftware_filtered,0.5487
+mesos,0.6639
+moodle,0.6039
+mule,0.6074
+mulestudio,0.5916
+springxd,0.6536
+talenddataquality,0.5574
+talendesb,0.6614
+titanium,0.5403
