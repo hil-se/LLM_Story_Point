@@ -9,7 +9,7 @@ In this study, we empirically evaluate the capabilities of four leading Large La
 ## Models Evaluated
 
 Our evaluation includes four state-of-the-art models accessed via their respective APIs:
-- **DeepSeek-R1** (`deepseek-reasoner`): An advanced reasoning model utilizing reinforcement learning and a Mixture-of-Experts architecture.
+- **DeepSeek-V3.2** (`deepseek-chat`): A high‑reasoning Transformer model with a sparse Mixture‑of‑Experts architecture and large‑scale RL post‑training.
 - **Kimi / Moonshot K2** (`moonshotai/kimi-k2-instruct-0905`): A model renowned for rigorous instruction-following and long-context capabilities.
 - **OpenAI** (`gpt-5-nano`): A highly efficient model designed for rapid interaction and extensive context processing.
 - **Gemini Flash Lite** (`gemini-2.5-flash-lite`): A lightweight model built for high-speed inference with a massive context window.
