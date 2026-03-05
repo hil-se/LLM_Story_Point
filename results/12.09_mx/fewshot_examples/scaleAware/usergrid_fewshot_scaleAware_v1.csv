@@ -1,6 +1,0 @@
-issuekey,title,description,storypoint,split_mark
-USERGRID-1069,implement build metrics in jenkins,,1,test
-USERGRID-760,Merge master to two-dot-o branches & rewrite tests to use new framework,There's one new test from master that needs to be rewritten using the new framework: ApplicationResourceIT.applicationCollectionWithAppToken(),2,val
-USERGRID-577,Make all Cassandra keyspace names configurable,This has already been done in the two-dot-o branch.    Fixing it in 1.0 will be a little different.     These keyspace names are hard-coded into Java code:  - Usergrid  - Usergrid_Applications    and the Locks keyspace name is hardcoded into a Spring config.,3,train
-USERGRID-400,Implement read interfaces,,5,train
-USERGRID-881,Remove Fields and Map to Entity Conversions from Core,we convert from a map to entity and back 2 - 3 times for every read and write.  We should remove these type conversions,8,val

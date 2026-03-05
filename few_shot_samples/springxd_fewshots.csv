@@ -1,6 +1,0 @@
-issuekey,title,description,storypoint
-XD-1,HDFS ItemWriter,Base integration of core HDFS writer functionality with Spring Batch.,1
-XD-6,Channel Registry,,3
-XD-24,Create pipes and filters DSL for ingestion,"Initial simple handcoded implementation for straight through pipe and filter model, e.g. a | b | c",2
-XD-10,Reactor based http ingestion,"When there is support for boostrapping a http server in the reactor project, and inbound SI adapter and associated XD source module should be created.",5
-XD-12,Jolokia based aggregator for cluster monitoring,,8

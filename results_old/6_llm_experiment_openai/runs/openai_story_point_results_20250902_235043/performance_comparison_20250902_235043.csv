@@ -1,3 +1,0 @@
-method,pearson_correlation,spearman_correlation,mean_absolute_error,root_mean_squared_error,accuracy_within_1,accuracy_within_2,avg_response_time,total_predictions,successful_predictions
-Zero-shot,0.5144149459255873,0.24213413195878242,2.54,3.3674916480965473,0.34,0.6,4.297418637275696,50,50
-Few-shot,0.30637481689418267,0.3560312519505042,3.4,4.014971979976947,0.24,0.36,0.4479067420959473,50,50

@@ -1,6 +1,0 @@
-issuekey,title,description,storypoint,split_mark
-BAM-4923,The contact administrators link should not be available is the setup footer,,1,train
-BAM-6912,Changing the builder type during cloning adds multiple builder requirements,"When cloning a plan: if you change the builder type from Ant to Maven then Bamboo adds Ant and Maven as a requirement to the plan.    Ideally, Bamboo should detect that the builder has changed and set the requirement to Maven from ant in the next screen.",2,train
-BAM-14118,Add the MSTest Agent to stock Windows Elastic Image,"The MS Test command line utility is very useful for running Microsoft Framework Unit Test. By utilizing the MS Test Agent installer, you do not have to fully install Visual Studio on the elastic image.    This can allow folks to utilize MS Test on the Elastic Images without having to customize and AMI.    [MS Test Agent 2010|http://www.microsoft.com/en-us/download/details.aspx?id=1334]  [MS Test Agent 2012|http://www.microsoft.com/en-us/download/details.aspx?id=38186]    Notes and comments from the support team are located here: [https://support.atlassian.com/browse/JST-70692]",3,test
-BAM-10870,Detect Branches should show dialog where user can pick branches to create,,5,test
-BAM-5376,Dynamic EC2 agents, Related to BAM-3344,8,train

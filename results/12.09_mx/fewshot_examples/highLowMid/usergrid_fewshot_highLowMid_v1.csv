@@ -1,6 +1,0 @@
-issuekey,title,description,storypoint,split_mark
-USERGRID-1069,implement build metrics in jenkins,,1,test
-USERGRID-387,Migrate Import service tests to rest tests to better emulate end to end testing,Migrate relevant ImportCollectionIT and ImportServiceIT tests to the rest tier such that we have better end to end coverage of the system. Having all of our integration tests in the service tier means that there is still room for error when we go back up into the REST tier.,3,train
-USERGRID-528,Refactor the Query portions of RelationManager into a command pattern,Using Rx and functional programming.  Implemented a builder + command pattern to allow us to chain observables together to generate a stream of results.,8,train
-USERGRID-1115,Fix AdminUsersIT tests,Six of the AdminUsersIT tests are ignored because they interfere with other tests and other reasons.  Figure out how to run those tests serially or some other way to test admin user features.,5,test
-USERGRID-1052,"After large deletions, graph seek time becomes slow","After a large number of deletions, 100k +, seek time on graph becomes very slow when searching collections.  Identify the issue, and implement a fix based off of sha  a09485a3a5ac8b4217b294f4754ea8a70a7ec447 ",5,test

@@ -1,0 +1,6 @@
+issuekey,title,description,storypoint
+TESB-53,proxy settings for Web Service schema: mandatory user/password,in the proxy settings of the Web Service schema user/password are mandatory.  Should be optional fields.,1
+TESB-36,SL: Service Locator - Install,Get familar and install Zookeeper (Apache Hadoop subproject) and get used with the distributed setup and web-ui provided by Zookeeper,2
+TESB-33,Common - Setup ESB Runtime Code Repositories (gitHub),Code Repository: It is expected that we setup a new git (gitHub) Code Repository for the 'new' Talend ESB Development Tasks with the goal that this repository contains all of our artefacts which will be later on part of the new ESB 4.0 and higher code base. ,3
+TESB-1,Investigation: S1 Improved user experience with TOS/TIS/ESB Studio,,5
+TESB-35,Get familar: CXF,for all of the team mebers who not worked with CXF before we asked you to get familar with CXF by using / exporing a bit the documentation and examples on the Apache CXF web-site but also the Documented Examples provided with the Talend SF Release 2.3.1. ,8

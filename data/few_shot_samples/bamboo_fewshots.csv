@@ -1,0 +1,6 @@
+issuekey,title,description,storypoint
+BAM-3634,Alert users of builds which can not be built by any agents,Bamboo should alert the user if a Plan can not be built for a period of time.  This should be set by default and overridden or removed by the user if necessary.    This will avoid the following:    !http://img.skitch.com/20090310-fk3547se8py75u3pr1g2g4mfux.jpg!,1
+BAM-932,allow a build to be placed at the head of the build queue... (or edit the queue order),,2
+BAM-65,Allows CVS repo to timeout and report on locking issues,"Sometimes, when you perform a CVS action you get something like    {noformat}  cvs update: [01:38:32] waiting for mchai's lock in /cvsroot/atlassian/maven2test/bamboo  {noformat}    so Bamboo would probably just hang and become not so happy. We should allow Bamboo to timeout, or conditionally stop and tell the user how to dix the problem",3
+BAM-3616,"Users can see the maven module (groupid, artifactid, version) against each plan.",* Should respect the sub-working directory. Only look for poms under the sub-working directory  * Only read top level pom for modules  * Pom is read only when building.  * This is only read only  * Each plan may have multiple artifacts,5
+BAM-3633,Implement SAL part 2,This is the remaining work for SAL.  See BAM-3631 for part 1.,8

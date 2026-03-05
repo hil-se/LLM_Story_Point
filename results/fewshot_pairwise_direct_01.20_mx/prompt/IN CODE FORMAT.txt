@@ -1,1 +1,0 @@
-IN THE CODE: Decision: Item Xi has higher story point than Item Xj.
