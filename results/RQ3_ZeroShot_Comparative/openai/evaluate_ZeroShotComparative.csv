@@ -1,15 +1,17 @@
-dataset,accuracy
-appceleratorstudio,0.6336
-aptanastudio,0.5978
-bamboo,0.5582
-clover,0.6402
-datamanagement,0.57
-jirasoftware_filtered,0.5487
-mesos,0.6639
-moodle,0.6039
-mule,0.6074
-mulestudio,0.5916
-springxd,0.6536
-talenddataquality,0.5574
-talendesb,0.6614
-titanium,0.5403
+source_filename,csv_filename,total_rows,valid_predictions,accuracy,precision,recall,f1,mae,rmse,pearson,spearman,predicted_mean,actual_mean,derived_pairwise_accuracy,output_folder
+appceleratorstudio,appceleratorstudio_openai_ZeroShotComparative.csv,2919,2919,0.627612,0.621897,0.664626,0.642552,0.744776,1.220472,0.255428,0.433083,0.076396,0.007194,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+aptanastudio,aptanastudio_openai_ZeroShotComparative.csv,829,829,0.603136,0.595023,0.636804,0.615205,0.793727,1.259942,0.20697,0.399067,0.066345,-0.003619,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+bamboo,bamboo_openai_ZeroShotComparative.csv,521,521,0.548944,0.593886,0.489209,0.536489,0.902111,1.343214,0.107037,0.233467,-0.120921,0.067179,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+clover,clover_openai_ZeroShotComparative.csv,384,384,0.632812,0.62844,0.695431,0.660241,0.734375,1.21192,0.264625,0.443028,0.135417,0.026042,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+datamanagement,datamanagement_openai_ZeroShotComparative.csv,4667,4667,0.569531,0.582096,0.572621,0.57732,0.860939,1.312203,0.138849,0.335864,0.010071,0.026784,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+duracloud,duracloud_openai_ZeroShotComparative.csv,666,636,0.704403,0.682584,0.764151,0.721068,0.591195,1.087378,0.411755,0.542195,0.119497,0.0,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+jirasoftware_filtered,jirasoftware_filtered_openai_ZeroShotComparative.csv,284,284,0.549296,0.54878,0.625,0.584416,0.901408,1.34269,0.097597,0.30999,0.15493,0.014085,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+mesos,mesos_openai_ZeroShotComparative.csv,1680,1680,0.651786,0.635394,0.710369,0.670793,0.696429,1.180194,0.305799,0.454534,0.116667,-0.00119,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+moodle,moodle_openai_ZeroShotComparative.csv,1166,1166,0.614065,0.597444,0.653846,0.624374,0.77187,1.242473,0.23019,0.333472,0.073756,-0.018868,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+mule,mule_openai_ZeroShotComparative.csv,889,889,0.6018,0.591463,0.655405,0.621795,0.7964,1.262062,0.204893,0.383748,0.106862,-0.001125,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+mulestudio,mulestudio_openai_ZeroShotComparative.csv,732,732,0.583333,0.569191,0.608939,0.588394,0.833333,1.290994,0.167903,0.347202,0.046448,-0.021858,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+springxd,springxd_openai_ZeroShotComparative.csv,3526,3526,0.652581,0.649752,0.66629,0.657917,0.694838,1.178845,0.305205,0.516873,0.028361,0.002836,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+talenddataquality,talenddataquality_openai_ZeroShotComparative.csv,1381,1381,0.556843,0.5387,0.52568,0.53211,0.886314,1.331401,0.111352,0.281665,-0.064446,-0.041274,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+talendesb,talendesb_openai_ZeroShotComparative.csv,868,868,0.673963,0.694624,0.696121,0.695371,0.652074,1.141993,0.344692,0.478342,0.071429,0.069124,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+titanium,titanium_openai_ZeroShotComparative.csv,2251,2251,0.530875,0.525268,0.611408,0.565074,0.93825,1.369854,0.063066,0.332999,0.160373,-0.00311,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
+usergrid,usergrid_openai_ZeroShotComparative.csv,482,466,0.611588,0.606557,0.635193,0.620545,0.776824,1.246454,0.223425,0.387132,0.04721,0.0,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ3_ZeroShot_Comparative/openai
