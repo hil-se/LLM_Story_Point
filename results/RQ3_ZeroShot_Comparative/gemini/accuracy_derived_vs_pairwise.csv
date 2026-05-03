@@ -1,0 +1,17 @@
+model,dataset,n,accuracy
+gemini,appceleratorstudio,1941,0.6059
+gemini,aptanastudio,586,0.558
+gemini,bamboo,344,0.5872
+gemini,clover,276,0.6449
+gemini,datamanagement,3544,0.6284
+gemini,duracloud,503,0.6839
+gemini,jirasoftware_filtered,197,0.6447
+gemini,mesos,1232,0.6055
+gemini,moodle,877,0.6556
+gemini,mule,633,0.5498
+gemini,mulestudio,504,0.627
+gemini,springxd,2478,0.5811
+gemini,talenddataquality,725,0.5821
+gemini,talendesb,657,0.5708
+gemini,titanium,1439,0.5066
+gemini,usergrid,327,0.5933

@@ -1,17 +1,17 @@
-source_filename,csv_filename,total_rows,valid_predictions,accuracy,precision,recall,f1,mae,rmse,pearson,spearman,predicted_mean,actual_mean,derived_pairwise_accuracy,output_folder
-appceleratorstudio,appceleratorstudio_gemini_Scale.csv,2919,2919,0.282631,0.155937,0.120811,0.107891,3.587187,5.714067,0.32269,0.4098,8.175745,5.635492,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-aptanastudio,aptanastudio_gemini_Scale.csv,826,826,0.305085,0.180955,0.115579,0.110083,4.389831,7.043277,0.297356,0.39607,9.03753,8.030266,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-bamboo,bamboo_gemini_Scale.csv,520,520,0.042308,0.040158,0.075656,0.017735,5.794231,7.277336,0.113887,0.15779,7.980769,2.421154,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-clover,clover_gemini_Scale.csv,383,383,0.070496,0.023401,0.087951,0.035492,7.86423,10.738282,0.365962,0.455858,11.248042,4.553525,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-datamanagement,datamanagement_gemini_Scale.csv,4642,4642,0.044593,0.023159,0.019808,0.00649,9.689143,16.224825,0.415232,0.389251,12.337355,9.506032,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-duracloud,duracloud_gemini_Scale.csv,665,665,0.009023,0.005314,0.028915,0.004109,8.415038,11.214652,0.440932,0.498304,10.467669,2.118797,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-jirasoftware_filtered,jirasoftware_filtered_gemini_Scale.csv,282,282,0.085106,0.031872,0.074773,0.03978,8.787234,13.613458,0.243676,0.26842,12.347518,4.333333,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-mesos,mesos_gemini_Scale.csv,1680,1680,0.052381,0.078044,0.053118,0.01808,6.843452,9.547781,0.381475,0.444631,9.820833,3.085714,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-moodle,moodle_gemini_Scale.csv,1166,1166,0.182676,0.063364,0.065211,0.050882,11.096055,21.350983,0.343818,0.244043,8.993139,15.538593,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-mule,mule_gemini_Scale.csv,888,888,0.182432,0.133225,0.101814,0.079357,4.951577,6.861483,0.312903,0.380199,9.344595,5.077703,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-mulestudio,mulestudio_gemini_Scale.csv,730,730,0.213699,0.135541,0.098188,0.082276,5.147945,8.348735,0.136988,0.328262,9.228767,6.349315,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-springxd,springxd_gemini_Scale.csv,3525,3525,0.07773,0.060413,0.053066,0.017314,5.681418,7.794215,0.339944,0.438784,9.045957,3.697021,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-talenddataquality,talenddataquality_gemini_Scale.csv,1381,1381,0.196235,0.076666,0.066794,0.054402,4.930485,7.60145,0.238881,0.248129,8.549602,5.923244,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-talendesb,talendesb_gemini_Scale.csv,868,868,0.013825,0.05063,0.064231,0.008381,9.762673,13.206181,0.368574,0.493937,11.907834,2.16129,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-titanium,titanium_gemini_Scale.csv,2251,2251,0.24167,0.063307,0.067512,0.05273,4.442026,6.765574,0.264044,0.297233,8.339405,6.31586,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
-usergrid,usergrid_gemini_Scale.csv,482,482,0.051867,0.190335,0.035919,0.024741,6.029046,8.609558,0.382173,0.358049,8.852697,2.852697,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/gemini/Scale
+dataset,count,mae,rmse,pearson,spearman,predicted_mean,actual_mean,total_rows,valid_predictions
+appceleratorstudio,2909,2.299072,3.479745,0.289877,0.324189,6.572362,5.615332,2914,2909
+aptanastudio,819,3.667888,5.505464,0.402943,0.395122,8.043956,7.973138,824,819
+bamboo,511,6.005871,6.844227,0.239534,0.209764,8.289628,2.338552,516,511
+clover,375,5.090667,6.291794,0.546531,0.480999,7.858667,4.437333,379,375
+datamanagement,4658,11.497853,16.941030,0.385067,0.422014,14.928725,9.526621,4662,4658
+duracloud,657,4.269406,5.003956,0.500707,0.493986,6.242009,2.063927,661,657
+jirasoftware_filtered,275,4.003636,5.208734,0.249173,0.296617,7.305455,4.232727,279,275
+mesos,1670,5.562874,7.353275,0.417286,0.461593,8.480838,3.049701,1675,1670
+moodle,1156,11.044983,19.774945,0.425283,0.360278,13.025952,15.435986,1161,1156
+mule,879,4.551763,7.110136,0.329944,0.389398,8.815700,5.062571,884,879
+mulestudio,722,7.005540,10.782026,0.165819,0.292515,11.547091,6.325485,727,722
+springxd,3516,6.913823,8.276455,0.290743,0.351060,10.310580,3.672639,3521,3516
+talenddataquality,1372,5.295190,9.315689,0.229517,0.307828,9.016764,5.883382,1376,1372
+talendesb,859,5.136205,5.862809,0.384690,0.462691,7.227008,2.128056,863,859
+titanium,2241,4.707274,8.100854,0.236637,0.298717,8.827755,6.296296,2246,2241
+usergrid,472,1.906780,2.720761,0.358032,0.344060,4.400424,2.832627,477,472

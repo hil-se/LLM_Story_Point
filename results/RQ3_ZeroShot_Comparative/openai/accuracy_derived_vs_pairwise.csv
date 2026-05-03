@@ -1,0 +1,17 @@
+model,dataset,n,accuracy
+openai,appceleratorstudio,1989,0.7169
+openai,aptanastudio,575,0.6557
+openai,bamboo,337,0.73
+openai,clover,281,0.7189
+openai,datamanagement,3385,0.7078
+openai,duracloud,455,0.789
+openai,jirasoftware_filtered,209,0.689
+openai,mesos,1160,0.7284
+openai,moodle,842,0.7138
+openai,mule,582,0.7131
+openai,mulestudio,520,0.6981
+openai,springxd,2407,0.725
+openai,talenddataquality,963,0.7134
+openai,talendesb,626,0.7875
+openai,titanium,1546,0.6721
+openai,usergrid,298,0.7517

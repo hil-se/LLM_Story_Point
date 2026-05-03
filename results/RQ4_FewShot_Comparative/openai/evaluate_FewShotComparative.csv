@@ -1,17 +1,17 @@
-source_filename,csv_filename,total_rows,valid_predictions,accuracy,precision,recall,f1,mae,rmse,pearson,spearman,predicted_mean,actual_mean,derived_pairwise_accuracy,output_folder
-appceleratorstudio,appceleratorstudio_openai_FewShotComparative.csv,2919,2919,0.198356,0.148279,0.120728,0.072558,2.830764,4.059214,0.304418,0.312674,3.100719,5.635492,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-aptanastudio,aptanastudio_openai_FewShotComparative.csv,829,829,0.107358,0.118713,0.089949,0.034434,4.920386,7.031122,0.327659,0.360305,3.850422,8.015682,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-bamboo,bamboo_openai_FewShotComparative.csv,521,521,0.193858,0.142166,0.137007,0.07117,1.756238,2.463164,0.155895,0.12469,3.460653,2.418426,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-clover,clover_openai_FewShotComparative.csv,384,384,0.184896,0.181184,0.145249,0.104706,3.127604,6.233102,0.369373,0.410939,3.684896,4.59375,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-datamanagement,datamanagement_openai_FewShotComparative.csv,4667,4667,0.058924,0.028758,0.015114,0.005385,7.28648,16.469228,0.340714,0.42683,5.460039,9.565031,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-duracloud,duracloud_openai_FewShotComparative.csv,666,666,0.096096,0.128039,0.128812,0.051455,2.070571,2.521082,0.475573,0.533953,3.825826,2.127628,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-jirasoftware_filtered,jirasoftware_filtered_openai_FewShotComparative.csv,284,284,0.267606,0.194575,0.169314,0.152166,2.102113,3.542995,0.258215,0.296109,3.461268,4.323944,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-mesos,mesos_openai_FewShotComparative.csv,1680,1680,0.282738,0.183319,0.132924,0.105296,1.589286,2.373214,0.370266,0.458182,3.711905,3.085714,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-moodle,moodle_openai_FewShotComparative.csv,1166,1166,0.109777,0.036357,0.056916,0.034168,12.264151,23.967495,0.389256,0.2839,4.161235,15.538593,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-mule,mule_openai_FewShotComparative.csv,889,889,0.247469,0.322711,0.161018,0.121799,2.488189,3.55291,0.317466,0.371354,3.850394,5.08099,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-mulestudio,mulestudio_openai_FewShotComparative.csv,732,732,0.185792,0.128104,0.127136,0.097904,3.818306,6.261274,0.174517,0.323588,3.105191,6.396175,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-springxd,springxd_openai_FewShotComparative.csv,3526,3526,0.22405,0.140147,0.111265,0.089836,1.956324,3.039726,0.346901,0.425759,3.957459,3.699943,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-talenddataquality,talenddataquality_openai_FewShotComparative.csv,1381,1381,0.157133,0.076056,0.070028,0.050529,3.590876,5.556699,0.310701,0.172361,3.367849,5.923244,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-talendesb,talendesb_openai_FewShotComparative.csv,868,868,0.150922,0.196849,0.182077,0.095935,1.949309,2.410614,0.395102,0.473938,3.887097,2.16129,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-titanium,titanium_openai_FewShotComparative.csv,2251,2251,0.272323,0.068032,0.056195,0.045993,3.191915,5.198717,0.297948,0.310259,4.492226,6.31586,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
-usergrid,usergrid_openai_FewShotComparative.csv,482,482,0.414938,0.300368,0.329084,0.281025,1.238589,1.853,0.282163,0.337765,3.564315,2.852697,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/openai
+dataset,total_rows,valid_predictions,accuracy,precision,recall,f1,mae,rmse,pearson,spearman,predicted_mean,actual_mean,derived_pairwise_accuracy
+appceleratorstudio,2904,2904,0.199036,0.148645,0.121532,0.073744,2.827135,4.052428,0.311089,0.309838,3.098829,5.649105,
+aptanastudio,814,814,0.109337,0.119073,0.090151,0.034993,4.874693,6.942551,0.329941,0.272325,3.853808,7.964373,
+bamboo,506,506,0.189723,0.158777,0.149844,0.077235,1.743083,2.429236,0.159060,0.193861,3.452569,2.361660,
+clover,369,369,0.186992,0.183396,0.144621,0.106816,3.173442,6.337611,0.378498,0.389070,3.672087,4.682927,
+datamanagement,4652,4652,0.059114,0.028766,0.015122,0.005399,7.299011,16.494423,0.340727,0.439538,5.461737,9.584480,
+duracloud,651,651,0.093702,0.139357,0.143772,0.054746,2.043011,2.450744,0.495639,0.498067,3.806452,2.036866,
+jirasoftware_filtered,269,269,0.278810,0.214507,0.173011,0.158047,2.022305,3.376058,0.268282,0.385587,3.486989,4.208178,
+mesos,1665,1665,0.283483,0.183584,0.132886,0.105601,1.583183,2.364655,0.371586,0.438746,3.712913,3.079880,
+moodle,1151,1151,0.111208,0.036607,0.057095,0.034488,12.004344,23.434827,0.387489,0.375353,4.156386,15.274544,
+mule,874,874,0.244851,0.318901,0.159825,0.120124,2.495423,3.564220,0.317063,0.346748,3.838673,5.059497,
+mulestudio,717,717,0.186890,0.129610,0.126840,0.098611,3.785216,6.196683,0.172032,0.268722,3.100418,6.355649,
+springxd,3511,3511,0.224153,0.140157,0.111299,0.089880,1.953290,3.037973,0.347684,0.393182,3.958701,3.696668,
+talenddataquality,1366,1366,0.155198,0.076072,0.069620,0.050394,3.571742,5.479163,0.313034,0.302956,3.367496,5.898243,
+talendesb,853,853,0.148886,0.228981,0.220793,0.111213,1.950762,2.408952,0.417515,0.481316,3.892145,2.119578,
+titanium,2236,2236,0.272809,0.068085,0.056251,0.046185,3.200358,5.212909,0.297719,0.263108,4.493292,6.339445,
+usergrid,467,467,0.413276,0.300962,0.331887,0.283080,1.246253,1.865958,0.285175,0.283585,3.556745,2.845824,

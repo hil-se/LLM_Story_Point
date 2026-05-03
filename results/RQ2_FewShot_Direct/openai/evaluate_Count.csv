@@ -1,17 +1,17 @@
-source_filename,csv_filename,total_rows,valid_predictions,accuracy,precision,recall,f1,mae,rmse,pearson,spearman,predicted_mean,actual_mean,derived_pairwise_accuracy,output_folder
-appceleratorstudio,appceleratorstudio_openai_Count.csv,2914,2914,0.332533,0.134997,0.115487,0.111176,2.264585,3.522114,0.306327,0.382629,4.460192,5.634866,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-aptanastudio,aptanastudio_openai_Count.csv,821,821,0.154689,0.08374,0.087626,0.062282,4.5676,6.521397,0.340763,0.360511,4.712546,8.042631,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-bamboo,bamboo_openai_Count.csv,515,515,0.227184,0.1381,0.123406,0.103255,1.782524,2.576217,0.207117,0.295841,3.382524,2.407767,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-clover,clover_openai_Count.csv,379,379,0.255937,0.171372,0.152144,0.12802,2.926121,6.043597,0.463812,0.505344,3.53562,4.604222,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-datamanagement,datamanagement_openai_Count.csv,4638,4638,0.134325,0.042763,0.017968,0.01592,7.248383,16.89878,0.31584,0.370326,4.029754,9.528676,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-duracloud,duracloud_openai_Count.csv,661,661,0.199697,0.149351,0.129782,0.094711,1.450832,2.06586,0.389051,0.513369,2.921331,2.121029,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-jirasoftware_filtered,jirasoftware_filtered_openai_Count.csv,278,278,0.251799,0.211855,0.140374,0.125672,2.568345,3.931976,0.2145,0.31661,4.971223,4.345324,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-mesos,mesos_openai_Count.csv,1675,1675,0.296716,0.166272,0.145295,0.13601,1.555821,2.330588,0.412763,0.453683,3.550448,3.083582,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-moodle,moodle_openai_Count.csv,1161,1161,0.167959,0.11578,0.061463,0.050463,11.198966,21.686475,0.39019,0.289318,7.768303,15.563307,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-mule,mule_openai_Count.csv,883,883,0.245753,0.250985,0.145816,0.130539,2.397508,3.420179,0.40819,0.437366,3.894677,5.084938,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-mulestudio,mulestudio_openai_Count.csv,726,726,0.293388,0.15968,0.126144,0.119811,3.264463,5.645886,0.191236,0.354938,4.950413,6.38843,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-springxd,springxd_openai_Count.csv,3520,3520,0.280114,0.086207,0.075548,0.071319,1.783523,3.083958,0.364891,0.475064,3.021307,3.696875,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-talenddataquality,talenddataquality_openai_Count.csv,1376,1376,0.206395,0.090516,0.076349,0.067456,3.337209,5.149509,0.353837,0.292282,4.228924,5.930959,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-talendesb,talendesb_openai_Count.csv,863,863,0.135574,0.151874,0.133782,0.070127,2.761298,3.387832,0.403478,0.460467,4.774044,2.151796,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-titanium,titanium_openai_Count.csv,2246,2246,0.291184,0.098101,0.065454,0.063951,3.167409,6.445953,0.162362,0.365452,5.270703,6.316118,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
-usergrid,usergrid_openai_Count.csv,477,477,0.366876,0.172991,0.169088,0.154274,1.324948,1.935003,0.225989,0.252421,3.450734,2.842767,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ2_FewShot_Direct/openai/Count
+dataset,total_rows,valid_predictions,accuracy,precision,recall,f1,mae,rmse,pearson,spearman,predicted_mean,actual_mean,derived_pairwise_accuracy
+appceleratorstudio,2914,2914,0.332533,0.134997,0.115487,0.111176,2.264585,3.522114,0.306327,0.341457,4.460192,5.634866,
+aptanastudio,821,821,0.154689,0.083740,0.087626,0.062282,4.567600,6.521397,0.340763,0.270739,4.712546,8.042631,
+bamboo,515,515,0.227184,0.138100,0.123406,0.103255,1.782524,2.576217,0.207117,0.315400,3.382524,2.407767,
+clover,379,379,0.255937,0.171372,0.152144,0.128020,2.926121,6.043597,0.463812,0.483550,3.535620,4.604222,
+datamanagement,4638,4638,0.134325,0.042763,0.017968,0.015920,7.248383,16.898780,0.315840,0.365878,4.029754,9.528676,
+duracloud,661,661,0.199697,0.149351,0.129782,0.094711,1.450832,2.065860,0.389051,0.495199,2.921331,2.121029,
+jirasoftware_filtered,278,278,0.251799,0.211855,0.140374,0.125672,2.568345,3.931976,0.214500,0.373337,4.971223,4.345324,
+mesos,1675,1675,0.296716,0.166272,0.145295,0.136010,1.555821,2.330588,0.412763,0.442180,3.550448,3.083582,
+moodle,1161,1161,0.167959,0.115780,0.061463,0.050463,11.198966,21.686475,0.390190,0.333551,7.768303,15.563307,
+mule,883,883,0.245753,0.250985,0.145816,0.130539,2.397508,3.420179,0.408190,0.418929,3.894677,5.084938,
+mulestudio,726,726,0.293388,0.159680,0.126144,0.119811,3.264463,5.645886,0.191236,0.322235,4.950413,6.388430,
+springxd,3520,3520,0.280114,0.086207,0.075548,0.071319,1.783523,3.083958,0.364891,0.446504,3.021307,3.696875,
+talenddataquality,1376,1376,0.206395,0.090516,0.076349,0.067456,3.337209,5.149509,0.353837,0.370140,4.228924,5.930959,
+talendesb,863,863,0.135574,0.151874,0.133782,0.070127,2.761298,3.387832,0.403478,0.455785,4.774044,2.151796,
+titanium,2246,2246,0.291184,0.098101,0.065454,0.063951,3.167409,6.445953,0.162362,0.323191,5.270703,6.316118,
+usergrid,477,477,0.366876,0.172991,0.169088,0.154274,1.324948,1.935003,0.225989,0.189587,3.450734,2.842767,

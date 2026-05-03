@@ -1,17 +1,17 @@
-source_filename,csv_filename,total_rows,valid_predictions,accuracy,precision,recall,f1,mae,rmse,pearson,spearman,predicted_mean,actual_mean,derived_pairwise_accuracy,output_folder
-appceleratorstudio,appceleratorstudio_gemini_FewShotComparative.csv,2919,2919,0.292223,0.141681,0.127984,0.110653,2.366564,3.577747,0.349705,0.405504,3.95752,5.635492,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-aptanastudio,aptanastudio_gemini_FewShotComparative.csv,829,829,0.108565,0.064188,0.08524,0.047687,4.940893,7.016438,0.362513,0.402641,3.755127,8.015682,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-bamboo,bamboo_gemini_FewShotComparative.csv,521,521,0.18618,0.147713,0.139659,0.088077,2.140115,2.86852,0.251073,0.273929,4.009597,2.418426,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-clover,clover_gemini_FewShotComparative.csv,384,384,0.145833,0.162132,0.124109,0.086976,3.398438,5.744336,0.507369,0.504044,4.809896,4.59375,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-datamanagement,datamanagement_gemini_FewShotComparative.csv,4667,4667,0.096636,0.051081,0.016898,0.010292,7.328905,16.785147,0.290233,0.374818,4.571245,9.565031,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-duracloud,duracloud_gemini_FewShotComparative.csv,666,666,0.102102,0.112685,0.106996,0.053718,2.498498,3.050132,0.568176,0.594977,4.406907,2.127628,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-jirasoftware_filtered,jirasoftware_filtered_gemini_FewShotComparative.csv,284,284,0.28169,0.199214,0.19017,0.183128,2.179577,3.601154,0.244704,0.30977,3.827465,4.323944,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-mesos,mesos_gemini_FewShotComparative.csv,1680,1680,0.245238,0.187735,0.158695,0.137604,2.013095,2.785165,0.461223,0.498344,4.440476,3.085714,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-moodle,moodle_gemini_FewShotComparative.csv,1166,1166,0.096055,0.031398,0.054714,0.035628,12.379074,23.903752,0.437246,0.335566,3.838765,15.538593,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-mule,mule_gemini_FewShotComparative.csv,889,889,0.290214,0.24612,0.179631,0.17151,2.345332,3.355736,0.390895,0.411402,4.488189,5.08099,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-mulestudio,mulestudio_gemini_FewShotComparative.csv,732,732,0.262295,0.137092,0.135812,0.129275,3.349727,5.722403,0.203303,0.345358,4.464481,6.396175,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-springxd,springxd_gemini_FewShotComparative.csv,3526,3526,0.249291,0.125657,0.12126,0.114066,1.960295,3.019881,0.43956,0.481832,4.138968,3.699943,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-talenddataquality,talenddataquality_gemini_FewShotComparative.csv,1381,1381,0.205648,0.096073,0.082503,0.076014,3.294714,5.098025,0.39314,0.343844,4.143374,5.923244,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-talendesb,talendesb_gemini_FewShotComparative.csv,868,868,0.072581,0.144886,0.190618,0.057804,3.521889,4.136914,0.439759,0.503655,5.554147,2.16129,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-titanium,titanium_gemini_FewShotComparative.csv,2251,2251,0.226122,0.062848,0.056186,0.051673,3.278987,5.213735,0.334985,0.367788,4.303865,6.31586,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
-usergrid,usergrid_gemini_FewShotComparative.csv,501,482,0.334025,0.243334,0.272415,0.215122,1.848548,2.769499,0.324413,0.349114,4.273859,2.852697,,/Users/macab/Documents/StoryPoint/research questions/final results/RQ4_FewShot_Comparative/gemini
+dataset,total_rows,valid_predictions,accuracy,precision,recall,f1,mae,rmse,pearson,spearman,predicted_mean,actual_mean,derived_pairwise_accuracy
+appceleratorstudio,2909,2909,0.291165,0.131292,0.123012,0.107856,2.369199,3.578132,0.343508,0.354635,3.973874,5.641114,
+aptanastudio,819,819,0.108669,0.100837,0.085917,0.049147,4.959707,7.070722,0.321257,0.294537,3.783883,8.015873,
+bamboo,511,511,0.181996,0.146750,0.133130,0.086444,2.125245,2.848421,0.246517,0.314813,3.984344,2.391389,
+clover,374,374,0.163102,0.132664,0.133243,0.100523,3.951872,6.447235,0.298662,0.383704,5.264706,4.644385,
+datamanagement,4657,4657,0.094481,0.040140,0.016752,0.009808,7.356882,16.830962,0.291829,0.369277,4.549066,9.575263,
+duracloud,656,656,0.106707,0.126032,0.135133,0.068161,2.407012,2.962417,0.582870,0.588438,4.315549,2.088415,
+jirasoftware_filtered,274,274,0.222628,0.150319,0.144768,0.141614,2.474453,3.742633,0.161804,0.247500,4.058394,4.204380,
+mesos,1670,1670,0.248503,0.186581,0.163735,0.139457,2.037725,2.883673,0.422343,0.483318,4.441916,3.079641,
+moodle,1156,1155,0.097835,0.031481,0.055684,0.035650,12.237229,23.531539,0.429446,0.404406,3.813853,15.368831,
+mule,879,879,0.298066,0.244959,0.183164,0.176050,2.331058,3.333731,0.402636,0.402428,4.509670,5.065984,
+mulestudio,722,722,0.259003,0.133722,0.134958,0.127529,3.459834,5.835938,0.165637,0.266718,4.526316,6.398892,
+springxd,3516,1676,0.216587,0.077414,0.131218,0.069423,2.879475,5.031286,0.231779,0.418121,5.038186,3.847255,
+talenddataquality,1371,1371,0.197666,0.098532,0.079709,0.074509,3.322392,5.126055,0.382370,0.387023,4.129103,5.919767,
+talendesb,858,858,0.072261,0.173737,0.222306,0.068346,3.482517,4.099576,0.470107,0.512769,5.530303,2.131702,
+titanium,2241,2241,0.232039,0.069625,0.057643,0.053472,3.269076,5.200316,0.347306,0.319162,4.298081,6.329317,
+usergrid,472,472,0.345339,0.273256,0.279501,0.234344,1.830508,2.731641,0.327959,0.320480,4.258475,2.847458,
