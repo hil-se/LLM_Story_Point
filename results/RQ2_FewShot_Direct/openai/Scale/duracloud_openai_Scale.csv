@@ -1,4 +1,4 @@
-x,x,description,storypoint,split_mark,storypoint_numeric,issuekey_str,few_shot_predicted_openai
+issuekey,title,description,storypoint,split_mark,storypoint_numeric,issuekey_str,few_shot_predicted_openai
 DURACLOUD-19,Bulk load: Verify successful DuraCloud ingest of 10TB of BHL content,,16,train,16,DURACLOUD-19,4
 DURACLOUD-21,JPEG2K: Image conversion service,Service wrapper and service to perform conversion of images from TIFF to JPEG2K.,8,train,8,DURACLOUD-21,5
 DURACLOUD-23,JPEG2K: Image viewer service,Service wrapper and service to display JPEG2K images.,3,train,3,DURACLOUD-23,5
