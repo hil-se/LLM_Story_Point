@@ -1,0 +1,6 @@
+issuekey_xi,title_xi,description_xi,story point_xi,split_mark_xi
+XD-1939,Update to Spring Batch Admin 1.3.0.RC1,,1,train
+XD-1668,Modularize angular app modules based on the functionality,"When adding streams page to the UI (from XD-1667), it is necessary to modularize the angular app modules based on the functionality/components (job, stream, auth etc.,).     As we expand into more components and use cases in the UI, this definitely makes it easier to concentrate on specific modules based on the functionality.",5,train
+XD-1027,Create script-based batch ItemProcessor,This would be included in the OOTB batch jobs to optionally process the loaded Tuple with a configured script.,10,train
+XD-2252,Measure baseline performance of RabbitMQ using PerfTest (In-house),,16,train
+XD-1391,Rewrite of the existing UI to use AngluarJS,,40,train

@@ -1,0 +1,5 @@
+model,prompt,metric,project_mean,project_std,projects_available,avg_runs_available
+deepseek-v4-flash,prompt4_pairwise_fewshot,mae,2.9151924885359697,1.428150349073698,16,5.0
+deepseek-v4-flash,prompt4_pairwise_fewshot,pearson,0.3408256372496141,0.07798241664800301,16,5.0
+deepseek-v4-flash,prompt4_pairwise_fewshot,rmse,4.789222689237299,3.2888563041675494,16,5.0
+deepseek-v4-flash,prompt4_pairwise_fewshot,spearman,0.38118476888635117,0.0941813035414493,16,5.0

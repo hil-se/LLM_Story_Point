@@ -1,0 +1,6 @@
+issuekey_xi,title_xi,description_xi,story point_xi,split_mark_xi
+MULE-7919,Upgrade Json Schema validator to support draft-04 rfc,"Current validator fully supports json schema draft 03 but has very limited suport of draft 04, besides having several issues fixed in later versions.    The update will require changes in mule as the validator was modularized an repackaged in a different way.    Check for latest stable version here:  https://github.com/fge/json-schema-validator",8,train
+MULE-7764,AMQP transport. Create inbound requestor (request),AS A  user    I WANT  I want to be able consume instantly amqp messages    SO THAT  I can consume messages at any point of the flow,5,train
+MULE-8097,Hot spot in ServerAddress of HTTP Connector,When ServerAddress executes:     this.ip = InetAddress.getByName(host).getHostAddress();    It's take a while to return. We need to improve it since it's used with every request.,3,train
+MULE-7424,New Database: Rename advanced-update to execute-ddl,Rename advanced-update to execute-ddl.    Also update the google doc spec,1,train
+MULE-6899,Provide an  API to stop/start and execute schedulers,We need external systems to be able to stop/start and execute schedulers at any given time.,2,train

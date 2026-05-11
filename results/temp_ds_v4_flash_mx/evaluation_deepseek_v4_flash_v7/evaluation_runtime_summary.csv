@@ -1,0 +1,17 @@
+model,prompt,project,total_runtime_sec,avg_runtime_sec_per_request,total_requests,runs_available
+deepseek-v4-flash,prompt4_pairwise_fewshot,appceleratorstudio,3033.3698999999997,1.038825308219178,2920,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,aptanastudio,840.1338000000001,1.0122093975903614,830,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,bamboo,466.2349,0.8880664761904761,525,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,clover,345.5048,0.897415064935065,385,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,datamanagement,4065.8168,0.8706245824411136,4670,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,duracloud,592.7794,0.8847453731343282,670,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,jirasoftware_filtered,284.999,0.8769199999999999,325,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,mesos,1488.2422000000001,0.8858584523809524,1680,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,moodle,1049.9438,0.8973878632478632,1170,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,mule,800.7803,0.8997531460674157,890,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,mulestudio,645.1642,0.8777744217687076,735,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,springxd,3172.6331,0.8987629178470256,3530,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,talenddataquality,1272.9004,0.9190616606498194,1385,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,talendesb,823.9585,0.9470787356321839,870,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,titanium,2431.1236,1.0781035920177384,2255,5
+deepseek-v4-flash,prompt4_pairwise_fewshot,usergrid,490.6926,1.011737319587629,485,5

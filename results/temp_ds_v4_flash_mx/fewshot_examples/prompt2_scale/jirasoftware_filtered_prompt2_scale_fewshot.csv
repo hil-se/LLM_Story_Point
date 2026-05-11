@@ -1,0 +1,6 @@
+issuekey_xi,title_xi,description_xi,story point_xi,split_mark_xi
+JSW-3070,Issues without a priority set should not be given a priority icon on the Rapid Board as it is misleading/incorrect,,1,train
+JSW-5216,When story moved to done column don't scroll to it,Stay selected,2,train
+JSW-5690,"As a user, I'd like to be able to inline edit the components, fix version and affects version fields in the detail view",COS: - Use the Frother control for entering input (i.e. same experience as View Issue)?,5,train
+JSW-4766,"MVR: Report page showing Sprints (with a selector), include table of issues, link to issue nav",,8,train
+JSW-4913,Make the Sprint Burndown chart use remaining estimate when the board has been configured that way,- Changes in the remaining estimate are burned down as they happen   - Time spent burns up   - Items that are added to the Sprint after its beginning are shown as scope change   - Items that are removed from the Sprint after its beginning are shown as scope change,20,train
