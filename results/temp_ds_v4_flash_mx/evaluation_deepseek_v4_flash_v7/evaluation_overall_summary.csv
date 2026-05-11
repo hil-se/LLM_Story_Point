@@ -1,4 +1,17 @@
 model,prompt,metric,project_mean,project_std,projects_available,avg_runs_available
+deepseek-v4-flash,prompt1_zeroshot,mae,3.033199527377414,1.2245735071786856,16,5.0
+deepseek-v4-flash,prompt1_zeroshot,pearson,0.36675784812375956,0.08623450470792657,16,5.0
+deepseek-v4-flash,prompt1_zeroshot,rmse,4.941358545673708,2.812693952222667,16,5.0
+deepseek-v4-flash,prompt1_zeroshot,spearman,0.3977069213670413,0.10242585179400253,16,5.0
+deepseek-v4-flash,prompt2_count,mae,2.916899388976774,1.581530072558671,16,5.0
+deepseek-v4-flash,prompt2_count,pearson,0.33372553035693686,0.1071158157552039,16,5.0
+deepseek-v4-flash,prompt2_count,rmse,4.477169928052725,3.1879034086181894,16,5.0
+deepseek-v4-flash,prompt2_count,spearman,0.3594805183254393,0.1202803304240247,16,5.0
+deepseek-v4-flash,prompt2_scale,mae,4.5785990113211685,2.4737081646063386,16,5.0
+deepseek-v4-flash,prompt2_scale,pearson,0.3427900468563883,0.1212530639783246,16,5.0
+deepseek-v4-flash,prompt2_scale,rmse,7.011353358821195,4.635374827235987,16,5.0
+deepseek-v4-flash,prompt2_scale,spearman,0.3729108846212026,0.1451706565197047,16,5.0
+deepseek-v4-flash,prompt3_pairwise,accuracy,0.6062257432305265,0.03564508935893403,16,5.0
 deepseek-v4-flash,prompt4_pairwise_fewshot,mae,2.9151924885359697,1.428150349073698,16,5.0
 deepseek-v4-flash,prompt4_pairwise_fewshot,pearson,0.3408256372496141,0.07798241664800301,16,5.0
 deepseek-v4-flash,prompt4_pairwise_fewshot,rmse,4.789222689237299,3.2888563041675494,16,5.0
