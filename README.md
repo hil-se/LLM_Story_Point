@@ -8,11 +8,11 @@ In this study, we empirically evaluate the capabilities of four leading Large La
 
 ## Models Evaluated
 
-Our evaluation includes four state-of-the-art models accessed via their respective APIs:
-- **DeepSeek-V3.2** (`deepseek-chat`): A high‑reasoning Transformer model with a sparse Mixture‑of‑Experts architecture and large‑scale RL post‑training.
-- **Kimi / Moonshot K2** (`moonshotai/kimi-k2-instruct-0905`): A model renowned for rigorous instruction-following and long-context capabilities.
-- **OpenAI** (`gpt-5-nano`): A highly efficient model designed for rapid interaction and extensive context processing.
-- **Gemini Flash Lite** (`gemini-2.5-flash-lite`): A lightweight model built for high-speed inference with a massive context window.
+Our evaluation includes four state-of-the-art models (2 open-source and 2 closed-source) accessed via their respective APIs:
+- **DeepSeek-V3.2** (`deepseek-v4-flash`): An open-source, high‑reasoning Transformer model with a sparse Mixture‑of‑Experts architecture.
+- **Qwen 3 32B** (`qwen-3-32b`): An open-source, highly capable 32-billion parameter instruction-tuned model.
+- **OpenAI** (`gpt-5-nano`): A closed-source, highly efficient model designed for rapid interaction and extensive context processing.
+- **Gemini Flash Lite** (`gemini-2.5-flash-lite`): A closed-source, lightweight model built for high-speed inference with a massive context window.
 
 ## Repository Structure
 
@@ -28,13 +28,20 @@ LLM_Story_Point/
 └── results/                            # Main experimental results
     ├── RQ1_ZeroShot_Direct/
     ├── RQ2_FewShot_Direct/
+    │   └── qwen/
+    │       ├── count/                  # Frequency-based few-shot results
+    │       └── scale/                  # Scale-aware few-shot results
     ├── RQ3_ZeroShot_Comparative/
-    └── RQ4_FewShot_Comparative/
+    ├── RQ4_FewShot_Comparative/
+    └── evaluation_qwen/                # Structured evaluation metrics and summaries for Qwen
+        ├── project_pearson_spearman.csv   # Per-run metrics and runtime stats
+        ├── evaluation_project_summary.csv # Mean/std summary for each project
+        └── evaluation_overall_summary.csv # Overall paper-ready summary metrics
 ```
 
 ## Experimental Results & Data Formats
 
-The experimental outputs are cleanly partitioned into four directories corresponding to the evaluation strategies. Inside each directory, results are grouped by the model. 
+The experimental outputs are cleanly partitioned into four directories corresponding to the evaluation strategies. Inside each directory, results are grouped by the model.
 
 ### RQ1: Zero-Shot Direct Prediction
 Evaluating the LLMs' inherent zero-shot capability to predict functional story points.
@@ -43,20 +50,20 @@ Evaluating the LLMs' inherent zero-shot capability to predict functional story p
 
 ### RQ2: Few-Shot Direct Prediction
 Evaluating the impact of providing historical, labeled story point examples in the prompt to calibrate the model's absolute scale. Experiments evaluated "Count" (most frequent) and "Scale" (scale-aware) few-shot selection.
-- **Path:** `results/RQ2_FewShot_Direct/<model>/Count/` and `results/RQ2_FewShot_Direct/<model>/Scale/`
-- **Format:** `*_<model>_Count.csv` and `*_<model>_Scale.csv`
+- **Path:** `results/RQ2_FewShot_Direct/<model>/count/` and `results/RQ2_FewShot_Direct/<model>/scale/`
+- **Format:** `*_<model>_FewShot.csv` and `*_<model>_FewShot_Scale.csv`
 
 ### RQ3: Zero-Shot Comparative
 Asking the model to explicitly compare the relative effort between two backlog items (predicting if one is strictly greater, less than, or equal to the other).
 - **Path:** `results/RQ3_ZeroShot_Comparative/<model>/`
-- **Format:** `*_<model>_ZeroShotComparative.csv`
+- **Format:** `*_<model>_RQ3_ZeroShot_Comparative.csv`
 
 ### RQ4: Few-Shot Comparative
 Providing relative comparison examples in the prompt before asking the LLM to output absolute story point predictions for new items.
 - **Path:** `results/RQ4_FewShot_Comparative/<model>/`
-- **Format:** `*_<model>_FewShotComparative.csv`
+- **Format:** `*_<model>_RQ4_FewShot_Comparative.csv`
 
-> **Note:** For every model inside these directories, an `evaluate_*.csv` summary file exists (e.g., `evaluate_ZeroShot.csv`, `evaluate_Count.csv`), containing aggregated performance metrics like Pearson (ρ) and Spearman (r_s) correlations.
+> **Note:** Performance summaries for each model are tracked via automated scripts to produce clean statistical correlation matrices (Pearson ρ, Spearman r_s) and error indicators (MAE, RMSE, Accuracy).
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
