@@ -1,8 +1,8 @@
-# Story Point Estimation with LLMs
+# Do LLMs Think Like Humans? Evidence from Comparative Judgments in Effort Estimation
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This repository contains the replication package, datasets, and analysis scripts for the research paper: **"Story Point Estimation with LLMs"**.
+This repository contains the replication package, datasets, and analysis scripts for the research paper: **"Do LLMs Think Like Humans? Evidence from Comparative Judgments in Effort Estimation"**.
 
 In this study, we empirically evaluate the capabilities of four leading Large Language Models (LLMs) in automating story point estimation across 16 real-world agile software projects. We investigate their performance across four different prompting setups: zero-shot direct estimation, few-shot direct estimation, zero-shot comparative estimation, and few-shot comparative estimation.
 
